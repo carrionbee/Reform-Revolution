@@ -1,0 +1,13 @@
+{
+  "name" : "Laws: Reform & Revolution",
+  "id" : "",
+  "version" : "1.5",
+  "supported_game_version" : "1.5.*",
+  "picture": "thumbnail.png",
+  "short_description" : "Theresia's Communist Overhaul + Centralized Law Pack integrated, updated, and expanded!",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}
