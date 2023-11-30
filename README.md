@@ -18,8 +18,12 @@ Speaking of BPM: The Beta version is **not** harmonised  Reform & Revolution as 
 
 __**REQUIRED & RECOMMENDED ITEMS:**__  
   • Theresia's Communist Overhaul: **Borderline Essential**  
+  https://steamcommunity.com/sharedfiles/filedetails/?id=2884072470   
 Designed with that mod in mind, and is my deepest preference.  
-  • 'Laws +' & 'Working Hours': **Highly Recommended** 
+  • 'Laws +' & 'Working Hours': **Highly Recommended**  
+  [https://steamcommunity.com/sharedfiles/filedetails/?id=2908811278](https://steamcommunity.com/sharedfiles/filedetails/?id=2941539986)  
+  [https://steamcommunity.com/sharedfiles/filedetails/?id=2908811278](https://steamcommunity.com/sharedfiles/filedetails/?id=2941539986)]  
+  [https://steamcommunity.com/sharedfiles/filedetails/?id=3066697607](https://steamcommunity.com/sharedfiles/filedetails/?id=2941539986)]  
 I made those mod's contents compatibile with mine, harmonised, curated, and updated for the current version explicitly! If you want that content, subscribe to them! <3
   • Assassination & Espionage: **Recommended, but Optional**  
 Required for the CHARACTER INTERACTION: Neutralise Target. (I prefer to give credit to the OG mod in this way, so if people like this, they can subscribe to the OG and use the character interaction implementation from my mod. The other ideological character interactions are stand-alone for my mod).
@@ -54,23 +58,23 @@ Centralized Law Pack: Federalism, Land Reform, and Urbanization laws:
 https://steamcommunity.com/sharedfiles/filedetails/?id=2918828321
 
 [u]Honorable Mentions:[/u]  
-Null & Void:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2902210880
-Private Construction Industry:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2947515189
-Heart of Appalachia, An Atompunk Mod:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2921015600
-Environmental Regulations:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=3066697607
-Simpler Infrastructure:  
-https://steamcommunity.com/workshop/filedetails/?id=2895583492
-Simpler Infrastructure - Ownership Fix:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2963170316
-Espionage:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2964689866
-Emergency Laws:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2921807355
-Emergency Election:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2971877982
-Assassination:  
-https://steamcommunity.com/sharedfiles/filedetails/?id=2885841953
+Null & Void: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2902210880  
+Private Construction Industry: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2947515189  
+Heart of Appalachia, An Atompunk Mod: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2921015600  
+Environmental Regulations: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=3066697607  
+Simpler Infrastructure: 
+https://steamcommunity.com/workshop/filedetails/?id=2895583492  
+Simpler Infrastructure - Ownership Fix: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2963170316  
+Espionage: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2964689866  
+Emergency Laws: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2921807355  
+Emergency Election: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2971877982  
+Assassination: 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2885841953  
