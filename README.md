@@ -1,6 +1,8 @@
 # Reform & Revolution
 Reform &amp; Revolution mod for Victoria 3
 
+## Reform & Revolution update for 1.5.10 will be releasing on the 3rd of December 12:30 UTC
+
 **Hello 1.5!**
 
 *New features! Corportatist Labour Syndicates! LGBTQ Rights Laws! Technocratic Dirigisme! Character Interactions! (with more to come!) Discreet Powers! Converting Ideologies! and more!*
