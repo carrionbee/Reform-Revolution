@@ -24,7 +24,7 @@ I made those mod's contents compatibile with mine, harmonised, curated, and upda
   • Assassination & Espionage: **Recommended, but Optional**  
 Required for the CHARACTER INTERACTION: Neutralise Target. (I prefer to give credit to the OG mod in this way, so if people like this, they can subscribe to the OG and use the character interaction implementation from my mod. The other ideological character interactions are stand-alone for my mod).
   • Emergency Laws: **Recommended, but Optional**  
-Need Reserve Powers or Autocracy in order to activate the decision.
+Need Reserve Powers or Autocracy in order to activate the decision.  
   • Emergency Election: **Recommended, but Optional**  
 Need Reserve Powers in order to activate the decision.
 
@@ -49,7 +49,7 @@ I would like to thank Honk for their blessing in making this mod, and you may fi
 
 **Credits:**   
 Theresia's Communist Overhaul:  
-https://steamcommunity.com/workshop/filedetails/?id=2884072470
+https://steamcommunity.com/workshop/filedetails/?id=2884072470  
 Centralized Law Pack: Federalism, Land Reform, and Urbanization laws:  
 https://steamcommunity.com/sharedfiles/filedetails/?id=2918828321
 
