@@ -1,0 +1,34 @@
+﻿ideology_corporatist = {
+	icon = "gfx/interface/icons/ideology_icons/corporatist.dds"
+	
+	lawgroup_health_system = {
+		law_charitable_health_system = approve
+		law_public_health_insurance = neutral
+		law_no_health_system = disapprove
+		law_private_health_insurance = disapprove
+	}
+	
+	lawgroup_education_system = {
+		law_religious_schools = approve
+		law_military_schools = neutral
+		law_no_schools = neutral
+		law_public_schools = disapprove
+		law_private_schools = disapprove		
+	}	
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = approve
+		law_corporatist_labour_syndicate = strongly_approve
+		law_worker_protections = disapprove
+		law_union_representation = strongly_disapprove
+	}
+	
+	lawgroup_welfare = {
+		law_poor_laws = neutral
+		law_no_social_security = disapprove
+		law_wage_subsidies = approve
+		law_old_age_pension = neutral
+		law_disability_insurance = disapprove
+	}
+}

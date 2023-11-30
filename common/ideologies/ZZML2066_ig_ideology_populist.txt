@@ -1,0 +1,58 @@
+﻿ideology_populist = {
+	icon = "gfx/interface/icons/ideology_icons/populist.dds"
+	
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = neutral
+		law_homesteading = neutral
+		law_tenant_farmers = disapprove	
+		law_commercialized_agriculture = disapprove
+		law_titled_estates = strongly_disapprove
+		law_serfdom = strongly_disapprove
+	}
+	
+	lawgroup_centralization = {
+		law_confederation = approve
+		law_unitary = neutral			
+		law_federalism = approve
+		law_military_cantons = disapprove
+		law_feudalism = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_mass_democracy = strongly_approve
+		law_universal_suffrage = approve
+		law_anarchy = approve		
+		law_census_voting = neutral
+		law_single_party_state = neutral
+		law_wealth_voting = disapprove
+		law_landed_voting = disapprove
+		law_technocracy = disapprove
+		law_ecclesiarchy = disapprove
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove		
+	}
+	
+	lawgroup_governance_principles = {
+		law_council_republic = approve
+		law_parliamentary_republic = approve		
+		law_presidential_republic = neutral
+		law_theocracy = strongly_disapprove
+		law_theocracy_occultists = strongly_disapprove
+		law_monarchy = strongly_disapprove
+		law_corporatocracy = strongly_disapprove
+	}
+	
+	lawgroup_migration = {
+		law_migration_controls = approve		
+		law_closed_borders = neutral
+		law_no_migration_controls = neutral
+	}
+	
+	lawgroup_army_model = {
+		law_national_militia = strongly_approve
+		law_mass_conscription = approve
+		law_peasant_levies = neutral
+		law_professional_army = disapprove
+		law_no_army = disapprove
+	}
+}
