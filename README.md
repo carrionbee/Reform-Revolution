@@ -13,7 +13,7 @@ Now with new Ownership Methods! Redesigned and NEW laws! Ideologies! Decrees! **
 
 __**LOAD ORDER:**__  
 Place this mod at the bottom of the load order.  My main design pillar of this mod in one (1) word: Harmonization. This is to say: I want this mod to be highly compatible with other mods, and ensure features play nice with many mods. 
-Yes, that does mean for example: putting this mod below Better Politics Mod in load order. Do let me know if you notice anything strange, I play with that mod as well. That mod in particular is the highest priority for mod compatibility - besides Theresia's Communist Overhaul. (my beloved).
+Yes, that does mean for example: putting this mod below Better Politics Mod in load order. Do let me know if you notice anything strange, I play with that mod as well. That mod in particular is the highest priority for mod compatibility - besides Theresia's Communist Overhaul. (my beloved).  
 Speaking of BPM: The Beta version is **not** harmonised  Reform & Revolution as of yet.
 
 __**REQUIRED & RECOMMENDED ITEMS:**__  
