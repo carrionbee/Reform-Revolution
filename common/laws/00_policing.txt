@@ -1,0 +1,340 @@
+﻿# 경찰 철폐
+law_no_police = {
+	group = lawgroup_policing
+	
+	icon = "gfx/interface/icons/law_icons/no_police.dds"
+	
+	progressiveness = 0
+	
+	possible_political_movements = {
+		law_local_police
+		law_dedicated_police
+		law_private_security_system		# laws +
+		law_militarized_police
+	}	
+	
+	pop_support = {
+		value = 0
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	# AI shouldn't try to abolish institutions
+	ai_will_do = {
+		always = no
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 지역 경찰
+law_local_police = {
+	group = lawgroup_policing
+	
+	icon = "gfx/interface/icons/law_icons/local_police.dds"
+	
+	unlocking_technologies = {
+		tech_bureaucracy
+	}
+	
+	progressiveness = 50
+
+	institution = institution_police
+	institution_modifier = {
+		interest_group_ig_landowners_pol_str_mult = 0.10
+		state_turmoil_effects_mult = -0.05
+	}
+	
+	possible_political_movements = {
+		law_dedicated_police
+		law_private_security_system	# laws +
+		law_militarized_police
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_ARISTOCRATS"
+			if = {
+				limit = { 
+					is_pop_type = aristocrats
+				}
+				value = 0.25
+			}
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+	
+	# Don't return to local police if we have something more advanced
+	ai_will_do = {
+		NOR = {
+			has_law = law_type:law_dedicated_police
+			has_law = law_type:law_militarized_police
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 전문 경찰
+law_dedicated_police = {
+	group = lawgroup_policing
+	
+	icon = "gfx/interface/icons/law_icons/dedicated_police.dds"
+	
+	progressiveness = 100
+
+	unlocking_technologies = {
+		law_enforcement
+	}
+
+	modifier = {
+		country_institution_police_max_investment_add = 2
+	}
+
+	institution = institution_police
+	institution_modifier = {
+		state_radicals_from_sol_change_mult = -0.05
+	}
+	
+	possible_political_movements = {
+		law_private_security_system	# laws +
+		law_militarized_police
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_SOLDIERS"
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_law = law_type:law_militarized_police
+						}
+					}
+					is_pop_type = soldiers
+				}
+				value = 0.33
+			}
+		}
+		add = {
+			desc = "POP_OFFICERS"
+			if = {
+				limit = {
+					NOT = {
+						owner = {
+							has_law = law_type:law_militarized_police
+						}
+					}
+					is_pop_type = officers
+				}
+				value = 0.33
+			}
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 사립 보안 체계	# laws +
+law_private_security_system = {
+	group = lawgroup_policing
+	
+	icon = "gfx/interface/icons/law_icons/private_security_system.dds"
+
+	progressiveness = 50
+	
+	unlocking_technologies = {
+		law_enforcement
+	}
+
+	can_enact = {
+		has_technology_researched = labor_movement
+	}
+
+	disallowing_laws = {
+		law_worker_protections
+		law_union_representation
+	}
+
+	modifier = {
+		country_institution_police_max_investment_add = 2
+	}
+
+	institution = institution_police
+	institution_modifier = {
+		state_radicals_from_sol_change_mult = -0.05
+		state_loyalists_from_sol_change_mult = 0.1
+		interest_group_ig_trade_unions_pol_str_mult = -0.05
+		interest_group_ig_rural_folk_pol_str_mult = -0.05
+		building_minimum_wage_mult = -0.05
+	}
+	
+	possible_political_movements = {
+		law_dedicated_police
+		law_militarized_police
+	}
+	
+	pop_support = {
+		value = 0
+		# 일해라 핫산!
+		add = {
+			desc = "POP_CAPITALISTS"
+			if = {
+				limit = {
+					is_pop_type = capitalists
+				}
+			}
+			value = 0.25
+		}
+		# 소작농이 기어오르는 꼴을 못 보는 지주들
+		add = {
+			desc = "POP_ARISTOCRATS"
+			if = {
+				limit = { 
+					owner = {
+						NOT = { has_law = law_type:law_local_police }
+					}
+					is_pop_type = aristocrats
+				}
+				value = 0.25
+			}
+		}
+	}
+
+	ai_will_do = {
+		exists = ruler
+		ruler = {
+			has_ideology = ideology:ideology_anarcho_liberal
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 경찰 군사화
+law_militarized_police = {
+	group = lawgroup_policing
+	
+	icon = "gfx/interface/icons/law_icons/militarized_police.dds"
+	
+	progressiveness = 75
+
+	unlocking_technologies = {
+		mass_surveillance
+	}
+
+	modifier = {
+		country_institution_police_max_investment_add = 2
+	}
+
+	institution = institution_police
+	institution_modifier = {
+		state_radicals_from_sol_change_mult = -0.05
+		state_radicals_from_discrimination_mult = -0.05
+		interest_group_ig_armed_forces_pol_str_mult = 0.10
+		state_mortality_turmoil_mult = 0.004
+	}
+	
+	possible_political_movements = {
+		law_dedicated_police
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_SOLDIERS"
+			if = {
+				limit = {
+					is_pop_type = soldiers
+				}
+				value = 0.25
+			}
+		}
+		add = {
+			desc = "POP_OFFICERS"
+			if = {
+				limit = {
+					is_pop_type = officers
+				}
+				value = 0.25
+			}
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+
+# Reform & Revolution: Community Police / Peoples Militas - TODO
+#law_peoples_militia = {
+#
+#}
