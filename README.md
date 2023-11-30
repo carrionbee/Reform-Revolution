@@ -10,6 +10,7 @@ Reform &amp; Revolution mod for Victoria 3
 This mod started as an **expansion** of the original scope of "Centralized Law Pack". 
 Now with new Ownership Methods! Redesigned and NEW laws! Ideologies! Decrees! **Queer Rights Compatibility!** Working Hours Compatibility! Environmental Regulations Compatibility!
 
+
 __**LOAD ORDER:**__
 
 Place this mod at the bottom of the load order. My main design pillar of this mod in one (1) word: Harmonization. This is to say: I want this mod to be highly compatible with other mods, and ensure features play nice with many mods. 
@@ -17,6 +18,7 @@ Yes, that does mean for example: putting this mod below Better Politics Mod in l
 Speaking of BPM: The Beta version is **not** harmonised  Reform & Revolution as of yet.
 
 __**REQUIRED & RECOMMENDED ITEMS:**__
+
 • Theresia's Communist Overhaul: **Borderline Essential**
 Designed with that mod in mind, and is my deepest preference. 
 • 'Laws +' & 'Working Hours': **Highly Recommended** 
@@ -29,6 +31,7 @@ Need Reserve Powers or Autocracy in order to activate the decision.
 Need Reserve Powers in order to activate the decision.
 
 **The modifications consist of:**
+
 • Character Interactions! (with more to come!) Discreet Powers! Converting Ideologies! and more!
 • Rebalancing of economic laws so that Urban Planning and Rural Planning can be used with Economic System laws.
 • New Laws! The redesigned Urban Planning and the Rural Development Law Groups expand the degree of economic control and customisation of the state. As well as the Centralization Law Group to further define the Authority of the state.
