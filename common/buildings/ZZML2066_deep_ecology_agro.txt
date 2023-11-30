@@ -1,1 +1,644 @@
+﻿############# FARMING & RANCHING
 
+building_rye_farm = {
+	building_group = bg_rye_farms
+	
+	texture = "gfx/interface/icons/building_icons/rye_farm.dds"
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_base_building_rye_farm
+		pmg_secondary_building_rye_farm
+		pmg_harvesting_process_building_rye_farm
+		pmg_ownership_land_building_rye_farm
+	}
+
+	required_construction = construction_cost_low
+	
+	terrain_manipulator = farmland_rye
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+
+}
+
+building_wheat_farm = {
+	building_group = bg_wheat_farms
+	
+	texture = "gfx/interface/icons/building_icons/wheat_farm.dds"
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_base_building_wheat_farm
+		pmg_secondary_building_wheat_farm
+		pmg_harvesting_process_building_wheat_farm
+		pmg_ownership_land_building_wheat_farm
+	}
+
+	required_construction = construction_cost_low
+	
+	terrain_manipulator = farmland_wheat
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_rice_farm = {
+	building_group = bg_rice_farms
+	
+	texture = "gfx/interface/icons/building_icons/rice_farm.dds"
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_base_building_rice_farm
+		pmg_secondary_building_rice_farm
+		pmg_harvesting_process_building_rice_farm
+		pmg_ownership_land_building_rice_farm
+	}
+
+	required_construction = construction_cost_low
+	
+	terrain_manipulator = farmland_rice
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_maize_farm = {
+	building_group = bg_maize_farms
+	
+	texture = "gfx/interface/icons/building_icons/maize_farm.dds"
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		enclosure
+	}
+	
+	production_method_groups = {
+		pmg_base_building_maize_farm
+		pmg_secondary_building_maize_farm
+		pmg_harvesting_process_building_maize_farm
+		pmg_ownership_land_building_maize_farm
+	}
+
+	required_construction = construction_cost_low
+	
+	terrain_manipulator = farmland_maize
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_millet_farm = {
+	building_group = bg_millet_farms
+	
+	texture = "gfx/interface/icons/building_icons/millet_farm.dds"
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_base_building_millet_farm
+		pmg_secondary_building_millet_farm
+		pmg_harvesting_process_building_millet_farm
+		pmg_ownership_land_building_millet_farm
+	}
+
+	required_construction = construction_cost_low
+	
+	terrain_manipulator = farmland_millet
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_livestock_ranch = {
+	building_group = bg_livestock_ranches
+
+	texture = "gfx/interface/icons/building_icons/cattle_ranch.dds"
+	
+	city_type = farm
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_base_building_livestock_ranch
+		pmg_sheep_ranch
+		pmg_fencing
+		pmg_refrigeration_building_livestock_ranch
+		pmg_ownership_land_building_livestock_ranch
+	}
+
+	required_construction = construction_cost_low
+
+	terrain_manipulator = pasture
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_vineyard_plantation = {
+	building_group = bg_vineyard_plantations
+	texture = "gfx/interface/icons/building_icons/vineyards.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_vineyard_plantation
+		pmg_train_automation_building_vineyard_plantation
+		pmg_ownership_land_building_vineyard_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+
+############# PLANTATIONS
+
+building_coffee_plantation = {
+	building_group = bg_coffee_plantations
+	texture = "gfx/interface/icons/building_icons/coffee_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_coffee_plantation
+		pmg_train_automation_building_coffee_plantation
+		pmg_ownership_land_building_coffee_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_cotton_plantation = {
+	building_group = bg_cotton_plantations
+	texture = "gfx/interface/icons/building_icons/cotton_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_cotton_plantation
+		pmg_train_automation_building_cotton_plantation
+		pmg_ownership_land_building_cotton_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_dye_plantation = {
+	building_group = bg_dye_plantations
+	texture = "gfx/interface/icons/building_icons/dye_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_dye_plantation
+		pmg_train_automation_building_dye_plantation
+		pmg_ownership_land_building_dye_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_opium_plantation = {
+	building_group = bg_opium_plantations
+	texture = "gfx/interface/icons/building_icons/opium_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_opium_plantation
+		pmg_train_automation_building_opium_plantation
+		pmg_ownership_land_building_opium_plantation
+	}
+	
+	can_build_government = {
+		error_check = {
+			severity = fail
+			owner = { NOT = { is_banning_goods = g:opium } }
+		}
+	}
+	can_build_private = {
+		error_check = {
+			severity = fail
+			owner = { NOT = { is_banning_goods = g:opium } }
+		}
+	}
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}	
+}
+
+building_tea_plantation = {
+	building_group = bg_tea_plantations
+	texture = "gfx/interface/icons/building_icons/tea_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_tea_plantation
+		pmg_train_automation_building_tea_plantation
+		pmg_ownership_land_building_tea_plantation
+	}
+}
+
+building_tobacco_plantation = {
+	building_group = bg_tobacco_plantations
+	texture = "gfx/interface/icons/building_icons/tobacco_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_tobacco_plantation
+		pmg_train_automation_building_tobacco_plantation
+		pmg_ownership_land_building_tobacco_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_sugar_plantation = {
+	building_group = bg_sugar_plantations
+	texture = "gfx/interface/icons/building_icons/sugar_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+	
+	city_type = farm
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_sugar_plantation
+		pmg_train_automation_building_sugar_plantation
+		pmg_ownership_land_building_sugar_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_banana_plantation = {
+	building_group = bg_banana_plantations
+	texture = "gfx/interface/icons/building_icons/banana_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+	
+	production_method_groups = {
+		pmg_base_building_banana_plantation
+		pmg_train_automation_building_banana_plantation
+		pmg_ownership_land_building_banana_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_silk_plantation = {
+	building_group = bg_silk_plantations
+	texture = "gfx/interface/icons/building_icons/silk_plantation.dds"
+	required_construction = construction_cost_low
+
+	unlocking_technologies = {
+		enclosure
+	}
+
+	city_type = farm
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_silk_plantation
+		pmg_train_automation_building_silk_plantation
+		pmg_ownership_land_building_silk_plantation
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+############# TREE FARMING
+
+building_tree_farm = {
+	building_group = bg_tree_farm
+	texture = "gfx/interface/icons/building_icons/logging_camp.dds"
+	city_type = farm
+	
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_tfarm_base_building_logging_camp
+		pmg_tfarm_equipment
+		pmg_tfarm_transportation_building_logging_camp
+		pmg_tfarm_ownership_capital_building_logging_camp
+	}
+	
+	required_construction = construction_cost_medium
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_hardwood_tree_farm = {
+	building_group = bg_tree_farm
+	texture = "gfx/interface/icons/building_icons/logging_camp.dds"
+	city_type = farm
+	
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_hardwood_tfarm_base_building_logging_camp
+		pmg_tfarm_equipment
+		pmg_tfarm_transportation_building_logging_camp
+		pmg_tfarm_ownership_capital_building_logging_camp
+	}
+	
+	required_construction = construction_cost_medium
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}	
+}
+
+############# AQUACULTURE
+
+building_fish_farm = {
+	building_group = bg_fish_farm
+	texture = "gfx/interface/icons/building_icons/fish_farm.dds"
+	city_type = farm
+	required_construction = construction_cost_low
+	
+	unlocking_technologies = {
+		enclosure
+	}
+
+	production_method_groups = {
+		pmg_base_building_fish_farm
+		pmg_feed_building_fish_farm
+		pmg_refrigeration_building_fishing_wharf
+		pmg_tidal_simulator_building_fish_farm
+		pmg_ownership_building_fish_farm
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+}
+
+building_fish_farm_seaside = {
+	building_group = bg_fish_farm
+	texture = "gfx/interface/icons/building_icons/fish_farm_seaside.dds"
+	city_type = port
+	required_construction = construction_cost_low
+
+	production_method_groups = {
+		pmg_base_building_fish_farm_seaside
+		pmg_feed_building_fish_farm
+		pmg_refrigeration_building_fishing_wharf
+		pmg_ownership_building_fish_farm
+	}
+	
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_deep_ecology_cooperatives } 
+				}
+			}
+		}
+	}
+	
+	can_build = {
+		error_check = {
+			severity = fail
+			is_sea_adjacent = yes
+		}
+	}
+}
