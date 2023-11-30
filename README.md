@@ -12,22 +12,20 @@ Now with new Ownership Methods! Redesigned and NEW laws! Ideologies! Decrees! **
 
 
 __**LOAD ORDER:**__
-
-Place this mod at the bottom of the load order.  My main design pillar of this mod in one (1) word: Harmonization. This is to say: I want this mod to be highly compatible with other mods, and ensure features play nice with many mods. 
+  Place this mod at the bottom of the load order.  My main design pillar of this mod in one (1) word: Harmonization. This is to say: I want this mod to be highly compatible with other mods, and ensure features play nice with many mods. 
 Yes, that does mean for example: putting this mod below Better Politics Mod in load order. Do let me know if you notice anything strange, I play with that mod as well. That mod in particular is the highest priority for mod compatibility - besides Theresia's Communist Overhaul. (my beloved).
 Speaking of BPM: The Beta version is **not** harmonised  Reform & Revolution as of yet.
 
 __**REQUIRED & RECOMMENDED ITEMS:**__
-
-• Theresia's Communist Overhaul: **Borderline Essential**
+  • Theresia's Communist Overhaul: **Borderline Essential**
 Designed with that mod in mind, and is my deepest preference. 
-• 'Laws +' & 'Working Hours': **Highly Recommended** 
+  • 'Laws +' & 'Working Hours': **Highly Recommended** 
 I made those mod's contents compatibile with mine, harmonised, curated, and updated for the current version explicitly! If you want that content, subscribe to them! <3
-• Assassination & Espionage: **Recommended, but Optional** 
+  • Assassination & Espionage: **Recommended, but Optional** 
 Required for the CHARACTER INTERACTION: Neutralise Target. (I prefer to give credit to the OG mod in this way, so if people like this, they can subscribe to the OG and use the character interaction implementation from my mod. The other ideological character interactions are stand-alone for my mod).
-• Emergency Laws: **Recommended, but Optional** 
+  • Emergency Laws: **Recommended, but Optional** 
 Need Reserve Powers or Autocracy in order to activate the decision.
-• Emergency Election: **Recommended, but Optional** 
+  • Emergency Election: **Recommended, but Optional** 
 Need Reserve Powers in order to activate the decision.
 
 **The modifications consist of:**
