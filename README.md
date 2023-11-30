@@ -35,7 +35,7 @@ I made these mod's contents compatibile with mine, harmonised, curated, and upda
   • *Assassination & Espionage:*  https://steamcommunity.com/sharedfiles/filedetails/?id=2885841953  
     • One of my first thoughts since PDX added character interactions. This mod is **Required** for the CHARACTER INTERACTION: Neutralise Target. (I prefer to give credit to the OG mod in this way, so if people like this, they can subscribe to the OG and use the character interaction implementation from my mod. The other ideological character interactions are stand-alone for my mod).  
   • *Emergency Laws:* https://steamcommunity.com/sharedfiles/filedetails/?id=2921807355  
-  • Emergency Election: https://steamcommunity.com/sharedfiles/filedetails/?id=2971877982  
+  • *Emergency Election:* https://steamcommunity.com/sharedfiles/filedetails/?id=2971877982  
     • Very very nice mods, and plays nicely with the newly revised Executive Privleges. You require some form of Executive Privleges to do this, or Autocracy in order to activate the decisions.  
 
 **The modifications consist of:**  
