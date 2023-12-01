@@ -1,9 +1,7 @@
 pm_technocratic_dirigisme_mines = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 
-	unlocking_laws = {
-		law_technocracy
-	}
+	unlocking_laws = { law_technocracy }
 
 	disallowing_laws = {
 		law_sprawl
@@ -34,9 +32,7 @@ pm_technocratic_dirigisme_mines = {
 pm_technocratic_dirigisme_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 
-	unlocking_laws = {
-		law_technocracy
-	}
+	unlocking_laws = { law_technocracy }
 
 	disallowing_laws = {
 		law_sprawl
@@ -67,9 +63,7 @@ pm_technocratic_dirigisme_logging_camp = {
 pm_technocratic_dirigisme_marine = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 
-	unlocking_laws = {
-		law_technocracy
-	}
+	unlocking_laws = { law_technocracy }
 
 	disallowing_laws = {
 		law_sprawl
@@ -100,9 +94,7 @@ pm_technocratic_dirigisme_marine = {
 pm_technocratic_dirigisme_heavy_industry = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 
-	unlocking_laws = {
-		law_technocracy
-	}
+	unlocking_laws = { law_technocracy }
 
 	disallowing_laws = {
 		law_sprawl
@@ -133,9 +125,7 @@ pm_technocratic_dirigisme_heavy_industry = {
 pm_technocratic_dirigisme_light_industry = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 
-	unlocking_laws = {
-		law_technocracy
-	}
+	unlocking_laws = { law_technocracy }
 
 	disallowing_laws = {
 		law_sprawl
@@ -166,9 +156,7 @@ pm_technocratic_dirigisme_light_industry = {
 pm_technocratic_dirigisme_military_industry = {
 	texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
 
-	unlocking_laws = {
-		law_technocracy
-	}
+	unlocking_laws = { law_technocracy }
 
 	disallowing_laws = {
 		law_sprawl

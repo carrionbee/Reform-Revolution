@@ -1,9 +1,7 @@
 pm_integralism_urban = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
 	
-	unlocking_laws = {
-			law_religious_integralism
-		}
+	unlocking_laws = { law_religious_integralism }
 		
 		building_modifiers = {
 			level_scaled = {
@@ -21,9 +19,7 @@ pm_integralism_urban = {
 pm_integralism_rural = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
 	
-	unlocking_laws = {
-			law_religious_integralism
-		}
+	unlocking_laws = { law_religious_integralism }
 		
 		building_modifiers = {
 			level_scaled = {
@@ -40,9 +36,7 @@ pm_integralism_rural = {
 pm_integralism_industry = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
 	
-	unlocking_laws = {
-			law_religious_integralism
-		}
+	unlocking_laws = { law_religious_integralism }
 		
 		building_modifiers = {
 			level_scaled = {
@@ -59,9 +53,7 @@ pm_integralism_industry = {
 pm_integralism_building_railway = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_clergy.dds"
 	
-	unlocking_laws = {
-			law_religious_integralism
-		}
+	unlocking_laws = { law_religious_integralism }
 	
 	building_modifiers = {
 			level_scaled = {

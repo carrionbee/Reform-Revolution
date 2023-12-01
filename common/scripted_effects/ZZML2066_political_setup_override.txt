@@ -73,6 +73,7 @@ effect_starting_politics_traditional = {
 	activate_law = law_type:law_right_of_assembly
 	activate_law = law_type:law_peasant_levies	
 	activate_law = law_type:law_closed_borders
+	activate_law = law_type:law_traditional_law
 	if = {
 		limit = {
 			is_country_type = decentralized
@@ -80,13 +81,14 @@ effect_starting_politics_traditional = {
 		activate_law = law_type:law_chiefdom
 		activate_law = law_type:law_isolationism
 		activate_law = law_type:law_no_workers_rights
+		activate_law = law_informal_authority
+		activate_law = law_sprawl
+		activate_law = law_unorganized_agriculture 
 	}
 	else = {
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_mercantilism
 		activate_law = law_type:law_serfdom
+		activate_law = law_type:law_feudalism
 	}
-	activate_law = law_type:law_feudalism
-	activate_law = law_type:law_tenant_farmers
-	activate_law = law_type:law_traditional_law
 }

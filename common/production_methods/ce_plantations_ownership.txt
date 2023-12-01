@@ -1,5 +1,4 @@
-﻿
-pm_government_run_plantation = {
+﻿pm_government_run_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
 	
 	unlocking_laws = {

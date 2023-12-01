@@ -1,0 +1,67 @@
+﻿# 조세 철폐	# laws +
+law_no_taxation = {
+	group = lawgroup_taxation
+	
+	progressiveness = 0
+	
+	is_visible = { exists = law_no_taxation }
+	
+	icon = "gfx/interface/icons/law_icons/no_taxation.dds"
+	
+	modifier = {
+		state_shopkeepers_investment_pool_efficiency_mult = 0.50
+		state_capitalists_investment_pool_efficiency_mult = 0.50
+		state_aristocrats_investment_pool_efficiency_mult = 0.50
+		state_farmers_investment_pool_efficiency_mult = 0.50
+		state_bureaucracy_population_base_cost_factor_mult = -0.50
+		state_loyalists_from_sol_change_mult = 0.20
+		state_radicals_from_sol_change_mult = -0.20
+		state_migration_pull_mult = 0.25
+	}
+
+	tax_modifier_very_low = {
+	}
+	
+	tax_modifier_low = {
+	}
+	
+	tax_modifier_medium = {
+	}
+	
+	tax_modifier_high = {
+	}
+	
+	tax_modifier_very_high = {
+	}
+	
+	possible_political_movements = {
+		law_consumption_based_taxation
+		law_land_based_taxation
+		law_per_capita_based_taxation
+		law_proportional_taxation
+		law_graduated_taxation
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_will_do = {
+		ruler = {
+			has_ideology = ideology:ideology_anarcho_liberal
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 250
+		}
+	}
+}

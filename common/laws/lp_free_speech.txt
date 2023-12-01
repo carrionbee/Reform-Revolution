@@ -1,0 +1,58 @@
+﻿# 판-옵티콘	# laws +
+law_pan_opticon = {
+	group = lawgroup_free_speech
+	icon = "gfx/interface/icons/law_icons/pan_opticon.dds"
+
+	progressiveness = -200
+	
+	is_visible = { exists = law_pan_opticon }
+	
+	modifier = {
+		country_authority_mult = 1
+		state_bureaucracy_population_base_cost_factor_mult = 0.25
+		country_promotion_ig_attraction_mult = 0.5
+		country_suppression_ig_attraction_mult = -0.5
+		political_movement_radicalism_mult = -0.5
+		country_tech_spread_mult = -0.5
+	}
+	
+	possible_political_movements = {
+		law_outlawed_dissent
+	}
+
+	unlocking_laws = {
+	}
+
+	unlocking_technologies = {
+		mass_propaganda
+	}
+
+	can_enact = {
+		has_technology_researched = mass_surveillance
+	}
+
+	disallowing_laws = {
+		law_no_home_affairs
+	}
+
+	pop_support = {
+		value = 0
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 75
+		}
+	}
+}

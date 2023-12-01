@@ -33,11 +33,6 @@ pm_privately_owned_building_logging_camp = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {
-		pm_saw_mills
-		pm_electric_saw_mills
-	}
-
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
@@ -59,14 +54,7 @@ pm_privately_owned_building_logging_camp = {
 pm_publicly_traded_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_saw_mills
-		pm_electric_saw_mills
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
@@ -74,9 +62,7 @@ pm_publicly_traded_building_logging_camp = {
 		law_cooperative_ownership
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -193,10 +179,6 @@ pm_privately_owned_building_fishing_wharf = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {				
-		pm_fishing_trawlers
-	}
-
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
@@ -229,9 +211,7 @@ pm_publicly_traded_building_fishing_wharf = {
 
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -325,7 +305,6 @@ pm_merchant_guilds_building_whaling_station = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -346,18 +325,12 @@ pm_privately_owned_building_whaling_station = {
 	unlocking_laws = {
 		law_sprawl
 		law_bourgeoisie_ownership
-	}
-	
-	unlocking_production_methods = {
-		pm_wooden_whaling_ships
-		pm_steam_whaling_ships
-	}				
+	}			
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -374,25 +347,15 @@ pm_privately_owned_building_whaling_station = {
 pm_publicly_traded_building_whaling_station = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"		
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-	
-	unlocking_production_methods = {
-		pm_wooden_whaling_ships
-		pm_steam_whaling_ships
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -477,9 +440,7 @@ pm_communal_management_building_whaling_station = {
 pm_publicly_traded_building_oil_rig = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 	
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
@@ -490,9 +451,7 @@ pm_publicly_traded_building_oil_rig = {
 
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {

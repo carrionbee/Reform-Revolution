@@ -32,16 +32,10 @@ pm_privately_owned_building_food_industry = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {
-		pm_sweeteners
-		pm_baking_powder
-	}
-
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -62,14 +56,7 @@ pm_publicly_traded_building_food_industry = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {
-		pm_sweeteners
-		pm_baking_powder
-	}
-
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	disallowing_laws = {
 		law_command_economy
@@ -171,7 +158,6 @@ pm_merchant_guilds_building_textile_mills = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -194,17 +180,10 @@ pm_privately_owned_building_textile_mills = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {
-		pm_dye_workshops
-		pm_sewing_machines
-		pm_electric_sewing_machines
-	}
-
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -221,15 +200,7 @@ pm_privately_owned_building_textile_mills = {
 pm_publicly_traded_building_textile_mills = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_dye_workshops
-		pm_sewing_machines
-		pm_electric_sewing_machines
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
@@ -238,9 +209,7 @@ pm_publicly_traded_building_textile_mills = {
 
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -334,7 +303,6 @@ pm_merchant_guilds_building_furniture_manufacturies = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -355,11 +323,6 @@ pm_privately_owned_building_furniture_manufacturies = {
 	unlocking_laws = {
 		law_sprawl
 		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_lathe
-		pm_mechanized_workshops
 	}
 
 	disallowing_laws = {
@@ -386,22 +349,14 @@ pm_publicly_traded_building_furniture_manufacturies = {
 	unlocking_laws = {
 		law_bourgeoisie_ownership
 	}
-
-	unlocking_production_methods = {
-		pm_lathe
-		pm_mechanized_workshops
-	}
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -495,7 +450,6 @@ pm_merchant_guilds_building_glassworks = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -518,17 +472,10 @@ pm_privately_owned_building_glassworks = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {
-		pm_leaded_glass
-		pm_crystal_glass
-		pm_houseware_plastics
-	}
-
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -545,15 +492,7 @@ pm_privately_owned_building_glassworks = {
 pm_publicly_traded_building_glassworks = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_leaded_glass
-		pm_crystal_glass
-		pm_houseware_plastics
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
@@ -562,9 +501,7 @@ pm_publicly_traded_building_glassworks = {
 
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -680,16 +617,10 @@ pm_privately_owned_building_tooling_workshops = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {
-		pm_pig_iron
-		pm_steel
-	}
-
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -706,25 +637,15 @@ pm_privately_owned_building_tooling_workshops = {
 pm_publicly_traded_building_tooling_workshops = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 
-	unlocking_production_methods = {
-		pm_pig_iron
-		pm_steel
-	}
-	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -818,7 +739,6 @@ pm_merchant_guilds_building_paper_mills = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -841,16 +761,10 @@ pm_privately_owned_building_paper_mills = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {				
-		pm_sulfite_pulping
-		pm_bleached_paper
-	}
-
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -867,14 +781,7 @@ pm_privately_owned_building_paper_mills = {
 pm_publicly_traded_building_paper_mills = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_sulfite_pulping
-		pm_bleached_paper
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
@@ -883,9 +790,7 @@ pm_publicly_traded_building_paper_mills = {
 
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -979,7 +884,6 @@ pm_merchant_guilds_industry = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -1006,7 +910,6 @@ pm_privately_owned_industry = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -1023,20 +926,15 @@ pm_privately_owned_industry = {
 pm_publicly_traded_industry = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1130,7 +1028,6 @@ pm_merchant_guilds_building_shipyards = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -1151,12 +1048,6 @@ pm_privately_owned_building_shipyards = {
 	unlocking_laws = {
 		law_sprawl
 		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_complex_shipbuilding
-		pm_metal_shipbuilding
-		pm_arc_welding_shipbuilding
 	}
 
 	disallowing_laws = {
@@ -1180,26 +1071,15 @@ pm_privately_owned_building_shipyards = {
 pm_publicly_traded_building_shipyards = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_complex_shipbuilding
-		pm_metal_shipbuilding
-		pm_arc_welding_shipbuilding
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1293,7 +1173,6 @@ pm_merchant_guilds_building_arms_industry = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {
@@ -1314,12 +1193,6 @@ pm_privately_owned_building_arms_industry = {
 	unlocking_laws = {
 		law_sprawl
 		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_rifles
-		pm_repeaters
-		pm_bolt_action_rifles
 	}
 
 	disallowing_laws = {
@@ -1343,26 +1216,15 @@ pm_privately_owned_building_arms_industry = {
 pm_publicly_traded_building_arms_industry = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_rifles
-		pm_repeaters
-		pm_bolt_action_rifles
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1447,25 +1309,15 @@ pm_communal_management_building_arms_industry  = {
 pm_publicly_traded_building_chemical_plants = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 
-	unlocking_production_methods = {
-		pm_improved_fertilizer
-		pm_nitrogen_fixation
-	}
-	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1481,20 +1333,15 @@ pm_publicly_traded_building_chemical_plants = {
 pm_publicly_traded_building_synthetic_plants = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 	
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1510,26 +1357,15 @@ pm_publicly_traded_building_synthetic_plants = {
 pm_publicly_traded_building_steel_mills = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
-
-	unlocking_production_methods = {
-		pm_bessemer_process
-		pm_open_hearth_process
-		pm_electric_arc_process
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1549,21 +1385,13 @@ pm_publicly_traded_building_motor_industries = {
 		law_bourgeoisie_ownership
 	}
 
-	unlocking_production_methods = {
-		pm_electric_engines
-		pm_diesel_engines
-	}
-	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1579,20 +1407,15 @@ pm_publicly_traded_building_motor_industries = {
 pm_publicly_traded_building_war_machines_induestries = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 	
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1608,20 +1431,15 @@ pm_publicly_traded_building_war_machines_induestries = {
 pm_publicly_traded_building_electrics_industries = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 	
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
@@ -1637,24 +1455,15 @@ pm_publicly_traded_building_electrics_industries = {
 pm_publicly_traded_building_munition_plants = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	unlocking_laws = { law_bourgeoisie_ownership }
 
-	unlocking_production_methods = {
-		pm_explosive_shells
-	}
-	
 	disallowing_laws = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
-	unlocking_technologies = {
-		mutual_funds
-	}
+	unlocking_technologies = { mutual_funds }
 
 	building_modifiers = {
 		level_scaled = {
