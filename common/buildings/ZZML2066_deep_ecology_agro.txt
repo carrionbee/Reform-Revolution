@@ -517,12 +517,16 @@ building_silk_plantation = {
 	}
 }
 
-############# TREE FARMING
+############# ARBORICULTURE (MOD CHECK)
 
 building_tree_farm = {
 	building_group = bg_tree_farm
 	texture = "gfx/interface/icons/building_icons/logging_camp.dds"
 	city_type = farm
+	
+	is_visible = { 
+		exists = building_tree_farm
+	}
 	
 	unlocking_technologies = {
 		enclosure
@@ -554,6 +558,10 @@ building_hardwood_tree_farm = {
 	texture = "gfx/interface/icons/building_icons/logging_camp.dds"
 	city_type = farm
 	
+	is_visible = { 
+		exists = building_hardwood_tree_farm
+	}
+	
 	unlocking_technologies = {
 		enclosure
 	}
@@ -579,13 +587,17 @@ building_hardwood_tree_farm = {
 	}	
 }
 
-############# AQUACULTURE
+############# AQUACULTURE (MODCHECK)
 
 building_fish_farm = {
 	building_group = bg_fish_farm
 	texture = "gfx/interface/icons/building_icons/fish_farm.dds"
 	city_type = farm
 	required_construction = construction_cost_low
+	
+	is_visible = { 
+		exists = building_fish_farm
+	}
 	
 	unlocking_technologies = {
 		enclosure
@@ -617,9 +629,9 @@ building_fish_farm_seaside = {
 	city_type = port
 	required_construction = construction_cost_low
 	
-#	is_visible = { 
-#	
-#	}
+	is_visible = { 
+		exists = building_fish_farm_seaside
+	}
 
 	production_method_groups = {
 		pmg_base_building_fish_farm_seaside

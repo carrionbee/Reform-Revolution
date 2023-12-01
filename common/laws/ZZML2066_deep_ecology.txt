@@ -110,6 +110,30 @@ law_deep_ecology_cooperatives = {
 					}
 					remove_building = building_silk_plantation
 				}
+				if = {
+					limit = {
+						has_building = building_tree_farm
+					}
+					remove_building = building_tree_farm
+				}
+				if = {
+					limit = {
+						has_building = building_hardwood_tree_farm
+					}
+					remove_building = building_hardwood_tree_farm
+				}
+				if = {
+					limit = {
+						has_building = building_fish_farm
+					}
+					remove_building = building_fish_farm
+				}
+				if = {
+					limit = {
+						has_building = building_fish_farm_seaside
+					}
+					remove_building = building_fish_farm_seaside
+				}
 			}
 		}
 	}
