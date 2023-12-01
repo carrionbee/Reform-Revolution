@@ -82,10 +82,12 @@
 	
 	lawgroup_rights_of_women = {
 		law_no_womens_rights = strongly_disapprove
-		law_women_own_property = strongly_disapprove
-		law_women_in_the_workplace = neutral
-		law_womens_suffrage = approve
-		law_overthrow_patriarchy = approve
+		law_women_own_property = disapprove
+	}
+	
+	lawgroup_queer_rights = {
+		law_enforced_gender_roles = strongly_disapprove
+		law_sodomy_laws = disapprove
 	}
 	
 	lawgroup_childrens_rights = {
@@ -93,14 +95,6 @@
 		law_restricted_child_labor = disapprove
 		law_compulsory_primary_school = neutral
 		law_child_benefit = approve
-	}
-	
-	lawgroup_queer_rights = {
-		law_enforced_gender_roles = strongly_disapprove
-		law_sodomy_laws = disapprove
-		law_queer_decriminalized = neutral
-		law_gay_marriage = approve
-		law_queer_liberation = approve
 	}
 	
 	lawgroup_citizenship = {

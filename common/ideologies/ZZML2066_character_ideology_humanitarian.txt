@@ -40,7 +40,7 @@
 		law_women_own_property = strongly_disapprove
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = approve
-		law_overthrow_patriarchy = approve
+		law_overthrow_patriarchy = neutral
 	}
 	
 	lawgroup_queer_rights = {

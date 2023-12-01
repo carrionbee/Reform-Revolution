@@ -20,7 +20,7 @@
 		law_collectivized_agriculture = strongly_disapprove
 	}
 	
-	lawgroup_economic_system = {	
+	lawgroup_economic_system = {
 		law_laissez_faire = strongly_approve
 		law_interventionism = approve
 		law_agrarianism = neutral

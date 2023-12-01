@@ -27,7 +27,7 @@
 	lawgroup_queer_rights = {
 		law_enforced_gender_roles = strongly_disapprove
 		law_sodomy_laws = disapprove
-		law_queer_decriminalized = approve
+		law_queer_decriminalized = neutral
 		law_gay_marriage = neutral
 		law_queer_liberation = neutral
 	}

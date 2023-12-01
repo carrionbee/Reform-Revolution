@@ -125,7 +125,7 @@
 		law_sodomy_laws = disapprove
 		law_queer_decriminalized = neutral
 		law_gay_marriage = approve
-		law_queer_liberation = approve
+		law_queer_liberation = strongly_approve
 	}
 	
 	lawgroup_crime_and_punishment = {

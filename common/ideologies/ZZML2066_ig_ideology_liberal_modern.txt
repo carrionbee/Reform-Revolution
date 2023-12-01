@@ -50,7 +50,7 @@
 	}
 	
 	lawgroup_rights_of_women = {
-		law_no_womens_rights = disapprove
+		law_no_womens_rights = strongly_disapprove
 		law_women_own_property = disapprove
 		law_women_in_the_workplace = neutral
 		law_womens_suffrage = approve
@@ -59,10 +59,10 @@
 
 	lawgroup_queer_rights = {
 		law_enforced_gender_roles = disapprove
-		law_sodomy_laws = neutral
+		law_sodomy_laws = disapprove
 		law_queer_decriminalized = neutral
 		law_gay_marriage = approve
-		law_queer_liberation = strongly_approve
+		law_queer_liberation = approve
 	}
 	
 	lawgroup_crime_and_punishment = {
