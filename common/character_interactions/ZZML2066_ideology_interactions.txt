@@ -13,10 +13,13 @@
 
 	effect = {
 		random_list = {
-			50 = {
+			35 = {
 				owner.ruler = { set_ideology = ideology:ideology_reformer }
 			}
-			50 = {
+			35 = {
+				owner.ruler = { set_ideology = ideology:ideology_modernizer }
+			}
+			20 = {
 				owner.ruler = { adopt_random_antigovernment_ideology = yes }
 			}
 		}
@@ -38,9 +41,9 @@ study_government_agenda = {
 		is_ruler = no
 	}
 
-#	possible = {
-#		interest_group = { is_in_government = yes }
-#	}
+	possible = {
+		interest_group = { is_in_government = yes }
+	}
 
 	effect = {
 		this.ideology = {

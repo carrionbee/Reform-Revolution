@@ -616,6 +616,10 @@ building_fish_farm_seaside = {
 	texture = "gfx/interface/icons/building_icons/fish_farm_seaside.dds"
 	city_type = port
 	required_construction = construction_cost_low
+	
+#	is_visible = { 
+#	
+#	}
 
 	production_method_groups = {
 		pmg_base_building_fish_farm_seaside

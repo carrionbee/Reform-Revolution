@@ -28,7 +28,7 @@ law_church_mandated_procreation = {
 	
 	institution = institution_birth_control
 	institution_modifier = {
-		state_birth_rate_mult = 0.05
+		state_accepted_birth_rate_mult = 0.05
 		interest_group_ig_devout_pol_str_mult = 0.1
 	}
 	
