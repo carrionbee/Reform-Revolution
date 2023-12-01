@@ -1,0 +1,1477 @@
+﻿pm_merchant_guilds_building_food_industry = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}
+
+pm_privately_owned_building_food_industry = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_food_industry = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = {
+		law_bourgeoisie_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_food_industry = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_food_industry = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+
+		}
+	}
+}
+
+pm_communal_management_building_food_industry = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_building_textile_mills = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}
+
+pm_privately_owned_building_textile_mills = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_textile_mills = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_textile_mills = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_textile_mills = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+	
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+
+		}
+	}
+}
+
+pm_communal_management_building_textile_mills = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+	
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}
+
+pm_privately_owned_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = {
+		law_bourgeoisie_ownership
+	}
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+pm_communal_management_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_building_glassworks = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}
+
+pm_privately_owned_building_glassworks = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_glassworks = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_glassworks = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_glassworks = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+pm_communal_management_building_glassworks = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+	
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_building_tooling_workshops = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}
+
+pm_privately_owned_building_tooling_workshops = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_tooling_workshops = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_tooling_workshops = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_tooling_workshops = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+
+		}
+	}
+}
+
+pm_communal_management_building_tooling_workshops = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+	
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_building_paper_mills = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}
+
+pm_privately_owned_building_paper_mills = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_paper_mills = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_paper_mills = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_paper_mills = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+
+		}
+	}
+}
+
+pm_communal_management_building_paper_mills = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+	
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_industry = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}
+
+pm_privately_owned_industry = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_industry = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_industry = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_industry = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+
+		}
+	}
+}
+
+pm_communal_management_industry = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_building_shipyards = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}		
+
+pm_privately_owned_building_shipyards = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_shipyards = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_shipyards = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_shipyards = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+
+		}
+	}
+}
+
+pm_communal_management_building_shipyards = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_merchant_guilds_building_arms_industry = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_guild_system
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+			building_employment_capitalists_add = 1
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+			building_capitalists_shares_add = 50
+		}
+	}
+}		
+
+pm_privately_owned_building_arms_industry = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_arms_industry = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_building_arms_industry = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_building_arms_industry = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+
+		}
+	}
+}
+
+pm_communal_management_building_arms_industry  = {
+	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+
+	unlocking_laws = {
+        law_communal_principle
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_bureaucrats_add = 50
+			building_employment_clerks_add = 50
+		}	
+		unscaled = {
+			building_workforce_shares_add = 1
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_chemical_plants = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_synthetic_plants = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+	
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_steel_mills = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_motor_industries = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = {
+		law_bourgeoisie_ownership
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_war_machines_induestries = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+	
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_electrics_industries = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+	
+	unlocking_laws = { law_bourgeoisie_ownership }
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_building_munition_plants = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_laws = { law_bourgeoisie_ownership }
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
