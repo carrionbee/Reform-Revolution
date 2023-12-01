@@ -6,7 +6,7 @@ law_ecclesiarchy = {
 	
 	progressiveness = -100
 	
-	is_visible = { exists = law_ecclesiarchy }
+	is_visible = { exists = law_type:law_no_codified_discrimination }
 
 	disallowing_laws = {
 		law_freedom_of_conscience

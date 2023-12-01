@@ -6,7 +6,7 @@ law_disability_insurance = {
 	
 	progressiveness = 200
 	
-	is_visible = { exists = law_disability_insurance }
+	is_visible = { exists = law_type:law_no_codified_discrimination }
 
 	unlocking_technologies = {
 		socialism

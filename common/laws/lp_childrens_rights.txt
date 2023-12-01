@@ -6,7 +6,7 @@ law_child_benefit = {
 	
 	progressiveness = 100
 	
-	is_visible = { exists = law_child_benefit }
+	is_visible = { exists = law_type:law_no_codified_discrimination }
 
 	disallowing_laws = {
 		law_no_social_security

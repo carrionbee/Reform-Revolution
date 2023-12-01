@@ -5,7 +5,7 @@ law_no_army = {
 	
 	progressiveness = 0
 	
-	is_visible = { exists = law_no_army }
+	is_visible = { exists = law_type:law_no_codified_discrimination }
 	
 	on_activate = {
 		deactivate_law = law_type:law_national_guard

@@ -5,7 +5,7 @@ law_pan_opticon = {
 
 	progressiveness = -200
 	
-	is_visible = { exists = law_pan_opticon }
+	is_visible = { exists = law_type:law_no_codified_discrimination }
 	
 	modifier = {
 		country_authority_mult = 1

@@ -5,7 +5,7 @@ law_gendarmerie = {
 	
 	progressiveness = 50
 	
-	is_visible = { exists = law_gendarmerie }
+	is_visible = { exists = law_type:law_no_codified_discrimination }
 
 	unlocking_technologies = {
 		centralization
