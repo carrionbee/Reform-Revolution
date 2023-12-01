@@ -1,0 +1,396 @@
+# 차별법 없음
+law_no_codified_discrimination = {
+	group = lawgroup_discriminated_pop
+	
+	icon = "gfx/interface/icons/law_icons/no_codified_discrimination.dds"
+	
+	progressiveness = 50
+	
+	modifier = {
+	}
+
+	possible_political_movements = {
+		law_profession_banned
+		law_permanent_residency
+	}
+
+	pop_support = {
+		value = 0
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 영주권
+law_permanent_residency = {
+	group = lawgroup_discriminated_pop
+	
+	icon = "gfx/interface/icons/law_icons/permanent_residency.dds"
+	
+	progressiveness = 100
+
+	unlocking_technologies = { egalitarianism }
+
+	disallowing_laws = {
+		law_multicultural
+	}
+	
+	on_activate = {
+		custom_tooltip = {
+			text = qualifications_discriminated_pop_permanent_residency_tt
+		}
+	}
+
+	modifier = {
+		state_radicals_from_discrimination_mult = -0.30
+		state_radicals_from_sol_change_mult = 0.15
+	}
+
+	possible_political_movements = {
+		law_no_codified_discrimination
+	}
+	
+	pop_support = {
+		value = 0
+		
+		add = {
+			desc = "POP_DISCRIMINATED"
+			if = {
+				limit = { 
+					culture_accepted = no
+				}
+				value = 0.25
+			}
+			if = {
+				limit = { 
+					culture_accepted = no
+				}
+				add = {
+					value = literacy_rate
+				}
+			}
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 고용 제한
+law_profession_banned = {
+	group = lawgroup_discriminated_pop
+	
+	icon = "gfx/interface/icons/law_icons/profession_banned.dds"
+	
+	progressiveness = 0
+
+	unlocking_technologies = { nationalism }
+	
+	disallowing_laws = {
+		law_multicultural
+	}
+
+	on_activate = {
+		custom_tooltip = {
+			text = qualifications_discriminated_pop_profession_banned_tt
+			every_scope_state = {
+				profession_ban_discriminated_pop = yes
+			}
+		}
+	}
+
+	modifier = {
+		state_radicals_from_discrimination_mult = 0.1
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.1
+	}
+
+	possible_political_movements = {
+		law_no_codified_discrimination
+		law_violent_suppresion
+	}
+	
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_DISCRIMINATED"
+			if = {
+				limit = { 
+					pop_has_primary_culture = yes
+					is_employed = no
+				}
+				value = 0.25
+			}
+			
+		}
+		add = {
+			if = {
+				limit = { 
+					culture_accepted = yes
+					is_employed = no
+				}
+				value = 0.1
+			}
+		}
+		add = {
+			if = {
+				limit = { 
+					culture_accepted = yes
+					standard_of_living < root.average_sol
+				}
+				value = 0.1
+			}
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 폭력적 억압
+law_violent_suppresion = {
+	group = lawgroup_discriminated_pop
+	
+	icon = "gfx/interface/icons/law_icons/violent_suppresion.dds"
+	
+	progressiveness = -100
+
+	unlocking_technologies = { political_agitation }
+	
+	disallowing_laws = {
+		law_multicultural
+		law_guaranteed_liberties
+	}
+
+	on_activate = {
+		custom_tooltip = {
+			text = qualifications_discriminated_pop_violent_suppresion_tt
+			every_scope_state = {
+				violent_suppresion_discriminated_pop = yes
+			}
+		}
+	}
+
+	modifier = {
+		country_infamy_decay_mult = -0.05
+		state_mortality_turmoil_mult = 0.02
+		state_radicals_from_discrimination_mult = 0.2
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.1
+		interest_group_ig_armed_forces_pol_str_mult = 0.3
+	}
+
+	possible_political_movements = {
+		law_profession_banned
+		law_no_codified_discrimination
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_DISCRIMINATED"
+			if = {
+				limit = { 
+					pop_has_primary_culture = yes
+					is_employed = no
+				}
+				value = 0.33
+			}
+			
+		}
+		add = {
+			if = {
+				limit = { 
+					culture_accepted = yes
+					is_employed = no
+				}
+				value = 0.25
+			}
+		}
+		add = {
+			if = {
+				limit = { 
+					culture_accepted = yes
+					standard_of_living < root.average_sol
+				}
+				value = 0.1
+			}
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+	
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
+# 강제노동
+law_forced_labour = {
+	group = lawgroup_discriminated_pop
+	
+	icon = "gfx/interface/icons/law_icons/enslavement.dds"
+	
+	progressiveness = -200
+
+	unlocking_laws = {
+		law_debt_slavery
+		law_slave_trade
+	}
+
+	unlocking_technologies = { nationalism }
+
+	disallowing_laws = {
+		law_multicultural
+	}
+
+	on_activate = {
+		# 노예제가 없음
+		if = {
+			limit = {
+				has_law = law_type:law_slavery_banned
+			}
+			deactivate_law = law_type:law_slavery_banned
+			activate_law = law_type:law_slave_trade
+		}
+
+		custom_tooltip = {
+			text = enslave_discriminated_farm_workers_tt
+			every_scope_state = {
+				enslave_discriminated_farm_workers = yes
+			}
+		}
+
+		custom_tooltip = {
+			text = qualifications_discriminated_pop_profession_banned_tt
+			every_scope_state = {
+				profession_ban_discriminated_pop = yes
+			}
+		}
+
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+			}
+			custom_tooltip = {
+				text = enslave_upper_class_tt
+				every_scope_state = {
+					enslave_upper_class_under_council_republic = yes
+				}
+			}
+		}
+	}
+
+	modifier = {
+		country_infamy_decay_mult = -0.1
+		state_radicals_from_discrimination_mult = 0.3
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.1
+		interest_group_ig_landowners_pol_str_mult = 0.3
+	}
+
+	possible_political_movements = {
+		law_no_codified_discrimination
+		law_profession_banned
+	}
+
+	pop_support = {
+		value = 0
+		
+		add = {
+			desc = "POP_ARISTOCRATS"
+			if = {
+				limit = { 
+					is_pop_type = aristocrats
+					pop_has_primary_culture = yes
+				}
+				value = 0.1
+			}
+		}
+		add = {
+			desc = "POP_ARISTOCRATS"
+			if = {
+				limit = { 
+					is_pop_type = aristocrats
+					culture_accepted = yes
+				}
+				value = 0.1
+			}
+		}
+		add = {
+			desc = "POP_ARISTOCRATS"
+			if = {
+				limit = { 
+					is_pop_type = aristocrats
+				}
+				value = 0.1
+			}
+		}
+	}
+
+	can_impose = { 
+		is_subject_of = scope:initiator	
+	} 
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}
