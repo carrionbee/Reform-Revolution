@@ -1,0 +1,50 @@
+﻿law_sprawl = {
+	group = lawgroup_urbanization
+	
+	icon = "gfx/interface/icons/law_icons/wage_controls.dds"
+	
+	progressiveness = -100
+
+	is_visible = { 
+		has_law = law_type:law_sprawl
+	}
+
+	disallowing_laws = {
+		law_laissez_faire
+		law_interventionism
+		law_cooperative_ownership
+		law_command_economy
+		law_communal_principle
+	}
+
+	modifier = {
+		building_input_mult = 0.10
+		state_bureaucracy_population_base_cost_factor_mult = -0.10
+		state_tax_capacity_mult = -0.10
+		state_construction_mult = -0.10
+		building_group_bg_manufacturing_tax_mult = -0.50
+		state_infrastructure_mult = -0.20
+		country_loan_interest_rate_mult = 0.20
+		state_tax_waste_add = 0.10
+
+	#	country_subsidies_bg_trade = yes
+	}
+
+	build_from_investment_pool = {
+		bg_infrastructure
+	}
+	
+	possible_political_movements = {
+		law_guild_system
+		law_bourgeoisie_ownership
+		law_religious_integralism
+		law_dirigisme
+		law_worker_management
+		law_planned_economics
+	}
+	
+	# AI should never try to wreck their urban organisation
+	ai_will_do = {
+		always = no
+	}
+}
