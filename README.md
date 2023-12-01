@@ -26,19 +26,19 @@ Designed with that mod in mind, and is my deepest preference.
 I made these mod's contents compatibile with mine, harmonised, curated, and updated for the current version explicitly! If you want that content, subscribe to them! <3  
 **Highly Recommened (and much beloved):**  
   • *Queer Rights:* https://steamcommunity.com/sharedfiles/filedetails/?id=3093348783  
-    • Much beloved. An important struggle for the time and now too. I was actually working on my own implementation of this before when I was told this mod came out! I did harmonise our features, so the law effects will differ a bit!  
+    Much beloved. An important struggle for the time and now too. I was actually working on my own implementation of this before when I was told this mod came out! I did harmonise our features, so the law effects will differ a bit!  
   • *Working Hours Laws:* https://steamcommunity.com/sharedfiles/filedetails/?id=2908811278  
-    • Such an important struggle for the labour unions of the period, let alone in general. I did expand some of the laws; we now have 40 hour weeks, 32 hour weeks, 20 hours weeks. Very progressive. Very prolet avant-garde.  
+    Such an important struggle for the labour unions of the period, let alone in general. I did expand some of the laws; we now have 40 hour weeks, 32 hour weeks, 20 hours weeks. Very progressive. Very prolet avant-garde.  
   • *Environmental Regulations:* https://steamcommunity.com/sharedfiles/filedetails/?id=3066697607  
-    • Necessary as pollution has effects, and another reason to hate the Industrialists.  
+    Necessary as pollution has effects, and another reason to hate the Industrialists.  
 **Recommended, but Optional:**  
   • *Birth Rates Laws:* https://steamcommunity.com/sharedfiles/filedetails/?id=3024374381  
-    • A wonderful smol mod. My effects harmonisation did make a minor change to what the tax credit does (effects accepted pops only) but a great mod!  
+    A wonderful smol mod. My effects harmonisation did make a minor change to what the tax credit does (effects accepted pops only) but a great mod!  
   • *Assassination & Espionage:*  https://steamcommunity.com/sharedfiles/filedetails/?id=2885841953  
-    • One of my first thoughts since PDX added character interactions. This mod is **Required** for the CHARACTER INTERACTION: Neutralise Target. (I prefer to give credit to the OG mod in this way, so if people like this, they can subscribe to the OG and use the character interaction implementation from my mod. The other ideological character interactions are stand-alone for my mod).  
+    One of my first thoughts since PDX added character interactions. This mod is **Required** for the CHARACTER INTERACTION: Neutralise Target. (I prefer to give credit to the OG mod in this way, so if people like this, they can subscribe to the OG and use the character interaction implementation from my mod. The other ideological character interactions are stand-alone for my mod).  
   • *Emergency Laws:* https://steamcommunity.com/sharedfiles/filedetails/?id=2921807355  
   • *Emergency Election:* https://steamcommunity.com/sharedfiles/filedetails/?id=2971877982  
-    • Very very nice mods, and plays nicely with the newly revised Executive Privleges. You require some form of Executive Privleges to do this, or Autocracy in order to activate the decisions.  
+    Very very nice mods, and plays nicely with the newly revised Executive Privleges. You require some form of Executive Privleges to do this, or Autocracy in order to activate the decisions.  
 
 **The modifications consist of:**  
 • Character Interactions! (with more to come!) Discreet Powers! Converting Ideologies! and more!  
@@ -51,7 +51,7 @@ I made these mod's contents compatibile with mine, harmonised, curated, and upda
 • Harmonisation and compatibility with 'Private Construction Industry'  
 • Harmonisation and compatibility with 'Heart of Appalachia, An Atompunk Mod'  
 • Harmonisation and compatibility with 'Laws +'  
-• Harmonisation, compatibility [b]and[/b] expansion of 'Working' Hours' Mod  
+• Harmonisation, compatibility **and** expansion of 'Working' Hours' Mod  
 
 I hope to expand this mod over time, and if you have feedback please do comment!
 
