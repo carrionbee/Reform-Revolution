@@ -62,7 +62,6 @@ pm_publicly_traded_building_food_industry = {
 		law_command_economy
         law_communal_principle
 		law_cooperative_ownership
-
 	}
 
 	building_modifiers = {

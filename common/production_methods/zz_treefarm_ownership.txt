@@ -1,6 +1,8 @@
 ﻿pm_tfarm_merchant_guilds_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 
+	is_visible = { exists = building_tree_farm }
+
 	unlocking_laws = {
 		law_sprawl
 		law_guild_system
@@ -24,6 +26,8 @@
 
 pm_tfarm_privately_owned_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	is_visible = { exists = building_tree_farm }
 
 	unlocking_laws = {
 		law_sprawl
@@ -49,6 +53,8 @@ pm_tfarm_privately_owned_building_logging_camp = {
 pm_tfarm_publicly_traded_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 
+	is_visible = { exists = building_tree_farm }
+
 	unlocking_laws = { law_bourgeoisie_ownership }
 
 	unlocking_technologies = { mutual_funds }
@@ -72,6 +78,8 @@ pm_tfarm_publicly_traded_building_logging_camp = {
 pm_tfarm_government_run_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
 
+	is_visible = { exists = building_tree_farm }
+
 	unlocking_laws = {
 		law_command_economy
 		law_planned_economics
@@ -93,6 +101,8 @@ pm_tfarm_government_run_building_logging_camp = {
 
 pm_tfarm_worker_cooperative_building_logging_camp = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	is_visible = { exists = building_tree_farm }
 
 	unlocking_laws = {
 		law_cooperative_ownership

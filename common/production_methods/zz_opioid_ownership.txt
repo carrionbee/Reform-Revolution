@@ -1,5 +1,7 @@
 ﻿pm_opioid_privately_owned_industry = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+	
+	is_visible = { exists = building_synthetic_opioid_plant } 
 
 	unlocking_laws = {
 		law_sprawl
@@ -19,6 +21,8 @@
 pm_opioid_publicly_traded_building_synthetic_plants = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 	
+	is_visible = { exists = building_synthetic_opioid_plant } 
+	
 	unlocking_laws = {
 		law_bourgeoisie_ownership
 	}
@@ -37,6 +41,8 @@ pm_opioid_publicly_traded_building_synthetic_plants = {
 
 pm_opioid_government_run_industry = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	is_visible = { exists = building_synthetic_opioid_plant } 
 
 	unlocking_laws = {
 		law_command_economy
@@ -59,6 +65,8 @@ pm_opioid_government_run_industry = {
 
 pm_opioid_worker_cooperative_industry = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+	
+	is_visible = { exists = building_synthetic_opioid_plant } 
 
 	unlocking_laws = {
 		law_command_economy

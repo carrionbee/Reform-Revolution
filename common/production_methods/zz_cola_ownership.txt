@@ -1,5 +1,7 @@
 ﻿pm_cola_privately_owned_industry = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+	
+	is_visible = { exists = building_cola_factory } 
 
 	unlocking_laws = {
 		law_sprawl
@@ -19,6 +21,8 @@
 pm_cola_publicly_traded_building_synthetic_plants = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
 	
+	is_visible = { exists = building_cola_factory } 
+	
 	unlocking_laws = { law_bourgeoisie_ownership }
 
 	unlocking_technologies = { mutual_funds }
@@ -35,6 +39,8 @@ pm_cola_publicly_traded_building_synthetic_plants = {
 
 pm_cola_government_run_industry = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	is_visible = { exists = building_cola_factory } 
 
 	unlocking_laws = {
 		law_command_economy
@@ -55,6 +61,8 @@ pm_cola_government_run_industry = {
 
 pm_cola_worker_cooperative_industry = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+	
+	is_visible = { exists = building_cola_factory } 
 
 	unlocking_laws = {
 		law_cooperative_ownership
