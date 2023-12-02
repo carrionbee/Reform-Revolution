@@ -14,6 +14,8 @@ lawgroup_labor_work_hours_desc:0 "Legislation on the standard working hours."
 # Work Hours Unregulated
 law_labor_work_hours_unregulated:0 "Unregulated Hours"
 law_labor_work_hours_unregulated_desc:0 "There are no specific laws governing the duration of the workday or workweek. Employers have complete freedom to set working hours, frequently leading to excessive and unpredictable schedules for employees."
+law_labor_work_hours_unlimit:0 "Unregulated Hours"
+law_labor_work_hours_unlimit_desc:0 "There are no specific laws governing the duration of the workday or workweek. Employers have complete freedom to set working hours, frequently leading to excessive and unpredictable schedules for employees."
 
 
 # Work Hours 12

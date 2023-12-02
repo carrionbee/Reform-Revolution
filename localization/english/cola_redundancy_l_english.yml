@@ -1,0 +1,20 @@
+﻿l_english:
+
+#Building
+building_cola_factory:0 "Cola Factory"
+
+#Production Method Group
+pmg_cola:0 "Cola Production"
+pmg_ownership_capital_building_cola_factory:1 "$pmg_ownership$"
+
+#Production Method
+pm_dark_cola:0 "Dark Cola"
+pm_light_cola:0 "Light Cola"
+pm_mixed_production:0 "Mixed Cola Production"
+pm_dark_cola_improved:0 "Improved Dark Cola"
+pm_light_cola_improved:0 "Improved Light Cola"
+pm_mixed_production_improved:0 "Improved Mixed Cola Production"
+pm_cola_privately_owned_industry:0 "$pm_publicly_traded$"
+pm_cola_publicly_traded_building_synthetic_plants:0 "$pm_privately_owned$"
+pm_cola_government_run_industry:1 "$pm_government_run$"
+pm_cola_worker_cooperative_industry:1 "$pm_worker_cooperative$"
