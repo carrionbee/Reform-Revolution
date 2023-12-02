@@ -36,7 +36,7 @@ ideology_corporatist_leader = {
 	}
 	
 	lawgroup_labor_work_hours = {
-		law_labor_work_hours_unregulated = disapprove
+		law_labor_work_hours_unlimit = disapprove
 		law_labor_work_hours_day_12 = neutral
 		law_labor_work_hours_day_8 = neutral
 		law_labor_work_hours_week_40 = disapprove
