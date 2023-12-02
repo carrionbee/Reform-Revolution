@@ -15,7 +15,10 @@
 		age >= define:NCharacters|ADULT_AGE
 		owner = {
 			NOT = { has_law = law_type:law_military_cantons }
-			has_law = law_type:law_generalissimo
+			OR = {
+				has_law = law_type:law_generalissimo
+				has_law = law_type:law_personality_cult
+			}
 			country_has_voting_franchise = yes
 		}
 		exists = owner.capital.land_hq
