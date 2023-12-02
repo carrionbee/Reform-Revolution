@@ -1,6 +1,0 @@
-﻿lawgroup_executive_privileges = {
-	law_group_category = power_structure
-	
-	progressive_movement_chance = 1.5
-	regressive_movement_chance = 0.1
-}

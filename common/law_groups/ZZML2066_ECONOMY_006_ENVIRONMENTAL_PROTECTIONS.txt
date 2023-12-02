@@ -1,7 +1,0 @@
-﻿lawgroup_enviromental_protections = {
-	law_group_category = economy
-	is_visible = { exists = institution = { institution_enviromental_regulations } }
-	
-	progressive_movement_chance = 1.0
-	regressive_movement_chance = 0.25
-}

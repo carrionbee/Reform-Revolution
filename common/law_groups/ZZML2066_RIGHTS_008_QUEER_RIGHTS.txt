@@ -1,7 +1,0 @@
-lawgroup_queer_rights = {
-	law_group_category = human_rights
-	is_visible = { exists = trait = { queer } }
-	
-	progressive_movement_chance = 0.25
-	regressive_movement_chance = 1	
-}

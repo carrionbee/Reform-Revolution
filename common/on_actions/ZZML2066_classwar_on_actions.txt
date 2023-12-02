@@ -1,9 +1,0 @@
-﻿# Class War Action Pulse Checks
-on_monthly_pulse_country = {
-	events = {
-		zzml2066_classwar.1
-		zzml2066_classwar.2
-		zzml2066_classwar.3
-		zzml2066_classwar.4
-	}
-}
