@@ -44,8 +44,8 @@ action_classicide_landowners = {
 	}
 	
 	modifier = {
-		building_group_bg_agriculture_tax_mult = 66.6
-		building_group_bg_plantations_tax_mult = 66.6
+		building_group_bg_agriculture_tax_mult = 0.6
+		building_group_bg_plantations_tax_mult = 0.6
 		
 		state_aristocrats_mortality_mult = 0.50
 		state_rich_standard_of_living_mult = -0.30
@@ -59,29 +59,33 @@ action_classicide_landowners = {
 		political_movement_radicalism_mult = 0.40
 	}
 	cost = 250
-
-	ai_weight = {
-		value = 0
-		if = {
-			limit = { ig:ig_landowners = { is_powerful = yes } }
-			add = 15
-		}
-		if = {
-			limit = any_interest_group = {
-				is_in_government = yes
-				law_stance = {
-					law = law_type:law_collectivized_agriculture
-					value < neutral
-				}
-			}
-			add = -10
-		}
-		if = {
-			limit = { OR = {
-				turmoil >= 0.70
-				devastation >= 55
-			} }
-			add = -100
-		}
+	
+	ai_will_do = {
+		always = no
 	}
+
+#	ai_weight = {	#TODO
+#		value = 0
+#		if = {
+#			limit = { ig:ig_landowners = { is_powerful = yes } }
+#			add = 15
+#		}
+#		if = {
+#			limit = any_interest_group = {
+#				is_in_government = yes
+#				law_stance = {
+#					law = law_type:law_collectivized_agriculture
+#					value < neutral
+#				}
+#			}
+#			add = -10
+#		}
+#		if = {
+#			limit = { OR = {
+#				turmoil >= 0.70
+#				devastation >= 55
+#			} }
+#			add = -100
+#		}
+#	}
 }

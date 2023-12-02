@@ -73,20 +73,25 @@ action_extortion_reactionary = {
 		state_welfare_payments_add = -1.0
 		state_political_strength_from_welfare_mult = -1.0
 	}
+	
 	cost = 100
 	
-	ai_weight = {
-		value = 0
-		if = {
-			limit = { ig:ig_industrialists = { is_powerful = yes } }
-			add = 15
-		}
-		if = {
-			limit = { OR = {
-				turmoil >= 0.70
-				devastation >= 55
-			} }
-			add = -100
-		}
+	ai_will_do = {
+		always = no
 	}
+	
+#	ai_weight = {	#TODO
+#		value = 0
+#		if = {
+#			limit = { ig:ig_industrialists = { is_powerful = yes } }
+#			add = 15
+#		}
+#		if = {
+#			limit = { OR = {
+#				turmoil >= 0.70
+#				devastation >= 55
+#			} }
+#			add = -100
+#		}
+#	}
 }

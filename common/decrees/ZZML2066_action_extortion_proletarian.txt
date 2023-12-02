@@ -63,20 +63,25 @@ action_extortion_proletarian = {
 		
 		state_mortality_turmoil_mult = 0.15
 	}
+	
 	cost = 100
 	
-	ai_weight = {
-		value = -15
-		if = {
-			limit = { ig:ig_industrialists = { is_powerful = yes } }
-			add = 15
-		}
-		if = {
-			limit = { OR = {
-				turmoil >= 0.70
-				devastation >= 55
-			} }
-			add = -100
-		}
+	ai_will_do = {
+		always = no
 	}
+	
+#	ai_weight = {	#TODO
+#		value = -15
+#		if = {
+#			limit = { ig:ig_industrialists = { is_powerful = yes } }
+#			add = 15
+#		}
+#		if = {
+#			limit = { OR = {
+#				turmoil >= 0.70
+#				devastation >= 55
+#			} }
+#			add = -100
+#		}
+#	}
 }

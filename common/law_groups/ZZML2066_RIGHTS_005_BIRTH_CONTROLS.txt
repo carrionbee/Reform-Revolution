@@ -1,5 +1,6 @@
 ﻿lawgroup_birth_control = {
 	law_group_category = human_rights
+	is_visible = { exists = institution = { institution_birth_control } }
 	
 	progressive_movement_chance = 0
 	regressive_movement_chance = 0
