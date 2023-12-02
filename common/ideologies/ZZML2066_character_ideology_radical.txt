@@ -57,14 +57,6 @@
 		law_elected_bureaucrats = strongly_approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = disapprove
-		law_elitist_system = strongly_disapprove
-		law_local_law = disapprove
-		law_liberal_system = strongly_approve
-		law_authoritarian_system = strongly_disapprove
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral
 		law_ministers_appointed = disapprove
@@ -73,6 +65,14 @@
 		law_sycophants = strongly_disapprove
 		law_generalissimo = strongly_disapprove
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = disapprove
+#		law_elitist_system = strongly_disapprove
+#		law_local_law = disapprove
+#		law_liberal_system = strongly_approve
+#		law_authoritarian_system = strongly_disapprove
+#	}
 	
 	possible = {
 		owner = { has_technology_researched = egalitarianism }

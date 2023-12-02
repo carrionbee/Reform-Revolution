@@ -49,11 +49,11 @@
 		law_labor_work_hours_week_20 = neutral
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = disapprove
-		law_elitist_system = strongly_disapprove
-		law_local_law = approve
-		law_liberal_system = neutral
-		law_authoritarian_system = disapprove
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = disapprove
+#		law_elitist_system = strongly_disapprove
+#		law_local_law = approve
+#		law_liberal_system = neutral
+#		law_authoritarian_system = disapprove
+#	}
 }

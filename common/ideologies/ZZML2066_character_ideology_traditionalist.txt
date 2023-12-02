@@ -19,14 +19,6 @@
 		law_overthrow_patriarchy = strongly_disapprove
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = approve
-		law_elitist_system = neutral
-		law_local_law = neutral
-		law_liberal_system = disapprove
-		law_authoritarian_system = disapprove
-	}
-	
 	lawgroup_queer_rights = {
 		law_enforced_gender_roles = approve
 		law_sodomy_laws = approve
@@ -34,6 +26,14 @@
 		law_gay_marriage = strongly_disapprove
 		law_queer_liberation = strongly_disapprove
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = approve
+#		law_elitist_system = neutral
+#		law_local_law = neutral
+#		law_liberal_system = disapprove
+#		law_authoritarian_system = disapprove
+#	}
 	
 	possible = {
 		# Agitatos should have an ideology at odds with current laws

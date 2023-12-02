@@ -20,14 +20,6 @@
 		law_feudalism = strongly_approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = neutral
-		law_elitist_system = approve
-		law_local_law = neutral
-		law_liberal_system = disapprove
-		law_authoritarian_system = neutral
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral
 		law_ministers_appointed = neutral
@@ -36,6 +28,14 @@
 		law_sycophants = neutral
 		law_generalissimo = neutral
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = neutral
+#		law_elitist_system = approve
+#		law_local_law = neutral
+#		law_liberal_system = disapprove
+#		law_authoritarian_system = neutral
+#	}
 	
 	possible = {
 		# Agitators should have an ideology at odds with current laws

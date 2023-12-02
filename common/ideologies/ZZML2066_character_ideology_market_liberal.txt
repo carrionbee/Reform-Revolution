@@ -61,9 +61,9 @@
 		law_commercialized_agriculture = approve
 	}
 
-	lawgroup_crime_and_punishment = {
-		law_elitist_system = approve
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_elitist_system = approve
+#	}
 
 	possible = {
 		owner = {

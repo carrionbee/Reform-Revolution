@@ -112,14 +112,6 @@
 		law_secret_police = approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = strongly_disapprove
-		law_elitist_system = strongly_disapprove
-		law_local_law = disapprove
-		law_liberal_system = strongly_disapprove
-		law_authoritarian_system = strongly_approve
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral
 		law_ministers_appointed = approve
@@ -128,6 +120,14 @@
 		law_sycophants = approve
 		law_generalissimo = approve
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = strongly_disapprove
+#		law_elitist_system = strongly_disapprove
+#		law_local_law = disapprove
+#		law_liberal_system = strongly_disapprove
+#		law_authoritarian_system = strongly_approve
+#	}
 							
 	possible = {
 		owner = { has_technology_researched = socialism }

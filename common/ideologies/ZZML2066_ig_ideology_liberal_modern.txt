@@ -65,14 +65,6 @@
 		law_queer_liberation = approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = disapprove
-		law_elitist_system = disapprove
-		law_local_law = neutral
-		law_liberal_system = strongly_approve
-		law_authoritarian_system = strongly_disapprove
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral
 		law_ministers_appointed = neutral
@@ -81,4 +73,12 @@
 		law_sycophants = disapprove
 		law_generalissimo = disapprove
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = disapprove
+#		law_elitist_system = disapprove
+#		law_local_law = neutral
+#		law_liberal_system = strongly_approve
+#		law_authoritarian_system = strongly_disapprove
+#	}
 }

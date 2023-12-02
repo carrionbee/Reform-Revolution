@@ -74,14 +74,6 @@
 		law_queer_liberation = strongly_disapprove
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = neutral
-		law_elitist_system = approve
-		law_local_law = strongly_disapprove
-		law_liberal_system = strongly_disapprove
-		law_authoritarian_system = strongly_approve
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral
 		law_ministers_appointed = neutral
@@ -90,6 +82,14 @@
 		law_sycophants = approve
 		law_generalissimo = approve
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = neutral
+#		law_elitist_system = approve
+#		law_local_law = strongly_disapprove
+#		law_liberal_system = strongly_disapprove
+#		law_authoritarian_system = strongly_approve
+#	}
 	
 	possible = {
 		owner = { has_technology_researched = mass_propaganda }

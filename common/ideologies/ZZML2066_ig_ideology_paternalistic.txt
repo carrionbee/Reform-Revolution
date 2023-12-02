@@ -65,11 +65,11 @@
 		law_pollution_management = strongly_disapprove
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = approve
-		law_elitist_system = approve
-		law_authoritarian_system = neutral
-		law_local_law = neutral
-		law_liberal_system = disapprove
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = approve
+#		law_elitist_system = approve
+#		law_authoritarian_system = neutral
+#		law_local_law = neutral
+#		law_liberal_system = disapprove
+#	}
 }

@@ -137,13 +137,13 @@
 		law_guaranteed_liberties = approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = disapprove
-		law_elitist_system = strongly_disapprove
-		law_local_law = approve
-		law_liberal_system = approve
-		law_authoritarian_system = disapprove
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = disapprove
+#		law_elitist_system = strongly_disapprove
+#		law_local_law = approve
+#		law_liberal_system = approve
+#		law_authoritarian_system = disapprove
+#	}
 	
 	possible = {
 		# Agitator ideologies should disapprove of a current law

@@ -45,7 +45,7 @@
 		law_private_security_system = strongly_approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_elitist_system = strongly_approve
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_elitist_system = strongly_approve
+#	}
 }

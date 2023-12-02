@@ -70,13 +70,13 @@ ideology_integralist = {
 		law_autocracy = strongly_approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_authoritarian_system = approve
-		law_local_law = neutral
-		law_traditional_law = neutral
-		law_elitist_system = disapprove
-		law_liberal_system = strongly_disapprove
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_authoritarian_system = approve
+#		law_local_law = neutral
+#		law_traditional_law = neutral
+#		law_elitist_system = disapprove
+#		law_liberal_system = strongly_disapprove
+#	}
 
 	possible = {
 		owner = { has_technology_researched = corporatism }

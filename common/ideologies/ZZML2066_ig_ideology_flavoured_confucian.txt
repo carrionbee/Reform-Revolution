@@ -27,11 +27,11 @@
 		law_protected_speech = disapprove
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = approve
-		law_elitist_system = neutral
-		law_local_law = neutral
-		law_liberal_system = disapprove
-		law_authoritarian_system = approve
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = approve
+#		law_elitist_system = neutral
+#		law_local_law = neutral
+#		law_liberal_system = disapprove
+#		law_authoritarian_system = approve
+#	}
 }

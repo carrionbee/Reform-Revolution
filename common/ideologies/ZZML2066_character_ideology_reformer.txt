@@ -34,13 +34,13 @@
 		law_queer_liberation = neutral
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = disapprove
-		law_elitist_system = disapprove
-		law_local_law = neutral
-		law_liberal_system = neutral
-		law_authoritarian_system = disapprove
-	}
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = disapprove
+#		law_elitist_system = disapprove
+#		law_local_law = neutral
+#		law_liberal_system = neutral
+#		law_authoritarian_system = disapprove
+#	}
 	
 	possible = {
 		owner = {

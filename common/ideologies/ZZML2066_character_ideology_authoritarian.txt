@@ -39,14 +39,6 @@
 		law_appointed_bureaucrats = approve
     }
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = neutral
-		law_elitist_system = neutral
-		law_local_law = disapprove
-		law_liberal_system = disapprove
-		law_authoritarian_system = approve
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral
 		law_ministers_appointed = neutral
@@ -55,6 +47,14 @@
 		law_sycophants = approve
 		law_generalissimo = approve
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = neutral
+#		law_elitist_system = neutral
+#		law_local_law = disapprove
+#		law_liberal_system = disapprove
+#		law_authoritarian_system = approve
+#	}
 
 	possible = {
 		# Agitator ideologies should disapprove of a current law
