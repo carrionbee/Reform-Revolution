@@ -131,7 +131,7 @@
  law_sycophants:0  "Sycophants"
  law_sycophants_desc:0 "The [concept_ruler] has leveraged a network of devoted sycophants in the legislative process. Under the guise of unity and efficiency, the head of state can now expedite the passage of laws, gaining unprecedented influence over the legislative process."
  
- law_ministers_appointed:0 "Ministerial Appointments"
+ law_ministers_appointed:0 "Appointed Ministers"
  law_ministers_appointed_desc:0 "Government Ministers are granted their portfolios and appointed directly by the [concept_ruler]."
  
  law_generalissimo:0 "Generalissimo"
