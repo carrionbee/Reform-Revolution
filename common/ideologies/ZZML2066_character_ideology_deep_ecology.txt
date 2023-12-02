@@ -1,0 +1,177 @@
+﻿ideology_deep_ecology = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/unused/ideology_leader_Agrarian.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_presidential_republic = disapprove
+		law_theocracy = strongly_disapprove
+		law_parliamentary_republic = strongly_disapprove
+		law_council_republic = neutral
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_disapprove	
+		law_oligarchy = strongly_disapprove
+		law_ecclesiarchy = strongly_disapprove
+		law_landed_voting = strongly_disapprove
+		law_wealth_voting = strongly_disapprove
+		law_census_voting = strongly_disapprove
+		law_technocracy = strongly_approve	
+		law_single_party_state = disapprove
+		law_universal_suffrage = neutral		
+		law_mass_democracy = approve
+		law_anarchy = strongly_approve
+	}
+	
+	lawgroup_economic_system = {
+		law_industry_banned = strongly_approve
+		law_communal_principle = approve		
+		law_cooperative_ownership = approve
+		law_agrarianism = neutral
+		law_command_economy = neutral
+		law_interventionism = strongly_disapprove
+		law_traditionalism = strongly_disapprove	
+		law_laissez_faire = strongly_disapprove
+	}
+	
+	lawgroup_urbanization = {	
+		law_worker_management = approve
+		law_planned_economics = neutral
+		law_guild_system = disapprove
+		law_dirigisme = strongly_disapprove
+		law_religious_integralism = strongly_disapprove	
+		law_bourgeoisie_ownership = strongly_disapprove
+		law_aristocratic_holdings = strongly_disapprove
+	}
+	
+	lawgroup_land_reform = {	
+		law_deep_ecology_cooperatives = strongly_approve
+		law_collectivized_agriculture = approve
+		law_homesteading = neutral
+		law_tenant_farmers = strongly_disapprove
+		law_titled_estates = strongly_disapprove
+		law_commercialized_agriculture = strongly_disapprove
+		law_serfdom = strongly_disapprove
+	}
+	
+	lawgroup_enviromental_protections = {
+		law_no_enviromental_protections = strongly_disapprove
+		law_pollution_tax = strongly_disapprove
+		law_enviromental_standards = approve
+		law_pollution_management = strongly_approve
+	}
+	
+	lawgroup_trade_policy = {
+		law_mercantilism = strongly_disapprove
+		law_free_trade = strongly_disapprove
+		law_protectionism = disapprove
+		law_isolationism = strongly_approve
+	}
+
+	possible = {
+		owner = { has_technology_researched = anarchism }
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_anarchy
+				has_law = law_type:law_industry_banned
+				has_law = law_type:law_deep_ecology_cooperatives
+				has_law = law_type:law_worker_management
+				has_law = law_type:law_pollution_management
+				has_law = law_type:law_isolationism
+			}
+		}
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_anarchists
+				is_interest_group_type = ig_agrarian_populists
+			}
+		}
+
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+
+	}
+	
+	leader_weight = {
+		value = 10
+		# Industrial Society and its consequences
+		if = {
+			limit = {
+				owner = {
+					exists = ig:ig_industrialists
+					ig:ig_industrialists = {
+						is_powerful = yes
+					}
+				}
+			}
+			add = 20
+		}
+		# More likely to support with mass cultivation of land
+		if = {
+			limit = {
+				owner = {
+					any_scope_building = {
+						is_building_group = bg_agriculture 
+						level >= 5
+					}
+				}
+			}
+			add = 20
+		}
+		# More likely with high unemployment and mass land cultivation
+		if = {
+			limit = {
+				owner = {
+					any_scope_state = {
+						any_scope_building = {
+							is_building_group = bg_agriculture 
+							level >= 5
+						}
+						state_unemployment_rate > 0.1
+					}
+				}
+			}
+			add = 20
+		}
+		# More likely to support with large industries
+		if = {
+			limit = {
+				owner = {
+					any_scope_building = {
+						is_building_group = bg_heavy_industry 
+						level >= 5
+					}
+				}
+			}
+			add = 20
+		}
+		# More likely with high unemployment and large industries
+		if = {
+			limit = {
+				owner = {
+					any_scope_state = {
+						any_scope_building = {
+							is_building_group = bg_heavy_industry 
+							level >= 5
+						}
+						state_unemployment_rate > 0.1
+					}
+				}
+			}
+			add = 20
+		}
+	}
+}

@@ -1,0 +1,59 @@
+﻿ideology_russian_patriarch = {
+	icon = "gfx/interface/icons/ideology_icons/russian_patriarch.dds" 
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_oligarchy = approve
+		law_ecclesiarchy = approve
+		law_landed_voting = neutral
+		law_wealth_voting = neutral
+		law_single_party_state = disapprove
+		law_census_voting = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+		law_technocracy = strongly_disapprove
+	}
+
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = strongly_approve
+		law_women_own_property = approve
+		law_women_in_the_workplace = neutral
+		law_womens_suffrage = disapprove
+		law_overthrow_patriarchy = strongly_disapprove
+	}
+
+	lawgroup_queer_rights = {
+		law_enforced_gender_roles = approve
+		law_sodomy_laws = approve
+		law_queer_decriminalized = disapprove
+		law_gay_marriage = strongly_disapprove
+		law_queer_liberation = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_approve
+		law_censorship = approve
+		law_pan_opticon = neutral
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
+	}
+	
+	lawgroup_land_reform = {
+		law_serfdom = approve
+		law_titled_estates = approve
+		law_tenant_farmers = neutral
+		law_commercialized_agriculture = disapprove
+		law_homesteading = disapprove
+		law_collectivized_agriculture = strongly_disapprove
+	}
+	
+	lawgroup_labor_work_hours = {
+		law_labor_work_hours_unregulated = strongly_approve
+		law_labor_work_hours_day_12 = neutral
+		law_labor_work_hours_day_8 = disapprove
+		law_labor_work_hours_week_40 = strongly_disapprove
+		law_labor_work_hours_week_32 = strongly_disapprove
+		law_labor_work_hours_week_20 = strongly_disapprove
+	}
+}
