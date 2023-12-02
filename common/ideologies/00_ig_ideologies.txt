@@ -121,14 +121,6 @@ ideology_ig_anarchist = {
 		law_state_atheism = strongly_approve
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = strongly_disapprove
-		law_elitist_system = strongly_disapprove
-		law_local_law = strongly_approve
-		law_liberal_system = neutral
-		law_authoritarian_system = strongly_disapprove
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral
 		law_ministers_appointed = strongly_disapprove
@@ -137,6 +129,14 @@ ideology_ig_anarchist = {
 		law_sycophants = strongly_disapprove
 		law_generalissimo = strongly_disapprove
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = strongly_disapprove
+#		law_elitist_system = strongly_disapprove
+#		law_local_law = strongly_approve
+#		law_liberal_system = neutral
+#		law_authoritarian_system = strongly_disapprove
+#	}
 }
 
 ideology_ig_fascist = {
@@ -215,14 +215,6 @@ ideology_ig_fascist = {
 		law_no_police = disapprove
 	}
 	
-	lawgroup_crime_and_punishment = {
-		law_traditional_law = neutral
-		law_elitist_system = approve
-		law_local_law = strongly_disapprove
-		law_liberal_system = strongly_disapprove
-		law_authoritarian_system = strongly_approve
-	}
-	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = disapprove
 		law_ministers_appointed = neutral
@@ -231,6 +223,14 @@ ideology_ig_fascist = {
 		law_sycophants = strongly_approve
 		law_generalissimo = approve
 	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = neutral
+#		law_elitist_system = approve
+#		law_local_law = strongly_disapprove
+#		law_liberal_system = strongly_disapprove
+#		law_authoritarian_system = strongly_approve
+#	}
 }
 
 ideology_ig_united_socialist = {
