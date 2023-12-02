@@ -1,0 +1,91 @@
+﻿ideology_proletarian = {
+	icon = "gfx/interface/icons/ideology_icons/proletarian.dds"
+
+	lawgroup_economic_system = {	
+		law_communal_principle = approve
+		law_cooperative_ownership = approve		
+		law_command_economy = approve		
+		law_interventionism = approve
+		law_agrarianism = neutral
+		law_traditionalism = disapprove		
+		law_laissez_faire = disapprove		
+		law_industry_banned = strongly_disapprove
+	}
+
+	lawgroup_urbanization = {	
+		law_worker_management = approve
+		law_planned_economics = approve
+		law_dirigisme = approve
+		law_religious_integralism = neutral		
+		law_guild_system = neutral	
+		law_bourgeoisie_ownership = disapprove	
+		law_aristocratic_holdings = strongly_disapprove
+	}
+	
+	lawgroup_taxation = {
+		law_no_taxation = disapprove
+		law_per_capita_based_taxation = disapprove
+		law_land_based_taxation = neutral
+		law_proportional_taxation = neutral
+		law_consumption_based_taxation = neutral
+		law_graduated_taxation = approve
+	}
+	
+	lawgroup_trade_policy = {		
+		law_protectionism = approve
+		law_isolationism = neutral
+		law_mercantilism = neutral
+		law_free_trade = disapprove
+	}		
+	
+	lawgroup_welfare = {
+		law_disability_insurance = strongly_approve
+		law_old_age_pension = approve
+		law_wage_subsidies = neutral
+		law_poor_laws = disapprove
+		law_no_social_security = strongly_disapprove
+	}
+	
+	lawgroup_health_system = {
+		law_private_health_insurance = disapprove
+		law_no_health_system = disapprove
+		law_charitable_health_system = neutral
+		law_public_health_insurance = approve
+	}	
+	
+	lawgroup_education_system = {
+		law_public_schools = approve
+		law_military_schools = neutral
+		law_private_schools = neutral
+		law_religious_schools = neutral	
+		law_no_schools = disapprove	
+	}
+	
+	lawgroup_labor_rights = {		
+		law_union_representation = approve
+		law_worker_protections = approve
+		law_regulatory_bodies = neutral
+		law_corporatist_labour_syndicate = disapprove
+		law_no_workers_rights = disapprove
+	}
+	
+	lawgroup_labor_work_hours = {
+		law_labor_work_hours_unregulated = strongly_disapprove
+		law_labor_work_hours_day_12 = disapprove
+		law_labor_work_hours_day_8 = neutral
+		law_labor_work_hours_week_40 = approve
+		law_labor_work_hours_week_32 = approve
+		law_labor_work_hours_week_20 = approve
+	}
+	
+	lawgroup_policing = {
+		law_private_security_system = strongly_disapprove
+	}
+	
+	lawgroup_enviromental_protections = {
+		law_no_enviromental_protections = disapprove
+		law_pollution_tax = approve
+		law_enviromental_standards = approve
+		law_pollution_management = approve
+	}
+}
