@@ -1,4 +1,4 @@
-﻿ Working Hours Act
+﻿# Working Hours Act
 lawgroup_labor_work_hours = {
 	law_group_category = human_rights
 	
