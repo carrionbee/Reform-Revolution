@@ -11,10 +11,10 @@
  military_administration_risk_strong_presidency_tt:0 "The question of the ever-increasing role of the [Concept('concept_army','Military')] in Government:"
  military_administration_risk_strong_presidency_desc_tt:0 "The [concept_army] have some security concerns, and endorse the implementation of [GetLawType('law_military_cantons').GetName] to provide additional safeguards. However there are wings of the [GetPopType('officers').GetName] and [GetPopType('soldiers').GetName] that will push for a further consolidation of powers - to ensure peace, freedom, justice, and security for the state."
  
- institution_feudal_privilages:0 "Feudal Privilages"
- institution_feudal_privilages_desc:0 "The degree of powers the landlords hold over the peasantry and laborers."
- modifier_country_institution_feudal_privilages_max_investment_add:0 "Degree of Feudal Privilage"
- modifier_country_institution_feudal_privilages_max_investment_add_desc:0 "Degree of Feudal Privilage"
+ institution_feudal_privilages:0 "Feudal Oversight"
+ institution_feudal_privilages_desc:0 "The Feudal System is one where the landowners holds significant power over the peasantry and laborers, and there are times where the central authority may want to curtail these abuses for the sake of harmony."
+ modifier_country_institution_feudal_privilages_max_investment_add:0 "Degree of Feudal Oversight"
+ modifier_country_institution_feudal_privilages_max_investment_add_desc:0 "Degree of Feudal Oversight"
  
  institution_unitary:0 "Unitary Government"
  institution_unitary_desc:0 "The degree to which the Government has Centralized Power"
@@ -27,9 +27,9 @@
  modifier_country_institution_federation_max_investment_add_desc:0 "Degree of Federal Powers"
  
  institution_confederation:0 "Confederation of States"
- institution_confederation_desc:0 "The degree to which the Confedration has Empowered the States."
- modifier_country_institution_confederation_max_investment_add:0 "Degree of Devolved Powers"
- modifier_country_institution_confederation_max_investment_add_desc:0 "Degree of Devolved Powers"
+ institution_confederation_desc:0 "The degree of harmony within the Confederation of States."
+ modifier_country_institution_confederation_max_investment_add:0 "Harmony within the Confederation of States"
+ modifier_country_institution_confederation_max_investment_add_desc:0 "Harmony within the Confederation of States"
   
  law_informal_authority:0 "Informal Authority"
  law_informal_authority_desc:0 "The state capital has nominal authority on the country, but its ability to project that authority effectively ends at the borders of the city center. The hierarchy of power in the rest of the country is completely informal, relying instead on the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s ability to identify local leaders and on their willingness to cooperate with their commands."
