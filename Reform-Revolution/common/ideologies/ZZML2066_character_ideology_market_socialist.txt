@@ -1,0 +1,194 @@
+﻿ideology_market_socialist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_vanguardist.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove
+		law_theocracy = strongly_disapprove
+		law_council_republic = strongly_approve
+	}
+
+	lawgroup_economic_system = {	
+		law_industry_banned = strongly_disapprove
+		law_traditionalism = strongly_disapprove		
+		law_agrarianism = neutral
+		law_communal_principle = neutral
+		law_command_economy = neutral
+		law_cooperative_ownership = neutral
+		law_laissez_faire = neutral
+		law_interventionism = approve
+	}
+	
+	lawgroup_urban_planning = {	
+		law_aristocratic_holdings = strongly_disapprove
+		law_religious_integralism = strongly_disapprove
+		law_bourgeoisie_ownership = disapprove
+		law_guild_system = disapprove
+		law_worker_management = neutral
+		law_planned_economics = neutral
+		law_dirigisme = approve
+	}
+	
+	lawgroup_trade_policy = {
+		law_isolationism = neutral
+		law_mercantilism = neutral
+		law_protectionism = neutral
+		law_free_trade = approve
+	}
+
+	possible = {
+		owner = {
+			has_technology_researched = socialism
+			has_technology_researched = international_trade
+		}
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_interventionism
+				has_law = law_type:law_dirigisme
+				has_law = law_type:law_free_trade
+			}
+		}
+		# Monarchs cannot be republicans
+		NAND = {
+			owner = {
+				has_law = law_type:law_monarchy
+			}
+			OR = {
+				is_ruler = yes
+				is_heir = yes
+			}
+		}
+		scope:interest_group = {
+			OR = {
+				has_ideology = ideology:ideology_proletarian
+				has_ideology = ideology:ideology_plutocratic
+				has_ideology = ideology:ideology_meritocratic
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_anarchism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 100		
+		# More likely for angry IG's outside of council republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+				}
+				scope:interest_group = {
+					ig_approval <= -5
+					NOT = { is_interest_group_type = ig_armed_forces }
+				}
+			}
+			add = 100
+		}
+		# More likely when SoL is low outside of council republic
+
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+					average_sol <= 10
+
+				}
+			}
+			add = 50
+		}
+		# More likely in an autocracy
+		if = {
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+                        has_law = law_type:law_single_party_state						
+					}
+				}
+			}
+			add = 50
+		}	
+		# Unlikely for content IG's under anarchism
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_anarchy
+				}
+				scope:interest_group = {
+					ig_approval >= 5
+				}
+			}
+			add = -100
+		}
+		
+		# Extremely likely for content Bureaucrats & Professionals in the Council Republic
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+				scope:interest_group = {
+					OR = {
+						has_ideology = ideology:ideology_plutocratic
+						has_ideology = ideology:ideology_meritocratic
+					}
+					ig_approval >= 0
+				}
+			}
+			add = 1000
+		}
+		# The Party remains devoted the peaceful development of the productive forces
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_council_republic
+					OR = {
+                        has_law = law_type:law_interventionism						
+						has_law = law_type:law_free_trade
+						has_law = law_type:law_protectionism
+						has_law = law_type:law_dirigisme
+					}
+				}
+			}
+			add = 50
+		}
+		if = { #Armed Forces should not become communist too often outside CRs.
+			limit = {
+				owner = {
+					NOT = {
+						has_law = law_type:law_council_republic
+					}
+				}
+				scope:interest_group = {
+					is_interest_group_type = ig_armed_forces
+				}
+			}
+			multiply = 0.3
+		}
+		if = {
+			limit = {
+				owner = { has_variable = communism_1_done }
+			}
+			multiply = 3
+		}
+		if = {
+			limit = {
+				owner = { has_variable = election_vanguardist_support }
+			}
+			multiply = 2
+		}
+	}
+}
