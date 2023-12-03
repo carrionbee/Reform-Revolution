@@ -12,7 +12,7 @@ law_gendarmerie = {
 	}
 
 	can_enact = {
-		has_technology_researched = law_enforcement
+		has_technology_researched = identification_documents
 	}
 
 	disallowing_laws = {

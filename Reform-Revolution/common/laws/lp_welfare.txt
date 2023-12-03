@@ -13,7 +13,7 @@ law_disability_insurance = {
 	}
 
 	can_enact = {
-		has_technology_researched = human_rights
+		has_technology_researched = socialism
 	}
 
 	modifier = {
