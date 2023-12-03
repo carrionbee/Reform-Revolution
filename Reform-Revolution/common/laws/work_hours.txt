@@ -1,9 +1,4 @@
-﻿# group = this is the law_group a law belongs to
-# icon = graphical icon shown in-game
-# modifier = {} modifier on country for having adopted this law
-
-
-# Unlimit
+﻿# Unlimit
 law_labor_work_hours_unlimit = {
 	group = lawgroup_labor_work_hours
 
@@ -19,12 +14,9 @@ law_labor_work_hours_unlimit = {
 		building_working_conditions_mult = 0.10 # +10%
 	}
 
-	# AI shouldn't try to abolish institutions
 	ai_will_do = {
-		NOR = {
-			has_law = law_type:law_labor_work_hours_day_12
-			has_law = law_type:law_labor_work_hours_day_8
-			has_law = law_type:law_labor_work_hours_week_48
+		ruler = {
+			has_ideology = ideology:ideology_anarcho_liberal
 		}
 	}
 }
@@ -45,7 +37,6 @@ law_labor_work_hours_day_12 = {
 
 	disallowing_laws = {
 		law_serfdom
-		law_serfdom_banned
 	}
 
 	possible_political_movements = {
