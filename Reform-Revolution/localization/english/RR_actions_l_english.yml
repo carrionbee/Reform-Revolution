@@ -1,0 +1,19 @@
+﻿l_english:
+
+#Classicide
+ action_classicide_landowners:0 "Classicide"
+ action_classicide_landowners_desc:0 "Declare the systematic obliteration of the [GetPopType('aristocrats').GetName] class. The cries of the [Concept('concept_lower_strata','Working Class')] have declared - it is time for [Concept('concept_revolution','Class War!')]"
+
+
+# Strikes
+ action_urban_mass_strike:0 "Endorse a Mass General Strike"
+ action_urban_mass_strike_desc:0 "Comrades, fellow [Concept('concept_lower_strata','Workers!')] Today marks a decisive moment in our [Concept('concept_political_movement','ongoing struggle for justice and equality!')] Effective immediately, we call upon all [Concept('concept_lower_strata','workers')] in this state to unite and to collectively demand their rights! This action is not born out of whimsy, but out of necessity! A response to the [Concept('concept_turmoil','unyielding exploitation')] faced by the [Concept('concept_lower_strata','working masses!')]"
+
+# Extortions
+ action_extortion_reactionary:0 "Extort the Poor"
+ action_extortion_reactionary_desc:0 "In light of some financial shortfalls, our [Concept('concept_upper_strata','Advisors')] have come up with a straightforward method to fill the [concept_treasury]. A subsection of the [concept_army] under our sway can pay a visit to the urban slums at night, and encourage a modest involuntary [Concept('concept_budget_poll_taxes','contribution.')] It's possible that the [concept_lower_strata] may experience [Concept('concept_casualties','minor inconveniences')], but rest assured it's all in the name of maintaining the status quo. [Concept('concept_revolution','After all, what are they going to do?')]"
+ 
+ action_extortion_proletarian:0 "Extort the Rich"
+ action_extortion_proletarian_desc:0 "There is a budget shortfall that must be addressed, and we have devised a bold strategy to confront this issue. In accordance with our unwavering commitment to the [Concept('concept_authority','Principles of Socialism')] - we shall [Concept('concept_budget_dividends_taxes','seize')] the [Concept('concept_unrealized_taxes','ill-gotten gains')] of the [GetPopType('capitalists').GetName] and [GetPopType('aristocrats').GetName] for the [Concept('concept_bureaucracy','Revolution!')]"
+ 
+ #
