@@ -1,0 +1,269 @@
+﻿ideology_anarchist = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_anarchist.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_disapprove		
+		law_oligarchy = strongly_disapprove
+		law_ecclesiarchy = strongly_disapprove
+		law_technocracy = strongly_disapprove
+		law_landed_voting = strongly_disapprove
+		law_wealth_voting = strongly_disapprove
+		law_single_party_state = strongly_disapprove
+		law_census_voting = disapprove
+		law_universal_suffrage = neutral
+		law_mass_democracy = approve
+		law_anarchy = strongly_approve
+	}
+	
+	lawgroup_centralization = {		
+		law_feudalism = strongly_disapprove
+		law_military_cantons = disapprove
+		law_unitary = strongly_disapprove
+		law_federalism = neutral
+		law_confederation = approve
+	}
+	
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_disapprove
+		law_national_supremacy = strongly_disapprove
+		law_racial_segregation = strongly_disapprove
+		law_cultural_exclusion = disapprove
+		law_multicultural = strongly_approve	
+	}	
+	
+	lawgroup_discriminated_pop = {
+		law_profession_banned = strongly_disapprove
+		law_violent_suppresion = strongly_disapprove
+		law_forced_labour = strongly_disapprove
+		law_no_codified_discrimination = neutral
+		law_permanent_residency = neutral
+	}
+	
+	lawgroup_economic_system = {
+		law_laissez_faire = strongly_disapprove
+		law_traditionalism = strongly_disapprove	
+		law_industry_banned = disapprove
+		law_command_economy = disapprove
+		law_interventionism = disapprove
+		law_agrarianism = neutral
+		law_communal_principle = approve		
+		law_cooperative_ownership = strongly_approve
+	}
+	
+	lawgroup_urban_planning = {	
+		law_worker_management = strongly_approve
+		law_guild_system = disapprove
+		law_religious_integralism = disapprove
+		law_dirigisme = disapprove
+		law_planned_economics = strongly_disapprove		
+		law_bourgeoisie_ownership = strongly_disapprove
+		law_aristocratic_holdings = strongly_disapprove
+	}
+	
+	lawgroup_land_reform = {		
+		law_collectivized_agriculture = strongly_approve
+		law_homesteading = neutral
+		law_tenant_farmers = strongly_disapprove
+		law_titled_estates = strongly_disapprove
+		law_commercialized_agriculture = strongly_disapprove
+		law_serfdom = strongly_disapprove
+	}
+	
+	lawgroup_bureaucracy = {
+		law_elected_bureaucrats = approve
+		law_appointed_bureaucrats = strongly_disapprove
+		law_hereditary_bureaucrats = strongly_disapprove
+		law_communal_adminstration = strongly_approve	
+    }
+
+	lawgroup_army_model = {
+		law_national_militia = neutral
+		law_no_army = approve
+		law_professional_army = disapprove
+		law_mass_conscription = disapprove
+		law_peasant_levies = strongly_disapprove
+	}
+
+
+	lawgroup_free_speech = {
+		law_protected_speech = strongly_approve
+		law_right_of_assembly = approve
+		law_censorship = strongly_disapprove
+		law_outlawed_dissent = strongly_disapprove
+		law_pan_opticon = strongly_disapprove
+	}
+
+	lawgroup_policing = {
+		law_no_police = approve
+		law_local_police = disapprove
+		law_dedicated_police = disapprove
+		law_militarized_police = strongly_disapprove
+		law_private_security_system = strongly_disapprove
+	}
+
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_disapprove
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove
+		law_theocracy = strongly_disapprove
+		law_council_republic = strongly_approve
+		law_corporatocracy = strongly_disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove
+		law_freedom_of_conscience = strongly_disapprove
+		law_religious_pluralism = disapprove
+		law_total_separation = neutral
+		law_state_atheism = strongly_approve
+	}
+	
+	lawgroup_queer_rights = {
+		law_enforced_gender_roles = strongly_disapprove
+		law_sodomy_laws = disapprove
+		law_queer_decriminalized = neutral
+		law_gay_marriage = approve
+		law_queer_liberation = strongly_approve
+	}
+	
+	lawgroup_executive_privileges = {
+		law_no_reserve_powers = neutral
+		law_ministers_appointed = disapprove
+		law_decree_powers = disapprove
+		law_personality_cult = disapprove
+		law_sycophants = disapprove
+		law_generalissimo = disapprove
+	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = strongly_disapprove
+#		law_elitist_system = strongly_disapprove
+#		law_local_law = strongly_approve
+#		law_liberal_system = neutral
+#		law_authoritarian_system = strongly_disapprove
+#	}
+	
+	possible = {
+		owner = { has_technology_researched = anarchism }
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				OR = {
+				has_law = law_type:law_national_militia
+				has_law = law_type:law_no_army
+				}
+				has_law = law_type:law_anarchy
+				has_law = law_type:law_protected_speech
+				has_law = law_type:law_guaranteed_liberties
+				has_law = law_type:law_no_police
+				has_law = law_type:law_council_republic
+			}
+		}
+		# Monarchs cannot be republicans
+		NAND = {
+			owner = {
+				has_law = law_type:law_monarchy
+			}
+			OR = {
+				is_ruler = yes
+				is_heir = yes
+			}
+		}
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_agrarian_populists
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_anarchists
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_radicals
+			}
+		}
+
+		scope:interest_group = {
+			NOR = {
+				has_variable = chose_vanguardism
+				has_variable = chose_communism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+
+	}
+	
+	leader_weight = {
+		value = -10
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_anarchists
+				}
+			}
+			add = 200
+		}
+		# More likely for angry IG's outside of council republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+					has_variable = local_anarchists_split_var
+				}
+				scope:interest_group = {
+					ig_approval <= -5
+				}
+			}
+			add = 30
+		}
+		# More likely for agrarian populists when serfdom is legal
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_serfdom
+				}
+				OR = {
+					scope:interest_group = {
+						is_interest_group_type = ig_agrarian_populists
+					}
+				}
+			}
+			add = 70
+		}
+		# More likely when SoL is low outside of council republic
+		if = {
+			limit = {
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+					average_sol <= 10
+				}
+			}
+			add = 50
+		}
+		# More likely if in "government" under anarchy
+		if = {
+			limit = {
+				owner = {
+					has_law = law_type:law_anarchy
+				}
+				scope:interest_group = {
+					is_in_government = yes
+				}
+			}
+			add = 75
+		}
+		if = {
+			limit = {
+				owner = { has_variable = communism_1_done }
+			}
+			multiply = 3
+		}
+		if = {
+			limit = {
+				owner = { has_variable = election_anarchist_support }
+			}
+			multiply = 2
+		}
+	}
+}
