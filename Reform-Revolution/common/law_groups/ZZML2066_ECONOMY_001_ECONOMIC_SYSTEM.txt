@@ -1,0 +1,7 @@
+lawgroup_economic_system = {
+	law_group_category = economy	
+	base_enactment_days = 150
+	
+	progressive_movement_chance = 3
+	regressive_movement_chance = 0.15
+}
