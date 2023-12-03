@@ -13,7 +13,7 @@ action_classicide_landowners = {
 			}
 			OR = {
 				any_interest_group = {
-				#	is_in_government = yes
+					is_in_government = yes
 					is_strongest_ig_in_government = yes 	# must be the leading force in govt, not coalition.
 					leader = {
 						OR = {
@@ -27,15 +27,15 @@ action_classicide_landowners = {
 				}
 				OR = {
 					ig:ig_socialists = { 	# since this is before the reformist-revolutionist split
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_revolutionist_socialists = {	# similar to the vanguardists - very willing to conduct violence against reactionary forces
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_agrarian_populists = {	# militant peasantry be happy to kill the landowners
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 				}
@@ -60,32 +60,5 @@ action_classicide_landowners = {
 	}
 	cost = 250
 	
-	ai_will_do = {
-		always = no
-	}
-
-#	ai_weight = {	#TODO
-#		value = 0
-#		if = {
-#			limit = { ig:ig_landowners = { is_powerful = yes } }
-#			add = 15
-#		}
-#		if = {
-#			limit = any_interest_group = {
-#				is_in_government = yes
-#				law_stance = {
-#					law = law_type:law_collectivized_agriculture
-#					value < neutral
-#				}
-#			}
-#			add = -10
-#		}
-#		if = {
-#			limit = { OR = {
-#				turmoil >= 0.70
-#				devastation >= 55
-#			} }
-#			add = -100
-#		}
-#	}
+	ai_will_do = { always = no }
 }

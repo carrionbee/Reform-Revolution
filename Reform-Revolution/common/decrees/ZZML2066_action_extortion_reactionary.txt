@@ -17,7 +17,7 @@ action_extortion_reactionary = {
 				}	
 			OR = {
 				any_interest_group = {
-				#	is_in_government = yes
+					is_in_government = yes
 					is_strongest_ig_in_government = yes
 					leader = {
 						OR = {
@@ -37,19 +37,19 @@ action_extortion_reactionary = {
 				}
 				OR = {
 					ig:ig_armed_forces = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_landowners = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_reactionaries = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_fascists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 				}
@@ -76,22 +76,5 @@ action_extortion_reactionary = {
 	
 	cost = 100
 	
-	ai_will_do = {
-		always = no
-	}
-	
-#	ai_weight = {	#TODO
-#		value = 0
-#		if = {
-#			limit = { ig:ig_industrialists = { is_powerful = yes } }
-#			add = 15
-#		}
-#		if = {
-#			limit = { OR = {
-#				turmoil >= 0.70
-#				devastation >= 55
-#			} }
-#			add = -100
-#		}
-#	}
+	ai_will_do = { always = no }
 }

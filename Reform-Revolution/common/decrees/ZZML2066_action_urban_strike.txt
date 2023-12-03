@@ -15,7 +15,7 @@ action_urban_mass_strike = {
 			}
 			OR = {
 				any_interest_group = {
-				#	is_in_government = yes
+					is_in_government = yes
 					is_strongest_ig_in_government = yes
 					leader = {
 						OR = {
@@ -34,23 +34,23 @@ action_urban_mass_strike = {
 				}
 				OR = { 
 					ig:ig_trade_unions = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_socialists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_revolutionist_socialists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_reformist_socialists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_agrarian_populists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 				}
@@ -86,32 +86,5 @@ action_urban_mass_strike = {
 	
 	cost = 150
 	
-	ai_will_do = {
-		always = no
-	}
-
-#	ai_weight = {	#TODO
-#		value = 0
-#		if = {
-#			limit = { ig:ig_industrialists = { is_powerful = yes } }
-#			add = 15
-#		}
-#		if = {
-#			limit = any_interest_group = {
-#				is_in_government = yes
-#				law_stance = {
-#					law = law_type:law_worker_protections
-#					value < neutral
-#				}
-#			}
-#			add = -10
-#		}
-#		if = {
-#			limit = { OR = {
-#				turmoil >= 0.70
-#				devastation >= 55
-#			} }
-#			add = -100
-#		}
-#	}
+	ai_will_do = { always = no }
 }

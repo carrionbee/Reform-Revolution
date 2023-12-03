@@ -14,7 +14,7 @@ action_extortion_proletarian = {
 			}
 			OR = {
 				any_interest_group = {
-				#	is_in_government = yes
+					is_in_government = yes
 					is_strongest_ig_in_government = yes
 					leader = {
 						OR = {
@@ -32,19 +32,19 @@ action_extortion_proletarian = {
 				}
 				OR = {
 					ig:ig_socialists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_revolutionist_socialists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_radicals = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 					ig:ig_agrarian_populists = {
-					#	is_in_government = yes
+						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
 				}
@@ -66,22 +66,5 @@ action_extortion_proletarian = {
 	
 	cost = 100
 	
-	ai_will_do = {
-		always = no
-	}
-	
-#	ai_weight = {	#TODO
-#		value = -15
-#		if = {
-#			limit = { ig:ig_industrialists = { is_powerful = yes } }
-#			add = 15
-#		}
-#		if = {
-#			limit = { OR = {
-#				turmoil >= 0.70
-#				devastation >= 55
-#			} }
-#			add = -100
-#		}
-#	}
+	ai_will_do = { always = no }
 }
