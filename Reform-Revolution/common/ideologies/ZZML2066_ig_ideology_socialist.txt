@@ -1,4 +1,5 @@
 ﻿ideology_socialist = {
+	icon = "gfx/interface/icons/ideology_icons/socialist.dds"
 
 	lawgroup_governance_principles = {
 		law_corporatocracy = strongly_disapprove
