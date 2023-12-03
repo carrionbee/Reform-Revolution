@@ -25,9 +25,8 @@ action_urban_mass_strike = {
 							has_ideology = ideology:ideology_left_communist
 							has_ideology = ideology:ideology_syndicalism
 							has_ideology = ideology:ideology_technocratic_socialism
-							has_ideology = ideology:ideology_totalitarian_socialist
+							has_ideology = ideology:ideology_communist_securocrat
 							has_ideology = ideology:ideology_futurist
-							has_ideology = ideology:ideology_fiume
 							has_ideology = ideology:ideology_luddite 
 						}
 					}
@@ -37,22 +36,22 @@ action_urban_mass_strike = {
 						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
-					ig:ig_socialists = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
-					ig:ig_revolutionist_socialists = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
-					ig:ig_reformist_socialists = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
-					ig:ig_agrarian_populists = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
+				#	ig:ig_socialists = {
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
+				#	ig:ig_revolutionist_socialists = {
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
+				#	ig:ig_reformist_socialists = {
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
+				#	ig:ig_agrarian_populists = {
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
 				}
 			}
 		}

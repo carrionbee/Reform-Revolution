@@ -26,18 +26,26 @@ action_classicide_landowners = {
 					}
 				}
 				OR = {
-					ig:ig_socialists = { 	# since this is before the reformist-revolutionist split
+					ig:ig_trade_unions = {
 						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
-					ig:ig_revolutionist_socialists = {	# similar to the vanguardists - very willing to conduct violence against reactionary forces
+					ig:ig_rural_folk = {
 						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
-					ig:ig_agrarian_populists = {	# militant peasantry be happy to kill the landowners
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
+				#	ig:ig_socialists = { 	# since this is before the reformist-revolutionist split
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
+				#	ig:ig_revolutionist_socialists = {	# similar to the vanguardists - very willing to conduct violence against reactionary forces
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
+				#	ig:ig_agrarian_populists = {	# militant peasantry be happy to kill the landowners
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
 				}
 			}
 		}

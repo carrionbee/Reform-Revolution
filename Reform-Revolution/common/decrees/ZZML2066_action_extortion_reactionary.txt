@@ -44,14 +44,14 @@ action_extortion_reactionary = {
 						is_in_government = yes
 						is_strongest_ig_in_government = yes
 					}
-					ig:ig_reactionaries = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
-					ig:ig_fascists = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
+				#	ig:ig_reactionaries = {
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
+				#	ig:ig_fascists = {
+				#		is_in_government = yes
+				#		is_strongest_ig_in_government = yes
+				#	}
 				}
 			}
 		}
