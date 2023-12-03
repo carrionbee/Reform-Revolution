@@ -17,7 +17,8 @@ pm_technocratic_dirigisme_mines = {
 		level_scaled = {
 			building_employment_bureaucrats_add = 100
 			building_employment_engineers_add = 50
-			building_employment_capitalists_add = 25
+			building_employment_capitalists_add = 50
+			building_employment_shopkeepers_add = 50
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 0.10
@@ -48,7 +49,9 @@ pm_technocratic_dirigisme_logging_camp = {
 		level_scaled = {
 			building_employment_bureaucrats_add = 100
 			building_employment_engineers_add = 50
-			building_employment_capitalists_add = 25
+			building_employment_shopkeepers_add = 50
+			building_employment_capitalists_add = 50
+			building_employment_shopkeepers_add = 50
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 0.10
@@ -110,7 +113,8 @@ pm_technocratic_dirigisme_heavy_industry = {
 		level_scaled = {
 			building_employment_bureaucrats_add = 100
 			building_employment_engineers_add = 50
-			building_employment_capitalists_add = 25
+			building_employment_capitalists_add = 50
+			building_employment_shopkeepers_add = 50
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 0.10
@@ -141,7 +145,8 @@ pm_technocratic_dirigisme_light_industry = {
 		level_scaled = {
 			building_employment_bureaucrats_add = 100
 			building_employment_academics_add = 50
-			building_employment_capitalists_add = 25
+			building_employment_capitalists_add = 50
+			building_employment_shopkeepers_add = 50
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 0.10
@@ -172,7 +177,8 @@ pm_technocratic_dirigisme_military_industry = {
 		level_scaled = {
 			building_employment_bureaucrats_add = 100
 			building_employment_officers_add = 50
-			building_employment_capitalists_add = 25
+			building_employment_capitalists_add = 50
+			building_employment_shopkeepers_add = 50
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 0.10
