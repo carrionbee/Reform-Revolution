@@ -35,9 +35,6 @@ bc_event.1 = {
 		ig:ig_trade_unions = {
 			add_ideology = ideology_progressive
 		}
-		ig:ig_intelligentsia = {
-			add_ideology = ideology_progressive
-		}
 		ig:ig_socialists = {
 			add_ideology = ideology_progressive
 		}
