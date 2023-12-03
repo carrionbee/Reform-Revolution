@@ -13,15 +13,15 @@ law_feudalism = {
 	institution_modifier = {
 		interest_group_ig_landowners_approval_add = -2
 		
-		tax_per_capita_add = -0.20
-		tax_land_add = -0.20
+		tax_per_capita_add = -0.08
+		tax_land_add = -0.08
 		
-		state_radicals_from_sol_change_mult = -0.10
-		political_movement_radicalism_mult = -0.10
-		state_radicals_from_discrimination_mult = -0.10
+		state_radicals_from_sol_change_mult = -0.05
+		political_movement_radicalism_mult = -0.01
+		state_radicals_from_discrimination_mult = -0.05
 		
 		interest_group_ig_landowners_pol_str_mult = -0.05
-		country_aristocrats_pol_str_mult = 0.05
+		country_aristocrats_pol_str_mult = -0.05
 	}
 
 	modifier = {
@@ -32,19 +32,18 @@ law_feudalism = {
 		
 		state_bureaucracy_population_base_cost_factor_mult = -0.25
 		state_tax_capacity_mult = 0.50
-		state_radicals_from_sol_change_mult = 0.65
-		political_movement_radicalism_mult = 0.65
-		state_radicals_from_discrimination_mult = 0.65
+		state_radicals_from_sol_change_mult = 0.30
+		political_movement_radicalism_mult = 0.10
+		state_radicals_from_discrimination_mult = 0.30
 		
-		tax_per_capita_add = 1.20
-		tax_land_add = 1.20
+		tax_per_capita_add = 0.50
+		tax_land_add = 0.50
 	}
 	
 	possible_political_movements = {
 		law_military_cantons
 		law_unitary
 		law_federalism
-		law_confederation
 	}
 	
 	can_impose = { 
@@ -143,7 +142,6 @@ law_military_cantons = {
 		law_feudalism
 		law_unitary
 		law_federalism
-		law_confederation
 	}
 	
 	can_impose = { 
@@ -197,6 +195,7 @@ law_unitary = {
 		state_loyalists_from_sol_change_accepted_culture_mult = 0.03
 		state_radicals_from_sol_change_mult = 0.03
 		state_radicals_from_discrimination_mult = 0.03
+		political_movement_radicalism_mult = 0.01
 	}
 	
 	modifier = {
@@ -208,7 +207,6 @@ law_unitary = {
 		law_military_cantons
 		law_feudalism
 		law_federalism
-		law_confederation
 	}
 	
 	can_impose = { is_subject_of = scope:initiator } 
@@ -262,6 +260,7 @@ law_federalism = {
 		
 		state_radicals_from_sol_change_mult = -0.08
 		state_loyalists_from_sol_change_mult = 0.08
+		political_movement_radicalism_mult = -0.01
 		
 		country_legitimacy_ideological_incoherence_mult = -0.01
 	}
@@ -274,7 +273,6 @@ law_federalism = {
 	
 	possible_political_movements = {
 		law_unitary
-		law_confederation
 	}
 	
 	can_impose = { 
