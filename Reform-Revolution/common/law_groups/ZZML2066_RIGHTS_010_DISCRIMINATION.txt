@@ -1,0 +1,6 @@
+lawgroup_discriminated_pop = {	# laws +
+	law_group_category = human_rights
+	
+	progressive_movement_chance = 1
+	regressive_movement_chance = 0.25
+}
