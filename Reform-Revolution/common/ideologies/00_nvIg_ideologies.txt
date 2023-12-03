@@ -1,0 +1,126 @@
+﻿ideology_demurralist = {
+	icon = "gfx/interface/icons/nvIdeology_icons/demurralist.dds"
+	
+	lawgroup_urban_planning = {	
+		law_religious_integralism = strongly_approve
+		law_guild_system = neutral
+		law_dirigisme = neutral
+		law_bourgeoisie_ownership = neutral		
+		law_worker_management = neutral
+		law_planned_economics = neutral
+	}
+	
+	lawgroup_governance_principles = {
+		law_theocracy_occultists = strongly_approve
+		law_monarchy = neutral
+		law_presidential_republic = neutral
+		law_parliamentary_republic = disapprove
+		law_council_republic = disapprove
+		law_theocracy = strongly_disapprove	
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_one_party_leadership = strongly_approve
+		law_oligarchy = strongly_approve
+		law_autocracy = approve
+		law_landed_voting = approve
+		law_census_voting = neutral
+		law_wealth_voting = disapprove
+		law_anarchy = strongly_disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+	}
+	
+	lawgroup_bureaucracy = {
+		law_hereditary_bureaucrats = strongly_disapprove
+		law_appointed_bureaucrats = strongly_approve
+		law_elected_bureaucrats = disapprove
+		law_communal_adminstration = disapprove
+	}	
+	
+	lawgroup_welfare = {
+		law_no_social_security = disapprove
+		law_poor_laws = neutral
+		law_wage_subsidies = approve
+		law_old_age_pension = approve
+	}
+}
+
+ideology_remurralist = {
+	icon = "gfx/interface/icons/nvIdeology_icons/remurralist.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_theocracy = strongly_disapprove			
+		law_presidential_republic = neutral
+		law_parliamentary_republic = disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_landed_voting = approve
+		law_autocracy = strongly_approve
+		law_oligarchy = disapprove
+		law_wealth_voting = disapprove
+		law_census_voting = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+	}
+}
+
+ideology_objectionist = {
+	icon = "gfx/interface/icons/nvIdeology_icons/objectionist.dds"
+	
+	lawgroup_governance_principles = {
+		law_theocracy = strongly_disapprove
+		law_monarchy = strongly_disapprove	
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = disapprove
+		law_council_republic = disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_disapprove 
+		law_freedom_of_conscience = neutral
+		law_total_separation = strongly_approve
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = strongly_approve
+		law_national_supremacy = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = disapprove
+		law_multicultural = strongly_disapprove	
+	}
+	
+	lawgroup_army_model = {
+		law_national_militia = strongly_disapprove
+		law_mass_conscription = strongly_approve
+		law_peasant_levies = disapprove
+		law_professional_army = approve
+	}
+}
+
+ideology_natalism = {
+	icon = "gfx/interface/icons/nvIdeology_icons/natalism.dds"
+	
+	lawgroup_health_system = {
+		law_no_health_system = disapprove
+		law_charitable_health_system = neutral
+		law_public_health_insurance = strongly_approve
+		law_private_health_insurance = approve
+	}
+	
+	lawgroup_migration = {
+		law_closed_borders = disapprove
+		law_migration_controls = approve
+		law_no_migration_controls = strongly_approve
+	}
+	
+	lawgroup_welfare = {
+		law_old_age_pension = strongly_approve
+		law_wage_subsidies = approve
+		law_poor_laws = approve
+		law_no_social_security = disapprove
+	}
+}
