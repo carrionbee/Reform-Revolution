@@ -8,7 +8,7 @@
  institution_military_cantons_desc:0 "The degree to which the [concept_army] has Consolidated Power"
  modifier_country_institution_military_cantons_max_investment_add:0 "Degree of [Concept('concept_army','Military')] Control"
  modifier_country_institution_military_cantons_max_investment_add_desc:0 "Degree of [Concept('concept_army','Military')] Control"
- military_administration_risk_strong_presidency_tt:0 "The question of the ever-increasing role of the [Concept('concept_army','Military')] in Government:"
+ military_administration_risk_strong_presidency_tt:0 "Consider the role of the [Concept('concept_army','Military')] in Government:"
  military_administration_risk_strong_presidency_desc_tt:0 "The [concept_army] have some security concerns, and endorse the implementation of [GetLawType('law_military_cantons').GetName] to provide additional safeguards. However there are wings of the [GetPopType('officers').GetName] and [GetPopType('soldiers').GetName] that will push for a further consolidation of powers - to ensure peace, freedom, justice, and security for the state."
  
  institution_feudal_privilages:0 "Feudal Oversight"
@@ -120,10 +120,10 @@
  modifier_country_institution_executive_privileges_max_investment_add_desc:0 "The degree to which various Executive Privilages have been advanced and entrenched for the benefit of the [concept_ruler]"
  
  law_no_reserve_powers:0 "No Reserve Powers"
- law_no_reserve_powers_desc:0 "No special legal or extralegal discretionary powers have yet been consolidated into the executive."
+ law_no_reserve_powers_desc:0 "The [concept_ruler] has not currently consolidated any discretionary powers."
  
  law_decree_powers:0 "Expanded Decree Powers"
- law_decree_powers_desc:0 "The [concept_ruler] in this country has few legal obstacles to any [concept_decrees] issued, effectively bypassing local administration with little oversight."
+ law_decree_powers_desc:0 "The [concept_ruler] in this country has few legal obstacles to any [concept_decree], effectively bypassing local administration with little oversight."
  
  law_personality_cult:0 "Personality Cult"
  law_personality_cult_desc:0 "The [concept_ruler] has ascended to a position of unparalleled charismatic authority, and has become an icon of the state - embodying the collective identity of the people."
@@ -132,7 +132,7 @@
  law_sycophants_desc:0 "The [concept_ruler] has leveraged a network of devoted sycophants in the legislative process. Under the guise of unity and efficiency, the head of state can now expedite the passage of laws, gaining unprecedented influence over the legislative process."
  
  law_ministers_appointed:0 "Appointed Ministers"
- law_ministers_appointed_desc:0 "Government Ministers are granted their portfolios and appointed directly by the [concept_ruler]."
+ law_ministers_appointed_desc:0 "The [concept_ruler] appoints all Government Ministers directly, along with their portfolios."
  
  law_generalissimo:0 "Generalissimo"
  law_generalissimo_desc:0 "The [concept_ruler] has been bestowed the prestigious rank of Generalissimo, a supreme military commander vested with unparalleled authority."
