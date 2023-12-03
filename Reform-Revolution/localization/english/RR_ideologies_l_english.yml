@@ -9,13 +9,16 @@
  
 # R&R Ideologies:
  ideology_deep_ecology:0 "Deep Ecologist"
- ideology_deep_ecology_desc:0 ""
- 
- ideology_communist_securocrat:0 "Totalitarian Socialist"
- ideology_communist_securocrat_desc:0 ""
+ ideology_deep_ecology_desc:0 "Ecocentrism to it's most radical - this ideal manifests in not only the rejection of exploitative systems like capitalism, but also the exploitation of nature by humans. They seek ecological harmony in the social transformation of outputs-for-use, in rejection of profit."
  
  ideology_autarkist:0 "Autarkist"
- ideology_autarkist_desc:0 ""
+ ideology_autarkist_desc:0 "Strict adherence to self-sufficiency, regional autonomy, and production sovereignty. Autarkists seek to resist against external market shocks by building a strong closed-loop self-sufficient economy. They will vehemently oppose opening to international markets and will advocate strong economic self-reliance."
+ 
+ ideology_market_socialist:0 "Market Socialist"
+ ideology_market_socialist_desc:0 "Ever the pragmatist, formally committed to Socialism, while open to international markets and win-win cooperation. This Socialist is pragmatic on the issue of markets under socialist economy, and is flexible with how the socialist economy develops, as long as it is can foster positive relations with free trade."
+  
+ ideology_communist_securocrat:0 "Securocrat Communist"
+ ideology_communist_securocrat_desc:0 "One could call this paranoia. This character has an unwavering policy of surveillance and collective security. This Communist prioritises the role of the socialist state in maintaining control through ever-increasing oversight in the face of class enemies and would-be subversives. Through unyielding vigilance, the revolution must be kept safe."
 
 
 # SOE REDUNDANCY
