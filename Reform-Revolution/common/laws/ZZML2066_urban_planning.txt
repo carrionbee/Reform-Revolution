@@ -335,7 +335,7 @@ law_worker_management = {
 		state_farmers_investment_pool_contribution_add = 0.10
 		
 		building_working_conditions_mult = -0.20
-		building_minimum_wage_mult = 0.10
+		building_minimum_wage_mult = 0.02
 
 	#	country_subsidies_all = yes
 	}
