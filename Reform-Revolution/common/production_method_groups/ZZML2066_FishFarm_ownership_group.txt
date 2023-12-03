@@ -1,0 +1,15 @@
+pmg_ownership_building_fish_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_merchant_guilds_building_fish_farm
+		pm_privately_owned_building_fish_farm
+		pm_publicly_traded_building_fish_farm
+		pm_aristocratic_industry
+		pm_integralism_industry
+		pm_dirigisme_industry
+		pm_technocratic_dirigisme_marine
+		pm_government_run_building_fish_farm
+		pm_worker_cooperative_building_fish_farm
+		pm_communal_management_industry
+	}
+}

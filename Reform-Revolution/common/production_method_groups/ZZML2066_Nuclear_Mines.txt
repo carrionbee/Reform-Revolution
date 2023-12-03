@@ -1,0 +1,45 @@
+﻿##############Mod: Uranium Mine
+pmg_ownership_capital_building_uranium_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_building_uranium_mine
+		pm_privately_owned_building_uranium_mine
+		pm_publicly_traded_building_uranium_mine
+		pm_aristocratic_industry
+		pm_integralism_industry
+		pm_dirigisme_industry
+		pm_technocratic_dirigisme_mines
+		pm_government_run_building_uranium_mine
+		pm_worker_cooperative_building_uranium_mine
+		pm_communal_management_industry
+	}
+}
+
+##################### Ancient Arsenal Scavenge
+pmg_ownership_capital_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_building_ancient_arsenal_scavenge
+		pm_privately_owned_building_ancient_arsenal_scavenge
+		pm_publicly_traded_building_ancient_arsenal_scavenge
+		pm_aristocratic_industry
+		pm_integralism_industry
+		pm_dirigisme_industry
+		pm_technocratic_dirigisme_military_industry
+		pm_government_run_building_ancient_arsenal_scavenge
+		pm_worker_cooperative_building_ancient_arsenal_scavenge
+		pm_communal_management_industry
+	}
+}
+
+############### Rad-Fungus Cave-Farm
+pmg_ownership_capital_building_rad_fungus_cave_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_privately_owned
+		pm_publicly_traded
+		pm_government_run
+		pm_worker_cooperative_farm
+		pm_communal_management_farm
+	}
+}
