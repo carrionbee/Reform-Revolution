@@ -11,14 +11,14 @@ law_feudalism = {
 
 	institution = institution_feudal_privilages
 	institution_modifier = {
-		interest_group_ig_landowners_approval_add = -2
+		interest_group_ig_landowners_approval_add = -1
 		
 		tax_per_capita_add = -0.08
 		tax_land_add = -0.08
 		
-		state_radicals_from_sol_change_mult = -0.05
+		state_radicals_from_sol_change_mult = -0.03
 		political_movement_radicalism_mult = -0.01
-		state_radicals_from_discrimination_mult = -0.05
+		state_radicals_from_discrimination_mult = -0.03
 		
 		interest_group_ig_landowners_pol_str_mult = -0.05
 		country_aristocrats_pol_str_mult = -0.05
@@ -26,15 +26,17 @@ law_feudalism = {
 
 	modifier = {
 		country_authority_add = 100
-		interest_group_ig_landowners_approval_add = 3
+		interest_group_ig_landowners_approval_add = 2
 		interest_group_ig_landowners_pol_str_mult = 0.50
 		country_aristocrats_pol_str_mult = 0.50
 		
-		state_bureaucracy_population_base_cost_factor_mult = -0.25
+		state_bureaucracy_population_base_cost_factor_mult = -0.30
+		country_bureaucracy_investment_cost_factor_mult = -0.30
+		
 		state_tax_capacity_mult = 0.50
-		state_radicals_from_sol_change_mult = 0.30
+		state_radicals_from_sol_change_mult = 0.20
 		political_movement_radicalism_mult = 0.10
-		state_radicals_from_discrimination_mult = 0.30
+		state_radicals_from_discrimination_mult = 0.20
 		
 		tax_per_capita_add = 0.50
 		tax_land_add = 0.50
