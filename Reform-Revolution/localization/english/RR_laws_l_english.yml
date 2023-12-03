@@ -1,0 +1,186 @@
+﻿l_english:
+
+ # Centralization Law-Group
+ lawgroup_centralization:0 "Centralization"
+ lawgroup_centralization_desc:0 "How the state handles the distribution of power between regions."
+ 
+ institution_military_cantons:0 "Military Administration"
+ institution_military_cantons_desc:0 "The degree to which the [concept_army] has Consolidated Power"
+ modifier_country_institution_military_cantons_max_investment_add:0 "Degree of [Concept('concept_army','Military')] Control"
+ modifier_country_institution_military_cantons_max_investment_add_desc:0 "Degree of [Concept('concept_army','Military')] Control"
+ military_administration_risk_strong_presidency_tt:0 "The question of the ever-increasing role of the [Concept('concept_army','Military')] in Government:"
+ military_administration_risk_strong_presidency_desc_tt:0 "The [concept_army] have some security concerns, and endorse the implementation of [GetLawType('law_military_cantons').GetName] to provide additional safeguards. However there are wings of the [GetPopType('officers').GetName] and [GetPopType('soldiers').GetName] that will push for a further consolidation of powers - to ensure peace, freedom, justice, and security for the state."
+ 
+ institution_feudal_privilages:0 "Feudal Privilages"
+ institution_feudal_privilages_desc:0 "The degree of powers the landlords hold over the peasantry and laborers."
+ modifier_country_institution_feudal_privilages_max_investment_add:0 "Degree of Feudal Privilage"
+ modifier_country_institution_feudal_privilages_max_investment_add_desc:0 "Degree of Feudal Privilage"
+ 
+ institution_unitary:0 "Unitary Government"
+ institution_unitary_desc:0 "The degree to which the Government has Centralized Power"
+ modifier_country_institution_unitary_max_investment_add:0 "Degree of Centralized Power"
+ modifier_country_institution_unitary_max_investment_add_desc:0 "Degree of Centralized Power"
+ 
+ institution_federation:0 "Federal Government"
+ institution_federation_desc:0 "The degree to which the Federal Government has Diffused Powers to the States."
+ modifier_country_institution_federation_max_investment_add:0 "Degree of Federal Powers"
+ modifier_country_institution_federation_max_investment_add_desc:0 "Degree of Federal Powers"
+ 
+ institution_confederation:0 "Confederation of States"
+ institution_confederation_desc:0 "The degree to which the Confedration has Empowered the States."
+ modifier_country_institution_confederation_max_investment_add:0 "Degree of Devolved Powers"
+ modifier_country_institution_confederation_max_investment_add_desc:0 "Degree of Devolved Powers"
+  
+ law_informal_authority:0 "Informal Authority"
+ law_informal_authority_desc:0 "The state capital has nominal authority on the country, but its ability to project that authority effectively ends at the borders of the city center. The hierarchy of power in the rest of the country is completely informal, relying instead on the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s ability to identify local leaders and on their willingness to cooperate with their commands."
+ 
+ law_feudalism:0 "Feudalism"
+ law_feudalism_desc:0 "Feudalism is a system of devolved governance style where specific individuals are determined the landowners of provinces, all of which are held in personal loyalty to the head of state for the whole nation. A somewhat decentralized model, Feudalism results in strong local governments formed around an aristocracy and greatly strengthens landholder political power. This allows more authoritative actions, but the populace will know who is responsible for poor quality of life"
+ 
+ law_unitary:0 "Unitary"
+ law_unitary_desc:0 "A unitary state is one where all regions of the state are governed essentially the same, and have little to no regional variance or specific representation. Unitary states tend to be very powerful and more capable of sweeping change, but also more prone to ignoring specific regional needs or matters of representation."
+ 
+ law_military_cantons:0 "Military Cantons"
+ law_military_cantons_desc:0 "Localities organized by military administration, which is nominally subordinate to the central state. Each canton organizes itself according to its needs while facilitating compliance to authority. The more governance is styled in accordance to military in response to an external threat, it is not difficult to find internal threats too. Likewise, if standard of living declines under this governance model, what use is the army to protect people when the government can't provide food?"
+ 
+ law_federalism:0 "Federalism"
+ law_federalism_desc:0 "Federalism diffuses the power of the central government - often utilizing a system of regional representation to each state, allowing them to conduct internal policy often by using residual powers. Tax income does not always reach the national treasury, as tax funding is often split between national and state bodies - as well as funding initiatives and grants provided by the state. The diffused powers ease administration of population, and the state governments can take care of their internal commerce. This facilitating of connections to markets along with local infastructure eases the burden on the central authority. Consequently, locals tend to feel empowered under this system, and are less keen to seek violent change within the state."
+ 
+ law_confederation:0 "Confederation"
+ law_confederation_desc:0 "Confederation is an extremely decentralized system which gives local regions not only autonomous control over economic and political policy, but even a degree of military autonomy through milita organisations. This can be considered as an exagerated diffusion of power compared to federalism - under this system the provinces are nominally united under the central government and coalition-building is commonplace. Participation in provincial militias ensures a sense of community, security and safety."
+ 
+ 
+ 
+ # Urban Planning Law-Group
+ lawgroup_urban_planning:0 "Urban Planning & Economic Development"
+ lawgroup_urban_planning_desc:0 "The system by which the country conducts urban planning and the development of the urban and industrial economy."
+
+ law_sprawl:0 "Urban Sprawl"
+ law_sprawl_desc:0 "A combination of archaic property law and a lack of consistent urban management. In short, there is no standardized model to conduct urban planning and industrial economic development in the state. This society is completely unprepared for an industrial & urban future. As a conseqence: urbanization like this leads to large sprawling favelas and slums that are exceptionally difficult to tax or organize. Any planned constructions are entirely the result of private actors, and are only as efficient as the small owners can manage themselves."
+ 
+ law_guild_system:0 "Guild System"
+ law_guild_system_desc:0 "A guild system is a method of urban development largely spearheaded by organizations of wealthy businessmen, who themselves are largely patronized by old monied aristocrats. As a result, a large capitalist class is unable to organize in this system, social mobility is largely restricted to the lower and middle classes, as guilds shut down any upcoming capitalists with oligopolistic practices."
+ 
+ law_bourgeoisie_ownership:0 "Bourgeois Ownership"
+ law_bourgeoisie_ownership_desc:0 "A modern system of urban development where urban planning is done by state bureaucrats only in name, with funding primarily coming from capitalist donors. Corporations are largely competitive with each other, battling to supply the greatest amount of goods for the lowest cost in the market. State management of the economy is both unwanted by the capitalist class and largely ineffective due to a lack of interconnected systems and tools to manage economics, leading to the inability to effectively subsidize buildings."
+ 
+ law_aristocratic_holdings:0 "Aristocratic Holdings"
+ law_aristocratic_holdings_desc:0 "A reaction to the advent of industrial economy - the extentsion of titled estates and feudal relations to business enterprises. All industrial economy is owned by an aristocratic class based on hereditary right and nobility. The merchant guilds are subordinated to these aristocratic families and franchise in their name."
+ 
+ law_religious_integralism:0 "Religious Integralism"
+ law_religious_integralism_desc:0 "A form of religious corporatism which characterizes human history as a battle between materialism and spiritualism - and so the struggle between the human spirit against the laws of nature. Opposed to both Liberalism and Socialism; Integralism promotes a regulated economy under religious policy influence."
+ 
+ law_dirigisme:0 "Dirigisme"
+ law_dirigisme_desc:0 "An economic doctrine in which the state plays a strong directive role over a market economy. Dirigisme is oppossed to laissez-faire economics, stressing the importance of state intervention in curbing market failures. Dirigisme often utilizes indicative planning and state-directed investment along with the use of market instruments to incentivize and manage market entities to fulfill state economic objectives."
+ 
+ law_worker_management:0 "Worker Self-Management"
+ law_worker_management_desc:0 "Worker Self-Management is a system of urban development in which all employees of a buisiness own shares in said business, and share the dividends to some degree. Neighborhoods are often planned from within, and urban services are provided by strong unions, for better or worse. Worker Self-Management economic policy does often lead to slower economic growth compared to typical bourgeois policy, but many unions band together to put down money for business expansion by sourcing small amounts of money from each individual in a very large group."
+ 
+ law_planned_economics:0 "Economic Planning"
+ law_planned_economics_desc:0 "Economic Planning is characterized by extreme curtailing of markets and private enterprise; in urban planning and industrial development. Economic Planning succeed or fail largely on the foresight and capability of the governing planning bodies. Under this system, all enterprises are subsidized at all times, largely drawing out no official profit to themselves, though bureaucrats often are well compensated in successful businesses."
+ 
+ 
+ 
+ # Land Reform Law-Group
+ lawgroup_land_reform:0 "Land Reform & Rural Development"
+ lawgroup_land_reform_desc:0 "The dominant mode of land ownership in rural, regional and agrarian areas of the country."
+
+ law_unorganized_agriculture:0 "Unorganized Countryside"
+ law_unorganized_agriculture_desc:0 "The property laws in the countryside are a vague mess that ultimately makes it nearly impossible to determine who is the owner of a farming plot. Farmers often encroach on each other's land, private fields mix with common lands, and nature tends to reclaim the land that is left unused."
+ 
+ law_titled_estates:0 "Titled Estates"
+ law_titled_estates_desc:0 "A distribution of land largely bound into massive sprawling complexes owned by single individuals and transferred herditarily rather than by sale on the market. Titled estates grant aristocrats access to large, self-sufficient revenue generation, but the relative lack of competition and archaic business practices result in slower adoption of technology. The uneducated workforce generally blames their woes on local aristocrats, rather than the national government."
+ 
+ law_slave_economy:0 "Slave Economy"
+ law_slave_economy_desc:0 "A peculiar institution in which production is largely performed by unpaid laborers, who are forced to work especially long and dangerous hours on plantations to produce a greater profit. The plantation barons of this economy are uniquely empowered through the inability of their workforce to leave or even exercise basic human rights, giving them a self-sufficient yet economically powerful position, and they use this power largely to expand and enrich themselves."
+ 
+ law_sharecropping:0 "Tenant Farming"
+ law_sharecropping_desc:0 "The typical form of tenant farming is called sharecropping - in which capitalist investors own the rights to land, and provide this land to local farmers in exchange for a percentage of that farmer's produce. While this system is still exploitative, smalltime farmers may be able to gain wealth through this arrangement, and occasionally use it to buy and develop new farmlands for themselves and their families. Capitalist investors often use this system in order to escape taxes by shifting the burden onto their tenant farmers."
+ 
+ law_smallholders:0 "Smallholders"
+ law_smallholders_desc:0 "Farms are primarily worked by the people who own them, small landowning farmers that live and die on their yearly produce and sell the extra to pay for more equipment and expansion. Smallholding economies are rare, and largely found in colonial societies or other places where there is much undeveloped land available for cultivation, or in societies that deliberately enact land reform laws to ensure estates stay small."
+ 
+ law_colonial_extraction:0 "Vulgar Exploitation"
+ law_colonial_extraction_desc:0 "A system of agrarian production in which the local population is treated as entirely disposable and as a means of producing as many raw goods as possible. Wages are kept depressed and working conditions are abysmal, but this is primarily done to benefit other markets rather than one's own, and investment is also quite low."
+ 
+ law_rural_communes:0 "Rural Communes"
+ law_rural_communes_desc:0 "A system whereby rural land is organized into Cooperative-style Communes or Whole-of-Society/Collective Social Ownership. Production is developed according to common plan based on local, regional and whole-of-society needs. This may operate according to a market or planned system depending on other reforms."
+
+ law_deep_ecology_cooperatives:0 "Deep Ecology Cooperatives"
+ law_deep_ecology_cooperatives_desc:0 "A radical system of eco-centric land management based on the principles that anthropocentric farming practices are exploitative of nature - and humans are not steward of nature, but are of nature themselves. Land is organised into cooperatives based on meeting collective needs in accordance with nature, rather than for profit."
+ deep_ecology_cooperatives_tt:0 "This will destroy all agriculture building - leaving only subsistence cooperatives. [GetPopType('aristocrats').GetName] are not going to like it."
+ deep_ecology_cultivation_destroy_tt:0 "Are you sure you want to abolish anthropocentric agricultural practices?"
+
+ # Discreet Powers Law-Group
+ lawgroup_executive_privileges:0 "Executive Privilages"
+ lawgroup_executive_privileges_desc:0 "Discreet Privilages of the [concept_ruler]"
+ institution_executive_privileges:0 "Level of Executive Privilages"
+ institution_executive_privileges_desc:0 "The degree to which various Executive Privilages have been advanced and entrenched for the benefit of the [concept_ruler]"
+ modifier_country_institution_executive_privileges_max_investment_add:0 "Entrenchment of Executive Privilages"
+ modifier_country_institution_executive_privileges_max_investment_add_desc:0 "The degree to which various Executive Privilages have been advanced and entrenched for the benefit of the [concept_ruler]"
+ 
+ law_no_reserve_powers:0 "No Reserve Powers"
+ law_no_reserve_powers_desc:0 "No special legal or extralegal discretionary powers have yet been consolidated into the executive."
+ 
+ law_decree_powers:0 "Expanded Decree Powers"
+ law_decree_powers_desc:0 "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] in this country has few legal obstacles to any [concept_decrees] issued, effectively bypassing local administration with little oversight."
+ 
+ law_personality_cult:0 "Personality Cult"
+ law_personality_cult_desc:0 "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has ascended to a position of unparalleled charismatic authority, and has become an icon of the state - embodying the collective identity of the people."
+ 
+ law_sycophants:0  "Sycophants"
+ law_sycophants_desc:0 "The [concept_ruler] has leveraged a network of devoted sycophants in the legislative process. Under the guise of unity and efficiency, the head of state can now expedite the passage of laws, gaining unprecedented influence over the legislative process."
+ 
+ law_ministers_appointed:0 "Appointed Ministers"
+ law_ministers_appointed_desc:0 "Government Ministers are granted their portfolios and appointed directly by the [concept_ruler]."
+ 
+ law_generalissimo:0 "Generalissimo"
+ law_generalissimo_desc:0 "The [concept_ruler] has been bestowed the prestigious rank of Generalissimo, a supreme military commander vested with unparalleled authority."
+ 
+ #law_HOS_army:0 "Honor Guard"
+ #law_HOS_army_desc:0 "Royal Guard, Republican Guard, Revolutionary Guard: whichever is their name, the honour guard of the Head of State in this country are more than just a personal bodyguard. This force act as the leader's personal army, and they both augment the regular standing forces and ensure that dissent is forcefully discouraged."
+
+
+
+ # LGBTQ Law-Group
+ lawgroup_LGBTQ_rights:0 "Rights of Sexual Minorities"
+ lawgroup_LGBTQ_rights_desc:0 "Legislation on the legal and social rights of sexual minorities."
+ 
+ law_LGBTQ_rights_criminalised:0 "Deviancy Laws: Criminalisation & Persecution"
+ law_LGBTQ_rights_criminalised_desc:0 "The state has various laws in place that actively criminalise identity and behavior of sexual minorities, from anti-sodomy laws, anti-crossdressing laws, to criminalised same-sex relationships. Harsh punishments are commonplace, discrimination and persecution are unchallenged in this society. Such laws create a hostile environment for these individuals, drowning of their basic human rights and a very real risk to life."
+ 
+ law_LGBTQ_rights_institutionalised:0 "Mandatory Institutionalisation of Sexual Minorities"
+ law_LGBTQ_rights_institutionalised_desc:0 "Institutionalisation represents a shift away from overt criminal punishments towards pathologisation of sexual minorities as mentally ill. Individuals may be forcibly detained in psychiatric facilities solely based on sexual orientation or gender identity for so-called treatment. This institutionalised discrimination extends beyond criminal law, as mental health institutions are used to subject sexual minorities to gross abuses under the guise of medical care. Such practices further exacerbate the suffering of sexual minorities, as legal barriers to employment persist and essential services are denied as discrimination persists. Basic human rights and bodily health are routinely violated under pseudoscientific pretexts."
+ 
+ law_LGBTQ_rights_decriminalised:0 "Toleration & Decriminalisation of Sexual Minorities "
+ law_LGBTQ_rights_decriminalised_desc:0 "Decriminalisation represents a shift towards a toleration (but not acceptance) of sexual minorities, where laws no longer explicitly target individuals for prosecution. However this hasn't guaranteed equal rights or protection from discrimination. While legal penalties are lifted, societal attitudes and institutional biases persist and are not actively challenged, creating an environment where sexual minorities still face challenges in accessing their full basic human rights."
+ 
+ law_LGBTQ_rights_protected:0 "Recongition & Protection of Sexual Minorities"
+ law_LGBTQ_rights_protected_desc:0 "There now exists a vast legal framework that actively safeguards the rights and well-being of sexual minorities. Laws are in place to prevent discrimination, promote equal opportunities, and protect against hate crimes. This stance fosters an inclusive society where sexual minorities are actively protected, contributing to a more equitable human rights environment."
+
+ # Political Transparency Law-Group
+
+ # Labour Rights Law-Group
+ law_corporatist_labour_syndicate:0 "Corporatist Labour Syndicate"
+ law_corporatist_labour_syndicate_desc:0 "This law establishes national federations consisting of workers and employer syndicates, organised along professions and sectors. Under this framework, workers and employer representatives collaborate to collectively manage and govern labour conditions. The aim is to harmonise relations between labour and capital, with these national syndicates utilised to mediate worker grievances, negotiate terms, and ensure the overseeing of production in a comprehensive manner."
+
+
+ # Crime & Punishment Law-Group
+ #lawgroup_crime:0 "Crime & Punishment"
+ #lawgroup_crime_desc:0 ""
+ 
+ #law_traditional_law:0 "Traditional Law"
+ #law_traditional_law_desc:0 ""
+ #law_elitist_law:0 "Elitist Legal System"
+ #law_elitist_law_desc:0 ""
+ #law_local_law:0 "Local Law"
+ #law_local_law_desc:0 ""
+ #law_liberal_law:0 "Liberal Law"
+ #law_liberal_law_desc:0 ""
+ #law_draconian_law:0 "Draconian Law"
+ #law_draconian_law_desc:0 ""
+ 
+ 
+ 
+ 
+ #
