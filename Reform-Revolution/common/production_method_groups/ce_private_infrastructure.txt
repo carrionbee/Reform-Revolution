@@ -6,7 +6,7 @@
 		pm_publicly_traded_building_railway
 		pm_aristocratic_industry
 		pm_integralism_industry
-		pm_dirigisme_building_railway
+		pm_dirigisme_industry
 		pm_technocratic_dirigisme_heavy_industry
 		pm_government_run_building_railway
 		pm_worker_cooperative_building_railway

@@ -6,9 +6,10 @@ pmg_ownership_building_fish_farm = {
 		pm_publicly_traded_building_fish_farm
 		pm_aristocratic_industry
 		pm_integralism_industry
-		pm_dirigisme_management_building_fish_farm
+		pm_dirigisme_industry
 		pm_technocratic_dirigisme_marine
 		pm_government_run_building_fish_farm
 		pm_worker_cooperative_building_fish_farm
+		pm_communal_management_industry
 	}
 }

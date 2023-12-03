@@ -6,7 +6,7 @@
 		pm_publicly_traded_building_logging_camp
 		pm_aristocratic_rural
 		pm_integralism_rural
-		pm_dirigisme_building_logging_camp
+		pm_dirigisme_industry
 		pm_technocratic_dirigisme_logging_camp
 		pm_government_run_building_logging_camp
 		pm_worker_cooperative_building_logging_camp
@@ -36,7 +36,7 @@ pmg_ownership_capital_building_fishing_wharf = {
 		pm_publicly_traded_building_fishing_wharf
 		pm_aristocratic_rural
 		pm_integralism_rural
-		pm_dirigisme_building_fishing_wharf
+		pm_dirigisme_industry
 		pm_technocratic_dirigisme_marine
 		pm_government_run_building_fishing_wharf
 		pm_worker_cooperative_building_fishing_wharf
@@ -52,7 +52,7 @@ pmg_ownership_capital_building_whaling_station = {
 		pm_publicly_traded_building_whaling_station
 		pm_aristocratic_rural
 		pm_integralism_rural
-		pm_dirigisme_building_whaling_station
+		pm_dirigisme_industry
 		pm_technocratic_dirigisme_marine
 		pm_government_run_building_whaling_station
 		pm_worker_cooperative_building_whaling_station
