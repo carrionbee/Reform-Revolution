@@ -85,9 +85,9 @@ effect_starting_politics_traditional = {
 		activate_law = law_type:law_chiefdom
 		activate_law = law_type:law_isolationism
 		activate_law = law_type:law_no_workers_rights
-		activate_law = law_informal_authority
-		activate_law = law_sprawl
-		activate_law = law_unorganized_agriculture 
+		activate_law = law_type:law_informal_authority
+		activate_law = law_type:law_sprawl
+		activate_law = law_type:law_unorganized_agriculture 
 	}
 	else = {
 		activate_law = law_type:law_monarchy
