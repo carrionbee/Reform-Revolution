@@ -8,6 +8,8 @@ ce_public_road = {
 		tech_bureaucracy
 	}
 
+	is_visible = { exists = ce_public_road }
+
 	production_method_groups = {
 		ce_pmg_base_building_public_road
 		ce_pmg_focused_investment
