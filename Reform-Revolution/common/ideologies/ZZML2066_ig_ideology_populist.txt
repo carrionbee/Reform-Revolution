@@ -18,18 +18,24 @@
 	}
 	
 	lawgroup_distribution_of_power = {
-		law_mass_democracy = strongly_approve
-		law_universal_suffrage = approve
-		law_anarchy = approve		
-		law_census_voting = neutral
+		GovPlus_law_council_system = approve
+		law_presidential_republic = approve
+        law_parliamentary_republic = approve
 		law_single_party_state = neutral
-		law_wealth_voting = disapprove
-		law_landed_voting = disapprove
 		law_technocracy = disapprove
 		law_ecclesiarchy = disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove		
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_disapprove
+        law_landed_voting = disapprove
+        law_wealth_voting = disapprove
+        law_census_voting = neutral
+        law_universal_suffrage = strongly_approve
+		law_mass_democracy = strongly_approve
+    }
 	
 	lawgroup_governance_principles = {
 		law_council_republic = approve

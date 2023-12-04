@@ -4,12 +4,31 @@
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = approve	
-		law_presidential_republic = neutral
-		law_parliamentary_republic = neutral
+		GovPlus_law_republic = neutral
 		law_corporatocracy = disapprove
+		law_anarchy = strongly_disapprove
 		law_council_republic = strongly_disapprove
-		law_theocracy_occultists = strongly_disapprove
 	}
+	
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_oligarchy = approve
+		law_ecclesiarchy = approve
+		law_single_party_state = neutral
+		law_presidential_republic = neutral
+        law_parliamentary_republic = neutral
+		law_technocracy = strongly_disapprove
+		GovPlus_law_council_system = strongly_disapprove
+	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = approve
+        law_landed_voting = neutral
+        law_wealth_voting = neutral
+        law_census_voting = disapprove
+        law_universal_suffrage = disapprove
+		law_mass_democracy = strongly_disapprove
+    }
 	
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_approve
@@ -25,19 +44,5 @@
 		law_racial_segregation = neutral
 		law_cultural_exclusion = disapprove
 		law_multicultural = strongly_disapprove	
-	}
-
-	lawgroup_distribution_of_power = {
-		law_autocracy = strongly_approve
-		law_oligarchy = approve
-		law_ecclesiarchy = approve
-		law_single_party_state = neutral
-		law_landed_voting = neutral
-		law_wealth_voting = neutral
-		law_census_voting = disapprove
-		law_universal_suffrage = disapprove
-		law_anarchy = strongly_disapprove
-		law_mass_democracy = strongly_disapprove
-		law_technocracy = strongly_disapprove
 	}
 }

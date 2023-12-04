@@ -1,20 +1,12 @@
 ﻿ideology_caudillismo = {
 	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
 	
-	lawgroup_centralization = {		
-		law_military_cantons = approve
-		law_unitary = approve
-		law_feudalism = neutral
-		law_federalism = disapprove
-	}
-	
 	lawgroup_governance_principles = {
-		law_monarchy = approve
-		law_presidential_republic = approve
-		law_theocracy = neutral
-		law_theocracy_occultists = disapprove
-		law_parliamentary_republic = neutral
-		law_corporatocracy = disapprove
+		GovPlus_law_republic = approve
+		law_monarchy = neutral
+		law_corporatocracy = neutral
+		law_theocracy = disapprove
+		law_anarchy = strongly_disapprove
 		law_council_republic = strongly_disapprove
 	}
 	
@@ -22,14 +14,27 @@
 		law_autocracy = strongly_approve
 		law_oligarchy = approve
 		law_single_party_state = approve
-		law_landed_voting = approve
+		law_presidential_republic = neutral
+        law_parliamentary_republic = neutral
 		law_technocracy = neutral
-		law_wealth_voting = neutral
 		law_ecclesiarchy = disapprove
-		law_census_voting = disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
+		GovPlus_law_council_system = strongly_disapprove
+	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_approve
+        law_landed_voting = approve
+        law_wealth_voting = neutral
+        law_census_voting = disapprove
+        law_universal_suffrage = strongly_disapprove
 		law_mass_democracy = strongly_disapprove
+    }
+	
+	lawgroup_centralization = {		
+		law_military_cantons = approve
+		law_unitary = approve
+		law_feudalism = neutral
+		law_federalism = disapprove
 	}
 	
 	lawgroup_bureaucracy = {

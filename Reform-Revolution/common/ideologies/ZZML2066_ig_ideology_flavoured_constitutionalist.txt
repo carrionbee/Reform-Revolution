@@ -2,27 +2,33 @@
 	icon = "gfx/interface/icons/ideology_icons/unused/reformer.dds"
 	
 	lawgroup_governance_principles = {	
-		law_presidential_republic = approve
-		law_parliamentary_republic = approve
+		GovPlus_law_republic = approve
 		law_monarchy = approve	
 		law_theocracy = neutral
-		law_council_republic = disapprove
 		law_corporatocracy = neutral
+		law_anarchy = strongly_disapprove
+		law_council_republic = disapprove
 	}
 	
 	lawgroup_distribution_of_power = {
-		law_universal_suffrage = strongly_approve
-		law_census_voting = strongly_approve
-		law_wealth_voting = approve
-		law_landed_voting = neutral
+		law_presidential_republic = approve
+        law_parliamentary_republic = approve
 		law_single_party_state = neutral
 		law_technocracy = neutral
 		law_oligarchy = disapprove
 		law_autocracy = disapprove
-		law_anarchy = strongly_disapprove
-		law_mass_democracy = strongly_disapprove
 		law_ecclesiarchy = disapprove
+		GovPlus_law_council_system = disapprove
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+        law_landed_voting = neutral
+        law_wealth_voting = approve
+        law_census_voting = strongly_approve
+        law_universal_suffrage = strongly_approve
+    }
 	
 	lawgroup_executive_privileges = {
 		law_no_reserve_powers = neutral

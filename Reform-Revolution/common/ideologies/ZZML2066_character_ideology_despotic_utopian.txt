@@ -3,17 +3,23 @@
 	character_ideology = yes
 
 	lawgroup_distribution_of_power = {
-		law_anarchy = strongly_disapprove
-		law_mass_democracy = strongly_disapprove			
-		law_universal_suffrage = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_wealth_voting = disapprove
-		law_landed_voting = disapprove
 		law_technocracy = approve
 		law_oligarchy = approve
 		law_autocracy = approve
 		law_single_party_state = approve
+		law_presidential_republic = disapprove
+        law_parliamentary_republic = disapprove
+		GovPlus_law_council_system = strongly_disapprove
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = approve
+        law_landed_voting = disapprove
+        law_wealth_voting = disapprove
+        law_census_voting = strongly_disapprove
+        law_universal_suffrage = strongly_disapprove
+		law_mass_democracy = strongly_disapprove			
+    }
 	
 	lawgroup_internal_security = {
 		law_guaranteed_liberties = strongly_disapprove

@@ -3,19 +3,34 @@
 	
 	character_ideology = yes
 	
+	lawgroup_governance_principles = {
+        law_monarchy = strongly_disapprove
+		law_corporatocracy = strongly_disapprove
+        GovPlus_law_republic = disapprove
+        law_theocracy = strongly_disapprove
+        law_council_republic = neutral
+        law_anarchy = strongly_approve
+    }
+	
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_disapprove		
 		law_oligarchy = strongly_disapprove
 		law_ecclesiarchy = strongly_disapprove
 		law_technocracy = strongly_disapprove
-		law_landed_voting = strongly_disapprove
-		law_wealth_voting = strongly_disapprove
 		law_single_party_state = strongly_disapprove
-		law_census_voting = disapprove
-		law_universal_suffrage = neutral
-		law_mass_democracy = approve
-		law_anarchy = strongly_approve
+		law_presidential_republic = disapprove
+        law_parliamentary_republic = neutral
+		GovPlus_law_council_system = approve
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_disapprove
+        law_landed_voting = disapprove
+        law_wealth_voting = disapprove
+        law_census_voting = disapprove
+        law_universal_suffrage = neutral
+		law_mass_democracy = strongly_approve
+    }
 	
 	lawgroup_centralization = {		
 		law_feudalism = strongly_disapprove
@@ -158,7 +173,8 @@
 				has_law = law_type:law_protected_speech
 				has_law = law_type:law_guaranteed_liberties
 				has_law = law_type:law_no_police
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_mass_democracy
+				has_law = law_type:GovPlus_law_council_system
 			}
 		}
 		# Monarchs cannot be republicans

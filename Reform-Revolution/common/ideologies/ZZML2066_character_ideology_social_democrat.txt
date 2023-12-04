@@ -9,13 +9,18 @@
 		law_ecclesiarchy = strongly_disapprove
 		law_technocracy = strongly_disapprove
 		law_single_party_state = strongly_disapprove
-		law_landed_voting = disapprove
-		law_wealth_voting = disapprove
-		law_anarchy = disapprove
-		law_mass_democracy = disapprove
-		law_census_voting = neutral
-		law_universal_suffrage = strongly_approve
+		law_presidential_republic = neutral
+        law_parliamentary_republic = neutral
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_disapprove
+        law_landed_voting = disapprove
+        law_wealth_voting = disapprove
+		law_mass_democracy = disapprove
+        law_census_voting = neutral
+        law_universal_suffrage = strongly_approve
+    }
 	
 	lawgroup_taxation = {
 		law_consumption_based_taxation = disapprove

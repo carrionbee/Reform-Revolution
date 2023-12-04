@@ -8,10 +8,13 @@ ideology_anarcho_liberal = {
 		law_council_republic = strongly_disapprove
 		law_theocracy = disapprove
 		law_monarchy = disapprove
-		law_parliamentary_republic = disapprove
-		law_presidential_republic = disapprove
+		GovPlus_law_republic = neutral
 		law_corporatocracy = strongly_approve
 	}
+	
+	lawgroup_distribution_of_power = {
+        GovPlus_law_council_system = strongly_disapprove
+    }
 
 	lawgroup_economic_system = {
 		law_industry_banned = strongly_disapprove

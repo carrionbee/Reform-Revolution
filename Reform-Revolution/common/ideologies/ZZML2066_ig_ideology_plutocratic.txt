@@ -1,29 +1,36 @@
 ﻿ideology_plutocratic = {
 	icon = "gfx/interface/icons/ideology_icons/plutocratic.dds"
-	
-	lawgroup_distribution_of_power = {
-		law_oligarchy = approve
-		law_wealth_voting = approve
-		law_technocracy = neutral
-		law_landed_voting = neutral
-		law_census_voting = neutral
-		law_single_party_state = neutral
-		law_autocracy = disapprove
-		law_ecclesiarchy = disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
-		law_mass_democracy = strongly_disapprove
-	}
 
 	lawgroup_governance_principles = {
 		law_monarchy = neutral			
-		law_presidential_republic = neutral
-		law_parliamentary_republic = neutral
+		GovPlus_law_republic = neutral
 		law_corporatocracy = neutral
 		law_theocracy = disapprove
-		law_theocracy_occultists = disapprove
 		law_council_republic = strongly_disapprove
+		law_anarchy = strongly_disapprove
 	}
+	
+	lawgroup_distribution_of_power = {
+		law_autocracy = disapprove
+		law_oligarchy = approve
+		law_presidential_republic = neutral
+        law_parliamentary_republic = neutral
+		law_technocracy = neutral
+		law_single_party_state = neutral
+		law_ecclesiarchy = disapprove
+		GovPlus_law_council_system = strongly_disapprove
+		
+		
+	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = neutral
+        law_landed_voting = neutral
+        law_wealth_voting = approve
+        law_census_voting = neutral
+        law_universal_suffrage = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+    }
 	
 	lawgroup_taxation = {
 		law_per_capita_based_taxation = approve

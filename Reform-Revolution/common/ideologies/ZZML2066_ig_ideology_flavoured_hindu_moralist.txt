@@ -2,12 +2,11 @@
 	icon = "gfx/interface/icons/ideology_icons/hindu_moralist.dds"
 	
 	lawgroup_governance_principles = {
-		law_theocracy = approve
-		law_theocracy_occultists = strongly_disapprove
 		law_monarchy = strongly_approve	
-		law_presidential_republic = neutral
-		law_parliamentary_republic = neutral
+		law_theocracy = approve
+		GovPlus_law_republic = neutral
 		law_corporatocracy = disapprove
+		law_anarchy = strongly_disapprove
 		law_council_republic = strongly_disapprove
 	}
 

@@ -4,18 +4,24 @@ ideology_liberal_leader = {
 	character_ideology = yes
 	
 	lawgroup_distribution_of_power = {
-		law_anarchy = strongly_disapprove
-		law_mass_democracy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 		law_technocracy = disapprove
 		law_oligarchy = disapprove
 		law_ecclesiarchy = disapprove
 		law_single_party_state = disapprove
-		law_landed_voting = approve
-		law_wealth_voting = approve
-		law_census_voting = approve
+		law_presidential_republic = approve
+        law_parliamentary_republic = approve
 		law_universal_suffrage = approve
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = disapprove
+		law_mass_democracy = disapprove
+        law_landed_voting = approve
+        law_wealth_voting = approve
+        law_census_voting = approve
+        law_universal_suffrage = approve
+    }
 	
 	lawgroup_bureaucracy = {
 		law_hereditary_bureaucrats = disapprove

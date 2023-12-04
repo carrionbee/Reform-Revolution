@@ -7,7 +7,7 @@
 		law_industry_banned = strongly_disapprove
 		law_communal_principle = strongly_disapprove
 		law_command_economy = strongly_disapprove
-		law_cooperative_ownership = strongly_disapprove		
+		law_cooperative_ownership = strongly_disapprove
 		law_traditionalism = disapprove		
 		law_agrarianism = disapprove
 		law_interventionism = neutral

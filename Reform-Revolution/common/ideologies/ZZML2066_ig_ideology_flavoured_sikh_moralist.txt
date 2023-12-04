@@ -4,11 +4,10 @@
 	lawgroup_governance_principles = {
 		law_theocracy = approve
 		law_monarchy = strongly_approve	
-		law_presidential_republic = neutral
-		law_parliamentary_republic = neutral
+		GovPlus_law_republic = neutral
 		law_council_republic = disapprove
+		law_anarchy = disapprove
 		law_corporatocracy = disapprove
-		law_theocracy_occultists = strongly_disapprove
 	}
 
 	lawgroup_church_and_state = {
