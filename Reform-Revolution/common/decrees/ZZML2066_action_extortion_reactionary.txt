@@ -15,43 +15,25 @@ action_extortion_reactionary = {
 					is_building_type = building_barracks
 					count >= 1
 				}	
-			OR = {
-				any_interest_group = {
-					is_in_government = yes
-					is_strongest_ig_in_government = yes
-					leader = {
-						OR = {
-							has_ideology = ideology:ideology_authoritarian
-							has_ideology = ideology:ideology_militaristgeneral
-							has_ideology = ideology:ideology_hitlerist
-							has_ideology = ideology:ideology_slaver
-							has_ideology = ideology:ideology_royalist
-							has_ideology = ideology:ideology_fascist
-							has_ideology = ideology:ideology_anarcho_liberal
-							has_ideology = ideology:ideology_militarist
-							has_ideology = ideology:ideology_clerical_fascist
-							has_ideology = ideology:ideology_national_socialist
-							has_ideology = ideology:ideology_natsoc
-						}
+			any_interest_group = {
+				#is_in_government = yes
+				is_strongest_ig_in_government = yes
+				leader = {
+					OR = {
+						has_ideology = ideology:stratocratic
+						has_ideology = ideology:ideology_ig_fascist
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_authoritarian
+						has_ideology = ideology:ideology_militaristgeneral
+						has_ideology = ideology:ideology_hitlerist
+						has_ideology = ideology:ideology_slaver
+						has_ideology = ideology:ideology_royalist
+						has_ideology = ideology:ideology_anarcho_liberal
+						has_ideology = ideology:ideology_militarist
+						has_ideology = ideology:ideology_clerical_fascist
+						has_ideology = ideology:ideology_national_socialist
+						has_ideology = ideology:ideology_natsoc
 					}
-				}
-				OR = {
-					ig:ig_armed_forces = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
-					ig:ig_landowners = {
-						is_in_government = yes
-						is_strongest_ig_in_government = yes
-					}
-				#	ig:ig_reactionaries = {
-				#		is_in_government = yes
-				#		is_strongest_ig_in_government = yes
-				#	}
-				#	ig:ig_fascists = {
-				#		is_in_government = yes
-				#		is_strongest_ig_in_government = yes
-				#	}
 				}
 			}
 		}
