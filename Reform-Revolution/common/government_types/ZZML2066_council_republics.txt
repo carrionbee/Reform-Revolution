@@ -32,7 +32,7 @@ gov_council_commissariat_junta = {
 			has_law = law_type:law_generalissimo
 			has_law = law_type:law_council_republic
 			country_has_voting_franchise = yes
-			NOT = { has_law = law_type:law_anarchy }
+			#NOT = { has_law = law_type:law_anarchy }
 		#	ig:ig_armed_forces = { is_in_government = yes }
 	}
 	on_government_type_change = {

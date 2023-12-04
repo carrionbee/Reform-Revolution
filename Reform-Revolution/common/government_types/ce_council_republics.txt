@@ -84,7 +84,10 @@ gov_soviet_single_party_state = {
 	female_ruler = "RULER_PREMIER"
 	
 	possible = {
-		NOT = { has_law = law_type:law_military_cantons }
+		NAND = { 
+			has_law = law_type:law_military_cantons
+			has_law = law_type:law_generalissimo
+		}
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_single_party_state
 		OR = {
@@ -177,7 +180,10 @@ gov_phalanstere = {
 	female_ruler = "RULER_CHAIRWOMAN"
 	
 	possible = {
-		NOT = { has_law = law_type:law_military_cantons }
+		NAND = { 
+			has_law = law_type:law_military_cantons
+			has_law = law_type:law_generalissimo
+		}
 		country_has_primary_culture = cu:french
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_technocracy
@@ -197,7 +203,10 @@ gov_cybernetic_state = {
 	female_ruler = "RULER_FOREWOMAN"
 	
 	possible = {
-		NOT = { has_law = law_type:law_military_cantons }
+		NAND = { 
+			has_law = law_type:law_military_cantons
+			has_law = law_type:law_generalissimo
+		}
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_technocracy
 	}
@@ -217,7 +226,10 @@ gov_council_single_party_state = {
 	female_ruler = "RULER_CHAIRWOMAN"
 	
 	possible = {
-		NOT = { has_law = law_type:law_military_cantons }
+		NAND = { 
+			has_law = law_type:law_military_cantons
+			has_law = law_type:law_generalissimo
+		}
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_single_party_state
 	}
@@ -268,8 +280,10 @@ gov_anarchist_commune = {
 	female_ruler = "RULER_REPRESENTATIVE"
 	
 	possible = {
-		NOT = { has_law = law_type:law_military_cantons }
-		has_law = law_type:law_council_republic
+		NAND = { 
+			has_law = law_type:law_military_cantons
+			has_law = law_type:law_generalissimo
+		}
 		has_law = law_type:law_anarchy
 	}
 	

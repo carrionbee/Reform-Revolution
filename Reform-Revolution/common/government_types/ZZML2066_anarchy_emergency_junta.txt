@@ -9,10 +9,7 @@
 		has_law = law_type:law_military_cantons
 		has_law = law_type:law_generalissimo
 		country_has_voting_franchise = yes
-		OR = {
-			has_law = law_type:law_anarchy
-			has_law = law_type:law_mass_democracy
-		}
+		has_law = law_type:law_anarchy
 	#	ig:ig_armed_forces = { is_in_government = yes }
 	}
 	on_government_type_change = {
