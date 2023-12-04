@@ -312,26 +312,33 @@ ideology_fiume = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
-		law_presidential_republic = strongly_approve
-		law_parliamentary_republic = approve
-		law_corporatocracy = neutral	# laws +
+		law_anarchy = strongly_disapprove
+		law_corporatocracy = neutral
 		law_theocracy = strongly_disapprove
 		law_council_republic = neutral
+		GovPlus_law_republic = strongly_approve
 	}
 
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
+		law_presidential_republic = strongly_approve
+        law_parliamentary_republic = approve
 		law_oligarchy = approve
-		law_landed_voting = strongly_disapprove	
-		law_wealth_voting = strongly_disapprove	
 		law_single_party_state = approve
-		law_census_voting = strongly_disapprove		
-		law_universal_suffrage = strongly_disapprove
 		law_anarchy = approve
 		law_technocracy = neutral
-		law_ecclesiarchy = strongly_disapprove	# laws +
-		law_mass_democracy = strongly_disapprove
+		law_ecclesiarchy = strongly_disapprove
+		GovPlus_law_council_system = neutral
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_approve
+        law_landed_voting = strongly_disapprove
+        law_wealth_voting = strongly_disapprove
+        law_census_voting = neutral
+        law_universal_suffrage = disapprove
+		law_mass_democracy = strongly_disapprove
+    }
 
 	lawgroup_army_model = {
 		law_mass_conscription = approve
@@ -461,25 +468,33 @@ ideology_futurist = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
-		law_presidential_republic = strongly_approve
-		law_parliamentary_republic = approve
 		law_theocracy = strongly_disapprove
+		law_anarchy = neutral
+		GovPlus_law_republic = strongly_approve
 		law_council_republic = neutral
 		law_corporatocracy = strongly_disapprove
 	}
 
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = approve
 		law_oligarchy = approve
-		law_landed_voting = strongly_disapprove	
-		law_wealth_voting = strongly_disapprove	
 		law_single_party_state = approve
-		law_census_voting = strongly_disapprove		
-		law_universal_suffrage = strongly_disapprove
+		law_ecclesiarchy = strongly_disapprove
 		law_anarchy = approve
 		law_technocracy = neutral
-		law_ecclesiarchy = strongly_disapprove
+		GovPlus_law_council_system = neutral
 	}
+	
+	 GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_approve
+        law_landed_voting = strongly_disapprove	
+		law_wealth_voting = strongly_disapprove	
+		law_census_voting = strongly_disapprove
+        law_universal_suffrage = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+    }
 
 	lawgroup_army_model = {
 		law_mass_conscription = approve
@@ -597,8 +612,8 @@ ideology_hitlerist = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
-		law_presidential_republic = approve
-		law_parliamentary_republic = strongly_approve
+		law_anarchy = strongly_disapprove
+		GovPlus_law_republic = strongly_approve
 		law_theocracy = strongly_disapprove
 		law_council_republic = strongly_disapprove
 		law_corporatocracy = neutral
@@ -607,15 +622,22 @@ ideology_hitlerist = {
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
 		law_oligarchy = approve
-		law_landed_voting = strongly_disapprove	
-		law_wealth_voting = strongly_disapprove	
+		law_presidential_republic = approve
+		law_parliamentary_republic = strongly_approve
 		law_single_party_state = approve
-		law_census_voting = strongly_disapprove		
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
 		law_technocracy = neutral
 		law_ecclesiarchy = strongly_disapprove
+		GovPlus_law_council_system = neutral
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_approve
+        law_landed_voting = strongly_disapprove
+        law_wealth_voting = strongly_disapprove
+        law_census_voting = strongly_disapprove
+        law_universal_suffrage = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+    }
 
 	lawgroup_army_model = {
 		law_mass_conscription = strongly_approve
@@ -727,8 +749,8 @@ ideology_spenglerist = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = approve
-		law_presidential_republic = strongly_approve
-		law_parliamentary_republic = strongly_disapprove
+		GovPlus_law_republic = approve
+		law_anarchy = strongly_disapprove
 		law_theocracy = neutral
 		law_council_republic = strongly_disapprove
 		law_corporatocracy = neutral
@@ -738,14 +760,20 @@ ideology_spenglerist = {
 		law_autocracy = strongly_approve
 		law_oligarchy = neutral
 		law_ecclesiarchy = neutral
-		law_landed_voting = strongly_disapprove	
-		law_wealth_voting = strongly_disapprove	
+		law_presidential_republic = strongly_approve
+		law_parliamentary_republic = strongly_disapprove
 		law_single_party_state = approve
-		law_census_voting = strongly_disapprove		
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
 		law_technocracy = neutral
+		GovPlus_law_council_system = strongly_disapprove
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_approve
+        law_landed_voting = strongly_disapprove
+        law_wealth_voting = strongly_disapprove
+        law_census_voting = strongly_disapprove
+        law_universal_suffrage = strongly_disapprove
+    }
 
 	lawgroup_army_model = {
 		law_mass_conscription = approve
@@ -856,11 +884,11 @@ ideology_hohenzollernsoe = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
 		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove
 		law_corporatocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		GovPlus_law_republic = disapprove
 	}
 	
 	lawgroup_colonization = {		
@@ -873,15 +901,22 @@ ideology_hohenzollernsoe = {
 	lawgroup_distribution_of_power = {
 		law_autocracy = approve
 		law_oligarchy = strongly_approve
-		law_landed_voting = approve	
-		law_wealth_voting = approve	
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove	
 		law_single_party_state = neutral
-		law_census_voting = disapprove		
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
 		law_technocracy = neutral
 		law_ecclesiarchy = disapprove
+		GovPlus_law_council_system = strongly_disapprove
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_approve
+        law_landed_voting = approve	
+		law_wealth_voting = approve
+        law_census_voting = disapprove
+        law_universal_suffrage = strongly_approve
+		law_mass_democracy = strongly_disapprove
+    }
 	
 	lawgroup_citizenship = {
 		law_ethnostate = neutral
@@ -985,25 +1020,31 @@ ideology_habsburgsoe = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		GovPlus_law_republic = disapprove
 		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove
 		law_corporatocracy = strongly_disapprove
+		law_anarchy = strongly_disapprove
 	}
 	
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_disapprove
 		law_oligarchy = strongly_disapprove
-		law_landed_voting = neutral	
-		law_wealth_voting = neutral	
 		law_single_party_state = strongly_disapprove
-		law_census_voting = approve		
-		law_universal_suffrage = strongly_approve
-		law_anarchy = strongly_disapprove
+		law_parliamentary_republic = approve
+		law_presidential_republic = neutral
 		law_technocracy = strongly_disapprove
 		law_ecclesiarchy = strongly_disapprove
+		GovPlus_law_council_system = strongly_disapprove
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_disapprove
+        law_landed_voting = neutral
+        law_wealth_voting = neutral
+        law_census_voting = approve
+        law_universal_suffrage = strongly_approve
+    }
 	
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_disapprove
@@ -1108,15 +1149,22 @@ ideology_natsoc = {
 	lawgroup_distribution_of_power = {
 	    law_autocracy = approve
 		law_single_party_state = strongly_approve
+		law_presidential_republic = approve
+		law_parliamentary_republic = neutral
 		law_oligarchy = neutral
 		law_technocracy = strongly_disapprove
-		law_anarchy = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
 		law_ecclesiarchy = strongly_disapprove
+		GovPlus_law_council_system = strongly_disapprove
 	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_approve
+        law_landed_voting = strongly_disapprove
+        law_wealth_voting = strongly_disapprove
+        law_census_voting = strongly_disapprove
+        law_universal_suffrage = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+    }
 
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_approve
@@ -1321,12 +1369,30 @@ ideology_trotskyist = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_anarchy = disapprove
 		law_theocracy = strongly_disapprove
 		law_council_republic = strongly_approve
 		law_corporatocracy = strongly_disapprove
 	}
+	
+	lawgroup_distribution_of_power = {
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove
+		law_presidential_republic = disapprove
+		law_technocracy = neutral
+		law_parliamentary_republic = approve
+		law_single_party_state = approve
+		GovPlus_law_council_system = strongly_approve
+	}
+	
+	GovPlus_lawgroup_political_franchise = {
+        GovPlus_law_no_voting = strongly_disapprove
+        law_landed_voting = strongly_disapprove
+        law_wealth_voting = strongly_disapprove
+        law_census_voting = approve
+        law_universal_suffrage = strongly_approve
+		law_mass_democracy = strongly_approve
+    }
 	
 	lawgroup_army_model = {
 		law_mass_conscription = approve
@@ -1334,19 +1400,6 @@ ideology_trotskyist = {
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
 		law_no_army = strongly_disapprove
-	}
-
-	lawgroup_distribution_of_power = {
-		law_oligarchy = strongly_disapprove
-		law_autocracy = strongly_disapprove		
-		law_anarchy = disapprove
-		law_universal_suffrage = disapprove
-		law_census_voting = strongly_disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
-		law_technocracy = strongly_approve
-		law_single_party_state = approve
-		law_mass_democracy = strongly_approve
 	}
 	
 	lawgroup_economic_system = {	
@@ -1384,7 +1437,13 @@ ideology_trotskyist = {
 				has_law = law_type:law_collectivized_agriculture
 				has_law = law_type:law_state_atheism
 				has_law = law_type:law_council_republic
-				has_law = law_type:law_worker_protections
+				OR = {
+					has_law = law_type:law_worker_protections
+					has_law = law_type:law_union_representation
+				}
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_mass_democracy
+				has_law = law_type:GovPlus_law_council_system
 			}
 		}
 		# Monarchs cannot be republicans
@@ -1491,12 +1550,22 @@ ideology_marxist = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
-		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_approve
 		law_corporatocracy = strongly_disapprove
+		law_theocracy = strongly_disapprove
+		GovPlus_law_republic = disapprove
+		law_anarchy = neutral
+		law_council_republic = strongly_approve
 	}
+	
+	lawgroup_distribution_of_power = {
+        law_autocracy = strongly_disapprove
+        law_oligarchy = strongly_disapprove
+        law_technocracy = disapprove
+        law_single_party_state = disapprove
+        law_presidential_republic = disapprove
+        law_parliamentary_republic = approve
+        GovPlus_law_council_system = strongly_approve
+    }
 
 	lawgroup_economic_system = {	
 		law_command_economy = approve
@@ -1534,7 +1603,11 @@ ideology_marxist = {
 				has_law = law_type:law_collectivized_agriculture
 				has_law = law_type:law_state_atheism
 				has_law = law_type:law_council_republic
-				has_law = law_type:law_worker_protections
+				OR = {
+					has_law = law_type:law_worker_protections
+					has_law = law_type:law_union_representation
+				}
+				has_law = law_type:GovPlus_law_council_system
 			}
 		}
 		# Monarchs cannot be republicans
