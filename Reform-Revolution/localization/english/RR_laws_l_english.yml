@@ -106,7 +106,7 @@
  law_rural_communes:0 "Rural Communes"
  law_rural_communes_desc:0 "A system whereby rural land is organized into Cooperative-style Communes or Whole-of-Society/Collective Social Ownership. Production is developed according to common plan based on local, regional and whole-of-society needs. This may operate according to a market or planned system depending on other reforms."
 
- law_deep_ecology_cooperatives:0 "Deep Ecology Cooperatives"
+ law_deep_ecology_cooperatives:0 "Eco-Communes"
  law_deep_ecology_cooperatives_desc:0 "A radical system of eco-centric land management based on the principles that anthropocentric farming practices are exploitative of nature - and humans are not steward of nature, but are of nature themselves. Land is organised into cooperatives based on meeting collective needs in accordance with nature, rather than for profit."
  deep_ecology_cooperatives_tt:0 "This will destroy all agriculture building - leaving only subsistence cooperatives. [GetPopType('aristocrats').GetName] are not going to like it."
  deep_ecology_cultivation_destroy_tt:0 "Are you sure you want to abolish anthropocentric agricultural practices?"
