@@ -6,7 +6,6 @@
 		law_military_cantons = neutral			
 		law_unitary = neutral
 		law_federalism = strongly_disapprove
-		law_confederation = strongly_disapprove
 	}
 	
 	lawgroup_executive_privileges = {

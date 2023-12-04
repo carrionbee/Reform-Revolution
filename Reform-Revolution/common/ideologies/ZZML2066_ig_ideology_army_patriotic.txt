@@ -35,11 +35,10 @@ ideology_armed_forces_patriotic = {
 	}
 	
 	lawgroup_centralization = {		
-		law_military_cantons = approve
-		law_feudalism = neutral
-		law_confederation = disapprove
-		law_federalism = neutral
+		law_military_cantons = strongly_approve
 		law_unitary = approve
+		law_feudalism = neutral
+		law_federalism = neutral
 	}
 	
 	lawgroup_executive_privileges = {

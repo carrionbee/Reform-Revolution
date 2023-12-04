@@ -29,7 +29,6 @@
 	lawgroup_centralization = {		
 		law_military_cantons = strongly_disapprove
 		law_feudalism = strongly_disapprove
-		law_confederation = neutral
 		law_federalism = neutral
 		law_unitary = neutral
 	}

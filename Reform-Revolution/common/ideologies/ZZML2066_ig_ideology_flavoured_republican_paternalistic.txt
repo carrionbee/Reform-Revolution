@@ -4,9 +4,8 @@
 	lawgroup_centralization = {
 		law_unitary = approve
 		law_federalism = approve
-		law_feudalism = neutral
 		law_military_cantons = neutral			
-		law_confederation = strongly_disapprove
+		law_feudalism = neutral
 	}
 	
 	lawgroup_governance_principles = {		

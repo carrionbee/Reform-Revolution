@@ -15,7 +15,6 @@
 		law_unitary = approve
 		law_federalism = neutral
 		law_feudalism = neutral
-		law_confederation = strongly_disapprove
 	}
 	
 	lawgroup_executive_privileges = {

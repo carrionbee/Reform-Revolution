@@ -2,7 +2,6 @@
 	icon = "gfx/interface/icons/ideology_icons/particularist.dds"
 	
 	lawgroup_centralization = {
-		law_confederation = approve
 		law_federalism = approve
 		law_unitary = disapprove			
 		law_feudalism = strongly_disapprove

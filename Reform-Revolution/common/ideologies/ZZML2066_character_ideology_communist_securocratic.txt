@@ -97,9 +97,8 @@
 	lawgroup_centralization = {		
 		law_military_cantons = strongly_approve
 		law_unitary = approve
-		law_feudalism = neutral
-		law_federalism = strongly_disapprove
-		law_confederation = strongly_disapprove
+		law_federalism = disapprove
+		law_feudalism = strongly_disapprove
 	}
 	
 	lawgroup_executive_privileges = {

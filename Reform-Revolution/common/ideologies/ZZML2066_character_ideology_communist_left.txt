@@ -55,7 +55,6 @@
 		law_feudalism = strongly_disapprove
 		law_military_cantons = strongly_disapprove
 		law_unitary = disapprove
-		law_confederation = neutral
 		law_federalism = approve
 	}
 	

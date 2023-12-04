@@ -22,7 +22,6 @@
 		law_military_cantons = disapprove
 		law_unitary = strongly_disapprove
 		law_federalism = neutral
-		law_confederation = approve
 	}
 	
 	lawgroup_citizenship = {

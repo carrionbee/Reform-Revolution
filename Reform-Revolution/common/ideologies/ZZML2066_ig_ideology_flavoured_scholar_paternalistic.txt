@@ -5,7 +5,6 @@
 		law_military_cantons = approve
 		law_feudalism = approve
 		law_unitary = neutral
-		law_confederation = strongly_disapprove
 		law_federalism = strongly_disapprove
 	}
 	

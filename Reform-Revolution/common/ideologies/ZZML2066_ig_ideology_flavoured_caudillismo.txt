@@ -6,7 +6,6 @@
 		law_unitary = approve
 		law_feudalism = neutral
 		law_federalism = disapprove
-		law_confederation = disapprove
 	}
 	
 	lawgroup_governance_principles = {
