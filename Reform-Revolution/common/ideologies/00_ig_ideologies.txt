@@ -6,7 +6,6 @@ ideology_ig_anarchist = {
 	icon = "gfx/interface/icons/ideology_icons/nationalism.dds"
 	
 	lawgroup_centralization = {		
-		law_confederation = strongly_approve
 		law_federalism = neutral
 		law_military_cantons = disapprove
 		law_unitary = strongly_disapprove
@@ -147,7 +146,6 @@ ideology_ig_fascist = {
 		law_unitary = strongly_approve
 		law_federalism = neutral
 		law_feudalism = neutral
-		law_confederation = strongly_disapprove
 	}
 
 	lawgroup_distribution_of_power = {
