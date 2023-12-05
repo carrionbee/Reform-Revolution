@@ -98,20 +98,6 @@ FRA = {
 			}
 		}
 	}
-	dynamic_country_name = {
-		name = dyn_c_french_commune
-		adjective = dyn_c_french_commune_adj
-
-		is_main_tag_only = yes
-		priority = 10
-		
-		trigger = {
-			exists = scope:actor
-			scope:actor = {
-				has_law = law_type:law_council_republic
-			}
-		}
-	}
 }
 
 HRE = {
