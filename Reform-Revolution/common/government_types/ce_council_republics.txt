@@ -5,8 +5,7 @@
 	female_ruler = "RULER_PONTIFEX_POPULI"
 	
 	possible = {
-		has_law = law_type:law_theocracy
-		has_law = law_type:GovPlus_law_council_system
+		has_law = law_type:law_council_republic
 		has_law = law_type:law_state_religion
 		exists = c:PAP
 		c:PAP = ROOT
@@ -35,7 +34,7 @@ gov_peoples_democratic_republic = {
 		country_has_voting_franchise = yes	
 		NOT = { has_law = law_type:law_collectivized_agriculture }
 		NOR = {
-		has_law = law_type:law_single_party_state		
+		has_law = law_type:law_single_party_state
 		has_law = law_type:law_mass_democracy
 		has_law = law_type:law_anarchy		
 		}		
@@ -85,10 +84,7 @@ gov_soviet_single_party_state = {
 	female_ruler = "RULER_PREMIER"
 	
 	possible = {
-		NAND = { 
-			has_law = law_type:law_military_cantons
-			has_law = law_type:law_generalissimo
-		}
+		NOT = { has_law = law_type:law_military_cantons }
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_single_party_state
 		OR = {
@@ -122,7 +118,6 @@ gov_soviet_republic = {
 			has_law = law_type:law_generalissimo
 		}
 		has_law = law_type:law_council_republic
-		has_law = law_type:GovPlus_law_council_system
 		has_law = law_type:law_collectivized_agriculture
 		country_has_voting_franchise = yes
 		NOR = {
@@ -161,12 +156,9 @@ gov_council_dictatorship = {
 	
 	possible = {
 		has_law = law_type:law_council_republic
-		country_has_voting_franchise = no
 		OR = {
 			has_law = law_type:law_autocracy
 			has_law = law_type:law_oligarchy
-			has_law = law_type:law_presidential_republic
-			has_law = law_type:law_parliamentary_republic
 		}
 	}
 
@@ -185,10 +177,7 @@ gov_phalanstere = {
 	female_ruler = "RULER_CHAIRWOMAN"
 	
 	possible = {
-		NAND = { 
-			has_law = law_type:law_military_cantons
-			has_law = law_type:law_generalissimo
-		}
+		NOT = { has_law = law_type:law_military_cantons }
 		country_has_primary_culture = cu:french
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_technocracy
@@ -208,10 +197,7 @@ gov_cybernetic_state = {
 	female_ruler = "RULER_FOREWOMAN"
 	
 	possible = {
-		NAND = { 
-			has_law = law_type:law_military_cantons
-			has_law = law_type:law_generalissimo
-		}
+		NOT = { has_law = law_type:law_military_cantons }
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_technocracy
 	}
@@ -231,10 +217,7 @@ gov_council_single_party_state = {
 	female_ruler = "RULER_CHAIRWOMAN"
 	
 	possible = {
-		NAND = { 
-			has_law = law_type:law_military_cantons
-			has_law = law_type:law_generalissimo
-		}
+		NOT = { has_law = law_type:law_military_cantons }
 		has_law = law_type:law_council_republic
 		has_law = law_type:law_single_party_state
 	}
@@ -260,7 +243,6 @@ gov_council_republic = {
 			has_law = law_type:law_generalissimo
 		}
 		has_law = law_type:law_council_republic
-		has_law = law_type:GovPlus_law_council_system
 		has_law = law_type:law_collectivized_agriculture
 		country_has_voting_franchise = yes
 		NOR = {
@@ -278,6 +260,27 @@ gov_council_republic = {
 	}
 }
 
+gov_anarchist_commune = {
+	transfer_of_power = parliamentary_elective
+	new_leader_on_reform_government = yes
+	
+	male_ruler = "RULER_REPRESENTATIVE"
+	female_ruler = "RULER_REPRESENTATIVE"
+	
+	possible = {
+		NOT = { has_law = law_type:law_military_cantons }
+		has_law = law_type:law_council_republic
+		has_law = law_type:law_anarchy
+	}
+	
+	on_government_type_change = {
+		change_to_parliamentary_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_parliamentary_elective = yes
+	}	
+}
+
 gov_sovietmultipledic = {
 	transfer_of_power = presidential_elective
 	new_leader_on_reform_government = yes
@@ -291,7 +294,6 @@ gov_sovietmultipledic = {
 			has_law = law_type:law_generalissimo
 		}
 		has_law = law_type:law_council_republic
-		has_law = law_type:GovPlus_law_council_system
 		country_has_voting_franchise = yes
 		has_law = law_type:law_mass_democracy		
 		OR = {
@@ -353,7 +355,6 @@ gov_commune_state = {
 			has_law = law_type:law_generalissimo
 		}
 		has_law = law_type:law_council_republic
-		has_law = law_type:GovPlus_law_council_system
 		country_has_voting_franchise = yes
 		has_law = law_type:law_mass_democracy		
 		OR = {
@@ -382,7 +383,6 @@ gov_combined_syndicates = {
 			has_law = law_type:law_generalissimo
 		}
 		has_law = law_type:law_council_republic
-		has_law = law_type:GovPlus_law_council_system
 		country_has_voting_franchise = yes
 		has_law = law_type:law_mass_democracy		
 		OR = {
@@ -413,7 +413,6 @@ gov_syndicalist_republic = {
 			has_law = law_type:law_generalissimo
 		}
 		has_law = law_type:law_council_republic
-		has_law = law_type:GovPlus_law_council_system
 		country_has_voting_franchise = yes		
 		has_law = law_type:law_mass_democracy
 		has_law = law_type:law_cooperative_ownership			
@@ -439,7 +438,6 @@ gov_peoples_commune = {
 			has_law = law_type:law_generalissimo
 		}
 		has_law = law_type:law_council_republic
-		has_law = law_type:GovPlus_law_council_system
 		country_has_voting_franchise = yes		
 		has_law = law_type:law_mass_democracy
         OR = {
