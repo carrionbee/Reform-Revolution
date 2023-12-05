@@ -1,0 +1,265 @@
+# 비즈니스 플롯
+gov_usa_business_plot = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		country_has_voting_franchise = no
+		
+		exists = c:USA
+		c:USA = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+# 동인도 회사
+gov_bic_east_indies_company = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		
+		exists = c:BIC
+		c:BIC = ROOT
+		
+		is_subject = no
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+# 독점 회사
+gov_hbc_monopoly_company = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = yes
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		
+		exists = c:HBC
+		c:HBC = ROOT
+
+		is_subject = no
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+# 패러독스 인터랙티브
+gov_swe_paradox_interactive_company = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		has_law = law_type:law_technocracy
+		
+		exists = c:SWE
+		c:SWE = ROOT
+		
+		owns_entire_state_region = STATE_TASMANIA
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+# 자이바츠 독재정
+gov_jap_zaibatsu_dictatorship = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_TOSHU"
+	female_ruler = "RULER_TITLE_TOSHU"
+
+	male_heir = "HEIR_TITLE_ONZOSHI"
+	female_heir = "HEIR_TITLE_OJOSAMA"
+
+	possible = {
+		has_law = law_type:law_corporatocracy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+		}
+		exists = c:JAP
+		c:JAP = ROOT
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+# 부르주아 독재정
+gov_bourgeois_dictatorship = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+
+	possible = {
+		has_law = law_type:law_corporatocracy
+		has_law = law_type:law_autocracy 
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+# 부르주아 과두정
+gov_bourgeois_oligarchy = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+
+	possible = {
+		has_law = law_type:law_corporatocracy
+		has_law = law_type:law_oligarchy
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+# 부르주아 민주정
+gov_bourgeois_democracy = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+
+	possible = {
+		has_law = law_type:law_corporatocracy
+		country_has_voting_franchise = yes
+		OR = {
+			has_law = law_type:law_landed_voting
+			has_law = law_type:law_wealth_voting
+		}
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+# 기업 공화국
+gov_corporate_republic = {
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+	
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		country_has_voting_franchise = yes
+		OR = { 
+			has_law = law_type:law_census_voting
+			has_law = law_type:law_universal_suffrage
+		}
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+# 이사회 공화국
+gov_corporate_single_party_state = {
+	transfer_of_power = presidential_elective
+	
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		has_law = law_type:law_single_party_state
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}
+# 과학적 관리 위원회
+gov_scientific_management_committee = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_CHIEF_ENGINEER"
+	female_ruler = "RULER_TITLE_CHIEF_ENGINEER"
+	
+	possible = {
+		has_law = law_type:law_corporatocracy
+		has_law = law_type:law_technocracy
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
+# 종교적 기업
+gov_religious_enterprise = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_CEO"
+	female_ruler = "RULER_TITLE_CEO"
+
+	possible = {
+		has_law = law_type:law_corporatocracy
+		has_law = law_type:law_ecclesiarchy
+	}
+
+	on_government_type_change = {
+		change_to_dictatorial = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
+	}
+}
