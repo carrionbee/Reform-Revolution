@@ -1,0 +1,187 @@
+﻿coa_monarchy_trigger = {
+	OR = {
+		has_law = law_type:law_chiefdom
+		has_law = law_type:law_monarchy
+	}
+}
+
+coa_undemocratic_monarchy_trigger = {
+	coa_monarchy_trigger = yes
+	OR = {
+		has_law = law_type:law_autocracy 
+		has_law = law_type:law_elder_council
+		has_law = law_type:law_oligarchy
+	    has_law = law_type:law_single_party_state
+	}
+}
+
+coa_dictatorship_trigger = {
+	coa_republic_trigger = yes
+	coa_autocracy_trigger = yes
+}
+
+coa_oligarchy_trigger = {
+	coa_republic_trigger = yes
+	has_law = law_type:law_oligarchy
+}
+
+coa_multicultural_trigger = {
+	has_law = law_type:law_multicultural
+}
+
+coa_autocracy_trigger = {
+	OR = {
+	has_law = law_type:law_autocracy 
+	has_law = law_type:law_single_party_state
+	}
+	NOT = {has_law = has_law = law_type:law_council_republic}
+}
+
+coa_anarchy_trigger = {
+	has_law = law_type:law_anarchy
+}
+
+coa_communist_trigger = {
+	has_law = law_type:law_council_republic
+}
+
+coa_commune_trigger = {
+	has_law = law_type:law_mass_democracy
+}
+
+coa_technocracy_trigger = {
+	has_law = law_type:law_technocracy
+}
+
+coa_military_trigger = {
+	OR = {
+		has_government_type = gov_military_dictatorship
+		has_government_type = gov_junta
+	}
+}
+
+coa_controls_part_of_ireland = {
+	any_scope_state = {
+		state_region = {
+			is_homeland = irish
+		}
+	}
+}
+
+coa_controls_part_of_france = {
+	any_scope_state = {
+		state_region = {
+			is_homeland = french
+		}
+	}
+}
+
+coa_nihilist_trigger = {
+	has_law = law_type:law_state_atheism
+	NOR = {
+		has_law = law_type:law_theocracy
+		has_law = law_type:law_monarchy
+		has_law = law_type:law_council_republic
+	}
+	any_scope_character = {
+		has_ideology = ideology:ideology_atheist
+		is_ruler = yes
+    }
+}
+
+coa_secessionist_or_revolutionary_trigger = {
+	OR = {
+		is_secessionist = yes
+		is_revolutionary = yes
+	}
+}
+
+coa_def_monarchy_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_monarchy_trigger = yes }
+}
+
+coa_def_absolute_monarchy_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_absolute_monarchy_trigger = yes }
+}
+
+coa_def_undemocratic_monarchy_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_undemocratic_monarchy_trigger = yes }
+}
+
+coa_def_republic_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_republic_trigger = yes }
+}
+
+coa_def_theocracy_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_theocracy_trigger = yes }
+}
+
+coa_def_multicultural_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_multicultural_trigger = yes }
+}
+
+coa_def_autocracy_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_autocracy_trigger = yes }
+}
+
+coa_def_communist_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_communist_trigger = yes }
+}
+
+coa_def_commune_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_commune_trigger = yes }
+}
+
+coa_def_technocracy_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_technocracy_trigger = yes }
+}
+
+coa_def_anarchy_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_anarchy_trigger = yes }
+}
+
+coa_def_dictatorship_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_dictatorship_trigger = yes }
+}
+
+coa_def_oligarchy_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_oligarchy_trigger = yes }
+}
+
+coa_def_state_religion_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { has_law = law_type:law_state_religion }
+}
+
+coa_def_egalitarian_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { has_law = law_type:law_multicultural }
+}
+
+coa_def_military_junta_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_military_trigger = yes }
+}
+
+coa_def_fascist_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_fascist_trigger = yes }
+}
+
+coa_def_nihilist_flag_trigger = {
+	exists = scope:actor
+	scope:actor = { coa_nihilist_trigger = yes }
+}

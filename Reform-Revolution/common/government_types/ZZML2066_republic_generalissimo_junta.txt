@@ -8,7 +8,7 @@
 	possible = {
 		has_law = law_type:law_military_cantons
 		has_law = law_type:law_generalissimo
-		has_law = law_type:GovPlus_law_republic
+		has_law = law_type:law_presidential_republic
 		country_has_voting_franchise = yes
 		#NOT = { has_law = law_type:law_anarchy }
 		#ig:ig_armed_forces = { is_in_government = yes }
