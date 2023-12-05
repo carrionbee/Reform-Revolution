@@ -1,0 +1,553 @@
+﻿namespace = work_hours
+
+# Labor Mistreaters
+work_hours.1 = {
+	type = country_event
+	placement = ROOT
+	
+	title = work_hours.1.t
+	desc = work_hours.1.d
+	flavor = work_hours.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/southamerica_child_labor.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		has_law = law_type:law_labor_work_hours_unlimit
+		OR = {
+			is_enacting_law = law_type:law_labor_work_hours_day_12
+			is_enacting_law = law_type:law_labor_work_hours_day_8
+			is_enacting_law = law_type:law_labor_work_hours_week_40
+			is_enacting_law = law_type:law_labor_work_hours_week_32
+			is_enacting_law = law_type:law_labor_work_hours_week_20
+		}
+		any_scope_state = {
+			any_scope_pop = {
+				is_pop_type = laborers
+			}
+		}
+		NOT = {
+			has_modifier = laborers_mistreaters_demonized_enactment
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				any_scope_pop = {
+					is_pop_type = laborers
+				}
+			}
+			save_scope_as = laborers_mistreat_state
+		}
+		ig:ig_industrialists = {
+			save_scope_as = laborers_mistreaters
+		}
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { currently_enacting_law = scope:current_law_scope }
+	}
+
+	option = {
+		name = work_hours.1.a
+		default_option = yes
+		# law success chance
+		add_enactment_modifier = {
+			name = laborers_mistreaters_demonized_enactment
+			multiplier = 2
+		}
+	}
+
+	option = {
+		name = work_hours.1.b
+		# negative pop attraction
+		scope:laborers_mistreaters = {
+			add_modifier = {
+				name = laborers_mistreaters_demonized
+				months = short_modifier_time
+			}
+		}
+		# law success chance
+		add_enactment_modifier = {
+			name = laborers_mistreaters_demonized_enactment
+		}
+	}
+}
+
+
+# Work Hours Debated
+work_hours.2 = {
+	type = country_event
+	placement = ROOT
+	
+	title = work_hours.2.t
+	desc = work_hours.2.d
+	flavor = work_hours.2.f
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		has_law = law_type:law_labor_work_hours_unlimit
+		OR = {
+			is_enacting_law = law_type:law_labor_work_hours_day_12
+			is_enacting_law = law_type:law_labor_work_hours_day_8
+			is_enacting_law = law_type:law_labor_work_hours_week_40
+			is_enacting_law = law_type:law_labor_work_hours_week_32
+			is_enacting_law = law_type:law_labor_work_hours_week_20
+		}
+		any_interest_group = {
+			is_marginal = no
+			law_stance = {
+				law = law_labor_work_hours_unlimit
+				value < neutral
+			}
+		}
+		NOT = {
+			has_modifier = work_hours_debate
+		}
+	}
+
+	immediate = {
+		random_interest_group = {
+			limit = {
+				is_marginal = no
+				law_stance = {
+					law = law_type:law_labor_work_hours_unlimit
+					value < neutral
+				}
+			}
+			save_scope_as = work_hours_ig
+			leader = {
+				save_scope_as = work_hours_advocate
+			}
+		}
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { currently_enacting_law = scope:current_law_scope }
+	}
+
+	option = {
+		name = work_hours.2.a
+		default_option = yes
+		# law success chance
+		random_list = {
+			1 = {
+				add_enactment_modifier = {
+					name = work_hours_debate
+					multiplier = 2
+				}
+			}
+			1 = {
+				add_enactment_modifier = {
+					name = work_hours_debate
+				}
+			}
+		}
+	}
+
+	option = {
+		name = work_hours.2.b
+		# ig leader popularity
+		scope:work_hours_advocate = {
+			add_modifier = {
+				name = work_hours_popularity
+				months = normal_modifier_time
+			}
+		}
+		# law success chance
+		random_list = {
+			1 = {
+				add_enactment_modifier = {
+					name = work_hours_debate
+					multiplier = 3
+				}
+			}
+			2 = {
+				add_enactment_modifier = {
+					name = work_hours_debate
+					multiplier = -1
+				}
+			}
+		}
+	}
+}
+
+
+
+# Industrialists demand compensation for increased personnel costs
+work_hours.3 = {
+	type = country_event
+	placement = ROOT
+	
+	title = work_hours.3.t
+	desc = work_hours.3.d
+	flavor = work_hours.3.f
+	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		has_law = law_type:law_labor_work_hours_unlimit
+		OR = {
+			is_enacting_law = law_type:law_labor_work_hours_day_12
+			is_enacting_law = law_type:law_labor_work_hours_day_8
+			is_enacting_law = law_type:law_labor_work_hours_week_40
+			is_enacting_law = law_type:law_labor_work_hours_week_32
+			is_enacting_law = law_type:law_labor_work_hours_week_20
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+		NOT = { has_modifier = government_subsidy_cost_full }
+		NOT = { has_modifier = government_subsidy_cost_half }
+		NOT = { has_modifier = government_subsidy_cost_no }
+	}
+
+	immediate = {
+		ig:ig_industrialists = {
+			save_scope_as = factory_owners
+		}
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { currently_enacting_law = scope:current_law_scope }
+	}
+
+	option = { # pay them off
+		name = work_hours.3.a
+		# small success chance but big bureaucracy hit
+		add_enactment_modifier = {
+			name = government_subsidy_cost_full
+		}
+	}
+
+	option = { # serfs should buy their emancipation
+		name = work_hours.3.b
+		# small success chance but low SoL
+		add_enactment_modifier = {
+			name = government_subsidy_cost_half
+		}
+	}
+	option = { # no deal
+		name = work_hours.3.c
+		default_option = yes
+		# Significant delay
+		add_enactment_modifier = {
+			name = government_subsidy_cost_no
+		}
+	}
+}
+
+
+
+# Direct action for 8 Work Hours
+work_hours.4 = {
+	type = country_event
+	placement = ROOT
+	
+	title = work_hours.4.t
+	desc = work_hours.4.d
+	flavor = work_hours.4.f
+	
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/union_leader"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		OR = {
+			AND = {
+				is_enacting_law = law_type:law_labor_work_hours_day_8
+				OR = {
+					has_law = law_type:law_labor_work_hours_unlimit
+					has_law = law_type:law_labor_work_hours_day_12
+				}
+			}
+			is_enacting_law = law_type:law_labor_work_hours_week_40
+			is_enacting_law = law_type:law_labor_work_hours_week_32
+			is_enacting_law = law_type:law_labor_work_hours_week_20
+		}
+		ig:ig_trade_unions = {
+			is_marginal = no
+		}
+		NOT = { has_modifier = work_hours_enactment_strikes_modifier }
+		NOT = { has_modifier = work_hours_enactment_strikes_deterred_modifier }
+	}
+
+	immediate = {
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+		ig:ig_trade_unions = {
+			save_scope_as = work_hours_unions_scope
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { currently_enacting_law = scope:current_law_scope }
+	}
+
+	option = {
+		name = work_hours.4.a
+		default_option = yes
+		# big success chance but industries crippled
+		add_enactment_modifier = {
+			name = work_hours_enactment_strikes_modifier
+		}
+	}
+
+	option = {
+		name = work_hours.4.b
+		# moderate success chance but slowdown law
+		add_enactment_modifier = {
+			name = work_hours_enactment_strikes_deterred_modifier
+		}
+	}
+}
+
+
+
+
+# Unions negotiate with industrialists
+work_hours.5 = {
+	type = country_event
+	placement = ROOT
+	
+	title = work_hours.5.t
+	desc = work_hours.5.d
+	flavor = work_hours.5.f
+	
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/union_leader"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		OR = {
+			AND = {
+				is_enacting_law = law_type:law_labor_work_hours_day_8
+				OR = {
+					has_law = law_type:law_labor_work_hours_unlimit
+					has_law = law_type:law_labor_work_hours_day_12
+				}
+			}
+			is_enacting_law = law_type:law_labor_work_hours_week_40
+			is_enacting_law = law_type:law_labor_work_hours_week_32
+			is_enacting_law = law_type:law_labor_work_hours_week_20
+		}
+		ig:ig_trade_unions = {
+			is_marginal = no
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+		NOT = { has_modifier = laborers_work_hours_negotiations }
+	}
+
+	immediate = {
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+		ig:ig_trade_unions = {
+			save_scope_as = work_hours_unions_scope
+		}
+		ig:ig_industrialists = {
+			save_scope_as = work_hours_capitalists_scope
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { currently_enacting_law = scope:current_law_scope }
+	}
+
+	option = { # support the unions
+		name = work_hours.5.a
+		default_option = yes
+		# increase enactment speed and gain some loyalists but lose success chance
+		add_enactment_modifier = {
+			name = laborers_work_hours_negotiations
+		}
+		add_loyalists = {
+			strata = poor
+			value = 0.05
+		}
+	}
+
+	option = { # make concessions to the industrialists
+		name = work_hours.5.b
+		# slow down enactment speed and create some radicals, but add success chance
+		add_enactment_modifier = {
+			name = laborers_work_hours_negotiations
+			multiplier = -1
+		}
+		add_loyalists = {
+			strata = rich
+			value = 0.1
+		}
+	}
+}
+
+
+
+# Strikbreakers discourage worker movement
+work_hours.6 = {
+	type = country_event
+	placement = ROOT
+	
+	title = work_hours.6.t
+	desc = work_hours.6.d
+	flavor = work_hours.6.f
+	
+	event_image = {
+		video = "gfx/event_pictures/middleeast_police_breaking_door.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/police_breaking_door"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+
+	cooldown = { months = normal_modifier_time }
+	
+	trigger = {
+		OR = {
+			AND = {
+				is_enacting_law = law_type:law_labor_work_hours_day_8
+				OR = {
+					has_law = law_type:law_labor_work_hours_unlimit
+					has_law = law_type:law_labor_work_hours_day_12
+				}
+			}
+			is_enacting_law = law_type:law_labor_work_hours_week_40
+			is_enacting_law = law_type:law_labor_work_hours_week_32
+			is_enacting_law = law_type:law_labor_work_hours_week_20
+		}
+		ig:ig_trade_unions = {
+			is_marginal = no
+		}
+		ig:ig_industrialists = {
+			is_marginal = no
+		}
+		NOT = { has_modifier = work_hours_strikbreakers_enactment }
+	}
+
+	immediate = {
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+		ig:ig_trade_unions = {
+			save_scope_as = work_hours_unions_scope
+		}
+		ig:ig_industrialists = {
+			save_scope_as = work_hours_capitalists_scope
+		}
+	}
+
+	cancellation_trigger = {
+		NOT = { currently_enacting_law = scope:current_law_scope }
+	}
+
+	option = { # call off the strikebreakers
+		name = work_hours.6.a
+		default_option = yes
+		scope:work_hours_capitalists_scope = {
+			add_modifier = {
+				name = work_hours_strikebreakers_called_off
+				months = short_modifier_time
+				multiplier = -1
+			}
+		}
+		scope:work_hours_unions_scope = {
+			add_modifier = {
+				name = work_hours_strikebreakers_called_off
+				months = short_modifier_time
+			}
+		}
+		# decrease enactment time
+		add_enactment_modifier = {
+			name = work_hours_strikbreakers_enactment
+		}
+	}
+
+	option = { # don't
+		name = work_hours.6.b
+		scope:work_hours_capitalists_scope = {
+			add_modifier = {
+				name = work_hours_strikebreakers_allowed
+				months = short_modifier_time
+			}
+		}
+		scope:work_hours_unions_scope = {
+			add_modifier = {
+				name = work_hours_strikebreakers_allowed
+				months = short_modifier_time
+				multiplier = -1
+			}
+		}
+		# increase enactment time
+		add_enactment_modifier = {
+			name = work_hours_strikbreakers_enactment
+			multiplier = -1
+		}
+	}
+}
