@@ -1,0 +1,62 @@
+﻿# Extort the Poor
+action_extortion_reactionary = {
+	texture = "gfx/interface/icons/invention_icons/gunsmithing.dds"
+	
+		unlocking_technologies = { law_enforcement }
+	
+	valid = {
+		owner = {
+			NOR = {
+				has_law = law_type:law_guaranteed_liberties			# so-called guarnateed rights, apparently
+				has_law = law_type:law_no_police					# state requires instruments of repression to engage in this action.
+				has_law = law_type:law_no_army						# state requires instruments of repression to engage in this action.
+			}
+			any_scope_building = {
+					is_building_type = building_barracks
+					count >= 1
+				}	
+			any_interest_group = {
+				#is_in_government = yes
+				is_strongest_ig_in_government = yes
+				leader = {
+					OR = {
+						has_ideology = ideology:stratocratic
+						has_ideology = ideology:ideology_ig_fascist
+						has_ideology = ideology:ideology_fascist
+						has_ideology = ideology:ideology_authoritarian
+						has_ideology = ideology:ideology_militaristgeneral
+						has_ideology = ideology:ideology_hitlerist
+						has_ideology = ideology:ideology_slaver
+						has_ideology = ideology:ideology_royalist
+						has_ideology = ideology:ideology_anarcho_liberal
+						has_ideology = ideology:ideology_militarist
+						has_ideology = ideology:ideology_clerical_fascist
+						has_ideology = ideology:ideology_national_socialist
+						has_ideology = ideology:ideology_natsoc
+					}
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		tax_per_capita_add = 1.0
+		tax_land_add = 1.0
+		
+		state_poor_standard_of_living_mult = -0.30
+		state_laborers_mortality_mult = 0.10
+		state_soldiers_mortality_mult = 0.02
+		building_employment_soldiers_mult = 0.15
+		
+		state_mortality_turmoil_mult = 0.15
+		state_turmoil_effects_mult = 0.15
+		political_movement_radicalism_mult = 0.15
+		
+		state_welfare_payments_add = -1.0
+		state_political_strength_from_welfare_mult = -1.0
+	}
+	
+	cost = 100
+	
+	ai_will_do = { always = no }
+}
