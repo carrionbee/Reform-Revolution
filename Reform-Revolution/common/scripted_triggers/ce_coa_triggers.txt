@@ -1,21 +1,4 @@
-﻿coa_monarchy_trigger = {
-	OR = {
-		has_law = law_type:law_chiefdom
-		has_law = law_type:law_monarchy
-	}
-}
-
-coa_undemocratic_monarchy_trigger = {
-	coa_monarchy_trigger = yes
-	OR = {
-		has_law = law_type:law_autocracy 
-		has_law = law_type:law_elder_council
-		has_law = law_type:law_oligarchy
-	    has_law = law_type:law_single_party_state
-	}
-}
-
-coa_dictatorship_trigger = {
+﻿coa_dictatorship_trigger = {
 	coa_republic_trigger = yes
 	coa_autocracy_trigger = yes
 }
