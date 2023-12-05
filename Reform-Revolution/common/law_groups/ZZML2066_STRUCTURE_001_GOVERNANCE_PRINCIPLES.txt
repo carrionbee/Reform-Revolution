@@ -11,8 +11,6 @@ lawgroup_governance_principles = {
 			is_subject = yes
 			OR = {
 				is_subject_type = subject_type_personal_union
-				is_subject_type = subject_type_federal_republic
-				is_subject_type = subject_type_autonomous_federal_republic
 				has_government_type = gov_chartered_company
 			}			
 		}

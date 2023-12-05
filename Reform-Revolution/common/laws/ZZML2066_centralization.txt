@@ -85,19 +85,11 @@ law_military_cantons = {
 	
 	on_activate = {
 		custom_tooltip = military_administration_risk_strong_presidency_tt
-		custom_tooltip = {	# strong military will use political power to push for a state of martial law / de-facto military junta
+		custom_tooltip = {
 		text = military_administration_risk_strong_presidency_desc_tt
 			if = {
 				limit = {
-					OR = {
-						has_law = law_type:GovPlus_law_republic
-						has_law = law_type:law_council_republic
-						has_law = law_type:law_corporatocracy
-					}
-					OR = {
-						has_law = law_type:law_parliamentary_republic
-						has_law = law_type:GovPlus_law_council_system
-					}
+					has_law = law_type:law_parliamentary_republic
 					OR = {
 						ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
 						ig:ig_armed_forces = { is_powerful = yes }
@@ -108,13 +100,8 @@ law_military_cantons = {
 			if = {
 				limit = {
 					OR = {
-						has_law = law_type:GovPlus_republic
-						has_law = law_type:law_council_republic
-						has_law = law_type:law_corporatocracy
-					}
-					OR = {
 						has_law = law_type:law_presidential_republic
-						has_law = law_type:law_single_party_state
+						has_law = law_type:law_council_republic
 					}
 					NOT = { has_law = law_type:law_law_generalissimo }
 					OR = {
@@ -198,16 +185,6 @@ law_unitary = {
 		democracy
 	}
 	
-	possible = {
-		NAND = {
-			is_subject = yes
-			OR = {
-				is_subject_type = subject_type_federal_republic
-				is_subject_type = subject_type_autonomous_federal_republic
-			}			
-		}
-	}
-	
 	institution = institution_unitary
 	institution_modifier = {
 	
@@ -230,7 +207,7 @@ law_unitary = {
 	}
 	
 	modifier = {
-		country_authority_add -= 100
+		country_authority_add = 100
 		country_institution_unitary_max_investment_add = 5
 	}
 	
@@ -240,7 +217,7 @@ law_unitary = {
 		law_federalism
 	}
 	
-	can_impose = { is_subject_of = scope:initiator }
+	can_impose = { is_subject_of = scope:initiator } 
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
