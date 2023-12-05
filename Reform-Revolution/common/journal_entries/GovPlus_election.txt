@@ -1,0 +1,72 @@
+﻿GovPlus_je_premier_election = {
+    # root = the owner of the Journal Entry (country scope)
+    # scope:journal_entry = this Journal Entry (journalentry scope)
+    # scope:target = target value, with which this Journal Entry was added using `add_journal_entry` effect
+
+    icon = "gfx/interface/icons/event_icons/event_election.dds"
+    
+    is_shown_when_inactive = {
+        GovPlus_st_is_presidential_monarchy = yes
+        in_election_campaign = yes
+    }
+    
+    possible = {
+        GovPlus_st_is_presidential_monarchy = yes
+    }
+    
+    immediate = {
+        get_ruler_for:presidential_elective = {
+            interest_group = {
+                owner = {
+                    set_variable = {
+                        name  = GovPlus_prospective_premier
+                        value = prev
+                    }
+                }
+            }
+        }
+    }
+    
+    invalid = {
+        OR = {
+            GovPlus_st_is_presidential_monarchy = no
+            in_election_campaign = no
+        }
+    }
+    
+    on_invalid = {
+        if = {
+            limit = {
+                GovPlus_st_is_presidential_monarchy = yes
+            }
+            GovPlus_se_set_premier = yes
+            GovPlus_se_update_head_of_gov_modifier = yes
+        }
+        remove_variable = GovPlus_prospective_premier
+    }
+    
+    on_weekly_pulse = {
+        effect = {
+            get_ruler_for:presidential_elective = {
+                interest_group = {
+                    owner = {
+                        set_variable = {
+                            name  = GovPlus_prospective_premier
+                            value = prev
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    weight = 0
+
+    transferable = no
+    
+    can_revolution_inherit = no
+
+    can_deactivate = yes
+    
+    should_be_pinned_by_default = no
+}
