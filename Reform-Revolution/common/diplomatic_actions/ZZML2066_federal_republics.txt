@@ -1,0 +1,245 @@
+﻿federal_republic = {
+	requires_approval = yes
+	can_use_obligations = yes
+	
+	show_effect_in_tooltip = yes
+
+	potential = {
+		scope:target_country = {
+			is_direct_subject_of = root
+			is_subject_type = subject_type_autonomous_republic
+		}
+	}
+	
+	possible = {
+		NOT = { has_war_with = scope:target_country }
+		NOT = { is_subject_of = scope:target_country }
+		is_junior_in_customs_union = no
+		has_diplomatic_relevance = scope:target_country	
+		custom_tooltip = {
+			text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER
+			scope:target_country.relations:root >= relations_threshold:cordial
+		}
+		is_revolutionary = no
+		scope:target_country = {
+			is_revolutionary = no
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_MARKET_CONNECTION_REQUIRED
+			OR = {	
+				AND = {
+					market = { has_port = yes }
+					scope:target_country.market = { has_port = yes }
+				}
+				market = {
+					any_scope_country = {
+						is_adjacent_to_country = scope:target_country
+					}
+				}
+			}
+		}			
+	}
+	
+	accept_effect = {
+		change_relations = { country = scope:target_country value = -40 }
+		scope:root = {
+			if = {
+				limit = { 
+					has_law = law_type:law_unitary
+				}
+			}
+			activate_law = law_type:law_federalism
+		}
+		scope:target_country = {
+			if = {
+				limit = { 
+					has_law = law_type:law_unitary
+				}
+			}
+			activate_law = law_type:law_federalism
+		}
+	}
+
+	pact = {
+		cost = 10
+		is_customs_union = yes
+		has_junior_participant = yes
+		recipient_pays_maintenance = no
+		
+		relations_progress_per_day = 1
+		relations_improvement_max = 100
+
+		subject_type = subject_type_federal_republic
+		
+		actor_can_break = {
+			is_diplomatic_play_committed_participant = no
+		}
+
+		target_can_break = { # Has to use diplomatic play to break
+			error_check = {
+				severity = invalid
+				always = no
+			}
+		}
+		
+		should_invalidate = {
+			OR = {
+				NOR = { 
+					has_law = law_type:GovPlus_law_republic
+					has_law = law_type:law_council_republic
+					has_law = law_type:law_corporatocracy
+					has_law = law_type:law_unitary
+				}
+				scope:target_country = { 
+					NOR = { 
+						has_law = law_type:GovPlus_law_republic 
+						has_law = law_type:law_council_republic
+						has_law = law_type:law_corporatocracy
+						has_law = law_type:law_unitary
+					}
+				}
+			}
+		}
+
+		break_effect = {
+			change_relations = { country = scope:target_country value = +40 }
+			remove_diplomatic_pact = {
+				country = scope:target_country
+				type = federal_republic
+			}
+			create_diplomatic_pact = {
+				country = scope:target_country
+				type = autonomous_federal_republic
+			}
+		}
+	}
+	
+	ai = {
+		will_break = {
+			always = no			
+		}		
+	}
+}
+
+autonomous_federal_republic = {
+	#can_select = no
+	requires_approval = no
+	should_notify_third_parties = no
+	show_effect_in_tooltip = yes
+
+	potential = {
+		scope:target_country = {
+			is_direct_subject_of = root
+			is_subject_type = subject_type_autonomous_republic
+		}
+	}
+	
+	possible = {
+		NOT = { has_war_with = scope:target_country }
+		NOT = { is_subject_of = scope:target_country }
+		is_junior_in_customs_union = no
+		has_diplomatic_relevance = scope:target_country	
+		custom_tooltip = {
+			text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER
+			scope:target_country.relations:root >= relations_threshold:cordial
+		}
+		is_revolutionary = no
+		scope:target_country = {
+			is_revolutionary = no
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_MARKET_CONNECTION_REQUIRED
+			OR = {	
+				AND = {
+					market = { has_port = yes }
+					scope:target_country.market = { has_port = yes }
+				}
+				market = {
+					any_scope_country = {
+						is_adjacent_to_country = scope:target_country
+					}
+				}
+			}
+		}			
+	}
+	
+	accept_effect = {
+		change_relations = { country = scope:target_country value = -40 }
+		scope:root = {
+			if = {
+				limit = { 
+					has_law = law_type:law_unitary
+				}
+			}
+			activate_law = law_type:law_federalism
+		}
+		scope:target_country = {
+			if = {
+				limit = { 
+					has_law = law_type:law_unitary
+				}
+			}
+			activate_law = law_type:law_federalism
+		}
+	}
+
+	pact = {
+		cost = 10
+		is_customs_union = no
+		has_junior_participant = yes
+		recipient_pays_maintenance = no
+		
+		relations_progress_per_day = 1
+		relations_improvement_max = 100
+
+		subject_type = subject_type_autonomous_federal_republic
+		
+		actor_can_break = {
+			is_diplomatic_play_committed_participant = no
+		}
+
+		target_can_break = { # Has to use diplomatic play to break
+			error_check = {
+				severity = invalid
+				always = no
+			}
+		}
+		
+		should_invalidate = {
+			OR = {
+				NOR = { 
+					has_law = law_type:GovPlus_law_republic
+					has_law = law_type:law_council_republic
+					has_law = law_type:law_corporatocracy
+					has_law = law_type:law_unitary
+				}
+				scope:target_country = { 
+					NOR = { 
+						has_law = law_type:GovPlus_law_republic 
+						has_law = law_type:law_council_republic
+						has_law = law_type:law_corporatocracy
+						has_law = law_type:law_unitary
+					}
+				}
+			}
+		}
+
+		break_effect = {
+			change_relations = { country = scope:target_country value = +40 }
+			remove_diplomatic_pact = {
+				country = scope:target_country
+				type = autonomous_federal_republic
+			}
+			create_diplomatic_pact = {
+				country = scope:target_country
+				type = protectorate
+			}
+		}
+	}
+	
+	ai = {
+		will_break = {
+			always = no			
+		}		
+	}
+}
