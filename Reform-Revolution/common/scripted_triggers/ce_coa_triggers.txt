@@ -1,23 +1,5 @@
-﻿coa_dictatorship_trigger = {
-	coa_republic_trigger = yes
-	coa_autocracy_trigger = yes
-}
-
-coa_oligarchy_trigger = {
-	coa_republic_trigger = yes
-	has_law = law_type:law_oligarchy
-}
-
-coa_multicultural_trigger = {
+﻿coa_multicultural_trigger = {
 	has_law = law_type:law_multicultural
-}
-
-coa_autocracy_trigger = {
-	OR = {
-	has_law = law_type:law_autocracy 
-	has_law = law_type:law_single_party_state
-	}
-	NOT = {has_law = has_law = law_type:law_council_republic}
 }
 
 coa_anarchy_trigger = {
@@ -30,6 +12,7 @@ coa_communist_trigger = {
 
 coa_commune_trigger = {
 	has_law = law_type:law_mass_democracy
+	NOT = { has_law = law_type:law_anarchy }
 }
 
 coa_technocracy_trigger = {
@@ -65,6 +48,7 @@ coa_nihilist_trigger = {
 		has_law = law_type:law_theocracy
 		has_law = law_type:law_monarchy
 		has_law = law_type:law_council_republic
+		has_law = law_type:law_anarchy
 	}
 	any_scope_character = {
 		has_ideology = ideology:ideology_atheist
@@ -82,11 +66,6 @@ coa_secessionist_or_revolutionary_trigger = {
 coa_def_multicultural_trigger = {
 	exists = scope:actor
 	scope:actor = { coa_multicultural_trigger = yes }
-}
-
-coa_def_autocracy_flag_trigger = {
-	exists = scope:actor
-	scope:actor = { coa_autocracy_trigger = yes }
 }
 
 coa_def_communist_flag_trigger = {
@@ -109,16 +88,6 @@ coa_def_anarchy_flag_trigger = {
 	scope:actor = { coa_anarchy_trigger = yes }
 }
 
-coa_def_dictatorship_flag_trigger = {
-	exists = scope:actor
-	scope:actor = { coa_dictatorship_trigger = yes }
-}
-
-coa_def_oligarchy_flag_trigger = {
-	exists = scope:actor
-	scope:actor = { coa_oligarchy_trigger = yes }
-}
-
 coa_def_state_religion_flag_trigger = {
 	exists = scope:actor
 	scope:actor = { has_law = law_type:law_state_religion }
@@ -134,10 +103,10 @@ coa_def_military_junta_flag_trigger = {
 	scope:actor = { coa_military_trigger = yes }
 }
 
-coa_def_fascist_flag_trigger = {
-	exists = scope:actor
-	scope:actor = { coa_fascist_trigger = yes }
-}
+#coa_def_fascist_flag_trigger = {
+#	exists = scope:actor
+#	scope:actor = { coa_fascist_trigger = yes }
+#}
 
 coa_def_nihilist_flag_trigger = {
 	exists = scope:actor
