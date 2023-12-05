@@ -1,13 +1,21 @@
 # Reform & Revolution
 Reform &amp; Revolution mod for Victoria 3
 
-### Reform & Revolution update for 1.5.10 will be releasing on the 3rd of December 12:30 UTC
+### Reform & Revolution's first major update has been released for 1.5.10!
 
-**Hello 1.5!**
-
-*New features! Corportatist Labour Syndicates! LGBTQ Rights Laws! Technocratic Dirigisme! Character Interactions! (with more to come!) Discreet Powers! Converting Ideologies! and more!*
+**Update Includes:**
+• Compatibility and feature harmonisation with the mods: Laws+, Queer Rights, Environmental Regulations, and more!
+• Labour Rights Law: Corporatist Labour Syndicate!
+• Land Reform Law: Deep Ecology Cooperatives!
+• Completely redesigned Discreet Powers (now Executive Privileges!)
+• 'Martial Law' Government!
+• New Ideologies to hate and love: Eco-Anarchist, Autarkist, Market Socialist, Security Socialist
 
 ~~is funni to see integralism in the base game now. it works with our urban ownership laws. hehe~~
+
+_________________________________________________________________________________________________________________________________________________________________________
+
+**New features! Corportatist Labour Syndicates! Technocratic Dirigisme! Character Interactions! Executive Privileges! Converting Ideologies! and more!**
 
 This mod started as an **expansion** of the original scope of "Centralized Law Pack". 
 Now with new Ownership Methods! Redesigned and NEW laws! Ideologies! Decrees! **Queer Rights Compatibility!** Working Hours Compatibility! Environmental Regulations Compatibility!
@@ -34,8 +42,6 @@ I made these mod's contents compatibile with mine, harmonised, curated, and upda
 **Recommended, but Optional:**  
   • *Birth Rates Laws:* https://steamcommunity.com/sharedfiles/filedetails/?id=3024374381  
     A wonderful smol mod. My effects harmonisation did make a minor change to what the tax credit does (effects accepted pops only) but a great mod!  
-  • *Assassination & Espionage:*  https://steamcommunity.com/sharedfiles/filedetails/?id=2885841953  
-    One of my first thoughts since PDX added character interactions. This mod is **Required** for the CHARACTER INTERACTION: Neutralise Target. (I prefer to give credit to the OG mod in this way, so if people like this, they can subscribe to the OG and use the character interaction implementation from my mod. The other ideological character interactions are stand-alone for my mod).  
   • *Emergency Laws:* https://steamcommunity.com/sharedfiles/filedetails/?id=2921807355  
   • *Emergency Election:* https://steamcommunity.com/sharedfiles/filedetails/?id=2971877982  
     Very very nice mods, and plays nicely with the newly revised Executive Privleges. You require some form of Executive Privleges to do this, or Autocracy in order to activate the decisions.  
@@ -51,7 +57,11 @@ I made these mod's contents compatibile with mine, harmonised, curated, and upda
 • Harmonisation and compatibility with 'Private Construction Industry'  
 • Harmonisation and compatibility with 'Heart of Appalachia, An Atompunk Mod'  
 • Harmonisation and compatibility with 'Laws +'  
-• Harmonisation, compatibility **and** expansion of 'Working' Hours' Mod  
+• Update, harmonisation and integration of the Assassinations mod, as it seems to be abandoned. All credits and respects to the OG 🙏.
+• Harmonisation, integration **and** expansion of 'Working' Hours' Mod
+• *Regarding Working Hours Laws:* https://steamcommunity.com/sharedfiles/filedetails/?id=2908811278
+It is such an important struggle for the labour unions of the period, let alone in general. The expansions I reference are of the laws: we now have 40 hour weeks, 32 hour weeks, 20 hours weeks. Very progressive. Very prolet avant-garde.
+
 
 I hope to expand this mod over time, and if you have feedback please do comment!
 
