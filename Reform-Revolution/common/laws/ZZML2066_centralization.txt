@@ -85,20 +85,23 @@ law_military_cantons = {
 	
 	on_activate = {
 		custom_tooltip = military_administration_risk_strong_presidency_tt
-		custom_tooltip = {
+		custom_tooltip = {	# strong military will use political power to push for a state of martial law / de-facto military junta
 		text = military_administration_risk_strong_presidency_desc_tt
 			if = {
 				limit = {
 					OR = {
 						has_law = law_type:GovPlus_law_republic
 						has_law = law_type:law_council_republic
+						has_law = law_type:law_corporatocracy
 					}
 					OR = {
 						has_law = law_type:law_parliamentary_republic
 						has_law = law_type:GovPlus_law_council_system
-						has_law = law_type:law_single_party_state
 					}
-					ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+					OR = {
+						ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+						ig:ig_armed_forces = { is_powerful = yes }
+					}
 				}
 				activate_law = law_type:law_presidential_republic
 			}
@@ -107,10 +110,17 @@ law_military_cantons = {
 					OR = {
 						has_law = law_type:GovPlus_republic
 						has_law = law_type:law_council_republic
+						has_law = law_type:law_corporatocracy
 					}
-					has_law = law_type:law_presidential_republic
+					OR = {
+						has_law = law_type:law_presidential_republic
+						has_law = law_type:law_single_party_state
+					}
 					NOT = { has_law = law_type:law_law_generalissimo }
-					ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+					OR = {
+						ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+						ig:ig_armed_forces = { is_powerful = yes }
+					}
 				}
 				activate_law = law_type:law_generalissimo
 			}
