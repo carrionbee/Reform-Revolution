@@ -1,0 +1,35 @@
+﻿ideology_constitutionalist = {
+	icon = "gfx/interface/icons/ideology_icons/unused/reformer.dds"
+	
+	lawgroup_governance_principles = {	
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_monarchy = approve	
+		law_theocracy = neutral
+		law_council_republic = disapprove
+		law_corporatocracy = neutral
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_universal_suffrage = strongly_approve
+		law_census_voting = strongly_approve
+		law_wealth_voting = approve
+		law_landed_voting = neutral
+		law_single_party_state = neutral
+		law_technocracy = neutral
+		law_oligarchy = disapprove
+		law_autocracy = disapprove
+		law_anarchy = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+		law_ecclesiarchy = disapprove
+	}
+	
+	lawgroup_executive_privileges = {
+		law_no_reserve_powers = neutral
+		law_ministers_appointed = neutral
+		law_decree_powers = disapprove
+		law_personality_cult = disapprove
+		law_sycophants = disapprove
+		law_generalissimo = neutral
+	}
+}

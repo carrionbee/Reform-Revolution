@@ -1,0 +1,57 @@
+﻿ideology_caudillismo = {
+	icon = "gfx/interface/icons/ideology_icons/caudillismo.dds"
+	
+	lawgroup_centralization = {		
+		law_military_cantons = approve
+		law_unitary = approve
+		law_feudalism = neutral
+		law_federalism = disapprove
+	}
+	
+	lawgroup_governance_principles = {
+		law_monarchy = approve
+		law_presidential_republic = approve
+		law_theocracy = neutral
+		law_theocracy_occultists = disapprove
+		law_parliamentary_republic = neutral
+		law_corporatocracy = disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_oligarchy = approve
+		law_single_party_state = approve
+		law_landed_voting = approve
+		law_technocracy = neutral
+		law_wealth_voting = neutral
+		law_ecclesiarchy = disapprove
+		law_census_voting = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+	}
+	
+	lawgroup_bureaucracy = {
+		law_hereditary_bureaucrats = approve
+		law_appointed_bureaucrats = approve
+		law_elected_bureaucrats = disapprove
+		law_communal_adminstration = strongly_disapprove
+	}
+
+	lawgroup_policing = {
+		law_local_police = approve
+		law_private_security_system = approve
+		law_militarized_police = approve
+		law_dedicated_police = neutral
+		law_no_police = disapprove
+	}
+	
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = approve
+#		law_elitist_system = approve
+#		law_local_law = neutral
+#		law_liberal_system = disapprove
+#		law_authoritarian_system = approve
+#	}
+}

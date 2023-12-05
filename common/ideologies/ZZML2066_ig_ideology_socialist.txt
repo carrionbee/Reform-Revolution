@@ -1,0 +1,31 @@
+﻿ideology_socialist = {
+	icon = "gfx/interface/icons/ideology_icons/socialist.dds"
+
+	lawgroup_governance_principles = {
+		law_corporatocracy = strongly_disapprove
+		law_monarchy = strongly_disapprove
+		law_theocracy = strongly_disapprove
+		law_theocracy_occultists = strongly_disapprove
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral		
+		law_council_republic = strongly_approve
+	}
+
+	lawgroup_economic_system = {	
+		law_industry_banned = strongly_disapprove	
+		law_traditionalism = strongly_disapprove		
+		law_laissez_faire = disapprove	
+		law_agrarianism = neutral
+		law_interventionism = neutral
+		law_command_economy = approve
+		law_cooperative_ownership = approve
+		law_communal_principle = approve	
+	}
+	
+	lawgroup_enviromental_protections = {
+		law_no_enviromental_protections = strongly_disapprove
+		law_pollution_tax = neutral
+		law_enviromental_standards = approve
+		law_pollution_management = approve
+	}
+}
