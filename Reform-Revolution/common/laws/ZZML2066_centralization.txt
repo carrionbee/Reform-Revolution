@@ -90,7 +90,10 @@ law_military_cantons = {
 			if = {
 				limit = {
 					has_law = law_type:law_parliamentary_republic
-					ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+					OR = {
+						ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+						ig:ig_armed_forces = { is_powerful = yes }
+					}
 				}
 				activate_law = law_type:law_presidential_republic
 			}
@@ -101,7 +104,10 @@ law_military_cantons = {
 						has_law = law_type:law_council_republic
 					}
 					NOT = { has_law = law_type:law_law_generalissimo }
-					ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+					OR = {
+						ig:ig_armed_forces = { is_strongest_ig_in_government = yes }
+						ig:ig_armed_forces = { is_powerful = yes }
+					}
 				}
 				activate_law = law_type:law_generalissimo
 			}
