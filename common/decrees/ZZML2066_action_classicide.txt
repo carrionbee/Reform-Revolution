@@ -13,20 +13,20 @@ action_classicide_landowners = {
 				has_law = law_type:law_deep_ecology_cooperatives	# socialised relations of production in the agriculture sector on-whole
 			}
 			any_interest_group = {
-				#is_in_government = yes
-				is_strongest_ig_in_government = yes 	# must be the leading force in govt, not coalition.
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_socialist		# redundancy for other mods
-						has_ideology = ideology:ideology_ig_united_socialist		# before the reformist-revolutionist split
-						has_ideology = ideology:ideology_ig_revolutionist_socialist	# obstructionists will not be allowed to exist.
-						has_ideology = ideology:ideology_agrarian_socialist_leader	# 土改
-						has_ideology = ideology:ideology_vanguardist	# obstructionists will not be allowed to exist.
-						has_ideology = ideology:ideology_technocratic_socialism		# not only are landowners counter-revolutionary, they're inefficient
-						has_ideology = ideology:ideology_communist_securocrat		# keep killing until there is no one left in your way
-						has_ideology = ideology:ideology_futurist		# the future is not made for everyone
-						has_ideology = ideology:ideology_deep_ecology  	# KILL THE FUCKING LANDLORDS. FEED THEM TO THE SUBSTRATE.
+				AND = {
+					is_in_government = yes
+					is_powerful = yes 	# must be the leading force in govt, not coalition.
 					}
+				OR = {
+					has_ideology = ideology:ideology_socialist		# redundancy for other mods
+					has_ideology = ideology:ideology_ig_united_socialist		# before the reformist-revolutionist split
+					has_ideology = ideology:ideology_ig_revolutionist_socialist	# obstructionists will not be allowed to exist.
+					has_ideology = ideology:ideology_agrarian_socialist_leader	# 土改
+					has_ideology = ideology:ideology_vanguardist	# obstructionists will not be allowed to exist.
+					has_ideology = ideology:ideology_technocratic_socialism		# not only are landowners counter-revolutionary, they're inefficient
+					has_ideology = ideology:ideology_communist_securocrat		# keep killing until there is no one left in your way
+					has_ideology = ideology:ideology_futurist		# the future is not made for everyone
+					has_ideology = ideology:ideology_deep_ecology  	# KILL THE FUCKING LANDLORDS. FEED THEM TO THE SUBSTRATE.
 				}
 			}
 		}
