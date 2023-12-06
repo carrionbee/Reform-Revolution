@@ -16,7 +16,10 @@ law_autocracy = {
 	}
 
 	on_activate = {
-		# Moved to GovPlus_law_no_voting
+		if = {
+			limit = { NOT = { has_law = law_type:GovPlus_law_no_voting } }
+			activate_law = law_type:GovPlus_law_no_voting
+		}
 	}
 
 	modifier = {
@@ -172,7 +175,10 @@ law_oligarchy = {
 	}
 
 	on_activate = {
-		# Moved to GovPlus_law_no_voting
+		if = {
+			limit = { NOT = { has_law = law_type:GovPlus_law_no_voting } }
+			activate_law = law_type:GovPlus_law_no_voting
+		}
 	}
 	
 	modifier = {
@@ -256,7 +262,10 @@ law_elder_council = {
 	}
 	
 	on_activate = {
-		# Moved to GovPlus_law_no_voting
+		if = {
+			limit = { NOT = { has_law = law_type:GovPlus_law_no_voting } }
+			activate_law = law_type:GovPlus_law_no_voting
+		}
 	}
 
 	modifier = {
