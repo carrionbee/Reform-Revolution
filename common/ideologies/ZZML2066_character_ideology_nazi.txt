@@ -68,6 +68,7 @@
 		law_commercialized_agriculture = neutral
 		law_homesteading = strongly_disapprove
 		law_collectivized_agriculture = strongly_disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
 	}
 
 	lawgroup_taxation = {

@@ -55,6 +55,12 @@
 		law_hereditary_bureaucrats = strongly_disapprove
 	}
 	
+	lawgroup_gun_rights = {
+		law_banned_firearms = strongly_disapprove
+		law_licensed_firearms = disapprove
+		law_unrestricted_firearms = strongly_approve
+	}
+	
 #	lawgroup_crime_and_punishment = {
 #		law_traditional_law = strongly_disapprove
 #		law_elitist_system = strongly_disapprove

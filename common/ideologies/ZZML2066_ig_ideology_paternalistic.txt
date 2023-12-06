@@ -65,6 +65,12 @@
 		law_pollution_management = strongly_disapprove
 	}
 	
+	lawgroup_gun_rights = {
+		law_banned_firearms = disapprove
+		law_licensed_firearms = neutral
+		law_unrestricted_firearms = approve
+	}
+	
 #	lawgroup_crime_and_punishment = {
 #		law_traditional_law = approve
 #		law_elitist_system = approve

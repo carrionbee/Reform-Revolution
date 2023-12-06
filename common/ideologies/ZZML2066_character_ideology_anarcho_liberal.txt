@@ -41,6 +41,7 @@ ideology_anarcho_liberal = {
 	}
 
 	lawgroup_land_reform = {
+		law_deep_ecology_cooperatives = strongly_disapprove
 		law_commercialized_agriculture = strongly_approve
 		law_tenant_farmers = disapprove
 		law_homesteading = disapprove
@@ -93,6 +94,12 @@ ideology_anarcho_liberal = {
 		law_pollution_tax = strongly_disapprove
 		law_enviromental_standards = strongly_disapprove
 		law_pollution_management = strongly_disapprove
+	}
+
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = approve
+		law_limited_beast_restrictions = disapprove
+		law_total_beast_restrictions = strongly_disapprove
 	}
 	
 	possible = {

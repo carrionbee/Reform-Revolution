@@ -67,6 +67,12 @@
 		law_generalissimo = disapprove
 	}
 
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = neutral
+		law_limited_beast_restrictions = approve
+		law_total_beast_restrictions = neutral
+	}
+
 #	lawgroup_crime_and_punishment = {
 #		law_traditional_law = disapprove
 #		law_elitist_system = strongly_disapprove

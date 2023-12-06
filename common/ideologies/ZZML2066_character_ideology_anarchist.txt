@@ -61,7 +61,8 @@
 		law_aristocratic_holdings = strongly_disapprove
 	}
 	
-	lawgroup_land_reform = {		
+	lawgroup_land_reform = {
+		law_deep_ecology_cooperatives = strongly_approve
 		law_collectivized_agriculture = strongly_approve
 		law_homesteading = neutral
 		law_tenant_farmers = strongly_disapprove
@@ -134,6 +135,12 @@
 		law_personality_cult = disapprove
 		law_sycophants = disapprove
 		law_generalissimo = disapprove
+	}
+
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = disapprove
+		law_limited_beast_restrictions = neutral
+		law_total_beast_restrictions = approve
 	}
 
 #	lawgroup_crime_and_punishment = {

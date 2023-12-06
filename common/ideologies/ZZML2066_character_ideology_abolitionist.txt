@@ -12,11 +12,6 @@
 
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
-		law_titled_estates = neutral
-		law_tenant_farmers = neutral
-		law_homesteading = neutral
-		law_collectivized_agriculture = neutral
-		law_commercialized_agriculture = neutral
 	}
 	
 	lawgroup_discriminated_pop = {

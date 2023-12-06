@@ -6,6 +6,7 @@
 		law_collectivized_agriculture = neutral
 		law_commercialized_agriculture = neutral
 		law_tenant_farmers = disapprove
+		law_deep_ecology_cooperatives = disapprove
 		law_serfdom = strongly_disapprove
 	}
 	

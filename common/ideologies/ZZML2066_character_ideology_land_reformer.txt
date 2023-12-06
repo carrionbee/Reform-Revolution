@@ -18,6 +18,7 @@ ideology_land_reformer = {
 		law_commercialized_agriculture = neutral
 		law_homesteading = approve
 		law_collectivized_agriculture = approve
+		law_deep_ecology_cooperatives = approve
 	}
 
 	possible = {

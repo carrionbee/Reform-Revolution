@@ -59,6 +59,7 @@
 		law_titled_estates = strongly_disapprove
 		law_commercialized_agriculture = strongly_disapprove
 		law_serfdom = strongly_disapprove
+		law_deep_ecology_cooperatives = disapprove
 		law_homesteading = neutral
 		law_collectivized_agriculture = strongly_approve
 	}
