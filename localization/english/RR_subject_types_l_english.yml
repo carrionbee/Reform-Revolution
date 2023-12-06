@@ -1,0 +1,42 @@
+﻿l_english:
+
+ # Subject Types - Federal Republics & Autonomous Federal Republics
+ 
+ 
+ # Federal Republic
+ subject_type_federal_republic:1 "Federal Republic"
+ subject_type_federal_republic_desc:2 "This form of Federal Republic is integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+
+ federal_republic:1 "Federal Republic"
+ federal_republic_desc:2 "This form of Federal Republic is integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+
+ become_federal_republic:1 "Offer to Integrate into the Federal Republic"
+ become_federal_republic_desc:2 "Federal Republics are integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+
+ federal_republic_action_break_name:1 "Offer Federal Republic Autonomy"
+ federal_republic_action_break_name_desc:2 "Offer to grant Autonomy to this Federal Republic"
+
+
+ # Autonomous Federal Republic
+ subject_type_autonomous_federal_republic:1 "Federal Autonomous Republic"
+ subject_type_autonomous_federal_republic_desc:2 "This form of Federal Republic is more Autonomous, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+ 
+ autonomous_federal_republic:1 "Autonomous Federal Republic"
+ autonomous_federal_republic_desc:2 "This form of Federal Republic is more Autonomous, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+
+ become_autonomous_federal_republic:1 "Offer to Federate as an Autonomous Republic"
+ become_autonomous_federal_republic_desc:2 "Autonomous Federal Republics, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+
+ autonomous_federal_republic_action_break_name:1 "Offer Autonomous Federal Republic Independence under Protectorate Status"
+ autonomous_federal_republic_action_break_name_desc:2 "Offer Independence from the Federation, while keeping them under our protection"
+
+
+ # Federal Revenues Tax (+20% Tax on State Revenues)
+ federal_republic_tax:1 "Issue a Federal Revenues Tax"
+ federal_republic_tax_desc:2 "Issue a Direct Tax on the Revenues of this Federal Republic"
+ 
+ federal_republic_tax_break_name:1 "Cease the Federal Revenues Tax"
+ federal_republic_tax_break_name_desc:2 "Cease all Direct Tax on the Revenues from this Federal Republic"
+
+ 
+ #
