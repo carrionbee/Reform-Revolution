@@ -14,7 +14,7 @@ zzml2066_classwar.1 = {
 			save_scope_as = state_undergoing_classicide
 		}
 		hidden_effect = {
-			scope:state_undergoing_classicide.state_region = {
+			scope:state_undergoing_classicide = {
 				add_devastation = 5
 			}
 			add_radicals_in_state = {
@@ -43,7 +43,7 @@ zzml2066_classwar.2 = {
 			save_scope_as = state_undergoing_mass_strike
 		}
 		hidden_effect = {
-			scope:state_undergoing_mass_strike.state_region = {
+			scope:state_undergoing_mass_strike = {
 				add_devastation = 3
 			}
 			add_radicals_in_state = {
@@ -72,7 +72,7 @@ zzml2066_classwar.3 = {
 			save_scope_as = state_extorting_the_rich
 		}
 		hidden_effect = {
-			scope:state_extorting_the_rich.state_region = {
+			scope:state_extorting_the_rich = {
 				add_devastation = 1
 			}
 			add_radicals_in_state = {
@@ -101,7 +101,7 @@ zzml2066_classwar.4 = {
 			save_scope_as = state_extorting_the_poor
 		}
 		hidden_effect = {
-			scope:state_extorting_the_poor.state_region = {
+			scope:state_extorting_the_poor = {
 				add_devastation = 1
 			}
 			add_radicals_in_state = {
