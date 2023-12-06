@@ -11,7 +11,7 @@
 			is_direct_subject_of = root
 			OR = {
 				is_subject_type = subject_type_federal_republic
-				is_subject_type = subject_type_autonomous_republic
+				is_subject_type = subject_type_autonomous_federal_republic
 			}
 		}	
 	}
@@ -54,7 +54,13 @@
 				is_country_type = decentralized
 				scope:target_country = { is_country_type = decentralized }
 				in_default = yes
-				is_subject = no
+				NAND = {
+					is_direct_subject_of = root
+						OR = {
+							is_subject_type = subject_type_federal_republic
+							is_subject_type = subject_type_autonomous_federal_republic
+						}
+				}
 			}
 		}
 	}
