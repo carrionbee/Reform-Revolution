@@ -14,13 +14,13 @@
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }
@@ -165,13 +165,13 @@ pm_merchant_guilds_building_textile_mills = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }
@@ -316,13 +316,13 @@ pm_merchant_guilds_building_furniture_manufacturies = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }
@@ -467,13 +467,13 @@ pm_merchant_guilds_building_glassworks = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }
@@ -618,13 +618,13 @@ pm_merchant_guilds_building_tooling_workshops = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }
@@ -768,13 +768,13 @@ pm_merchant_guilds_building_paper_mills = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }
@@ -919,13 +919,13 @@ pm_merchant_guilds_industry = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }
@@ -1069,13 +1069,13 @@ pm_merchant_guilds_building_shipyards = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }		
@@ -1219,13 +1219,13 @@ pm_merchant_guilds_building_arms_industry = {
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_shopkeepers_add = 250
-			building_employment_clerks_add = 100
-			building_employment_capitalists_add = 10
+			building_employment_shopkeepers_add = 200
+			building_employment_clerks_add = 50
+			building_employment_capitalists_add = 1
 		}
 		unscaled = {
 			building_shopkeepers_shares_add = 10
-			building_capitalists_shares_add = 50
+			building_capitalists_shares_add = 30
 		}
 	}
 }		
