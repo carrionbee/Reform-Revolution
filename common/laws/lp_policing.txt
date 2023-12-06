@@ -12,6 +12,22 @@ law_private_security_system = {
 		corporatism
 	}
 
+	# RTBA Edit
+	on_activate = {
+		custom_tooltip = {
+			text = rtba_activate_police_departments
+			every_state = {
+				limit = {
+					owner = ROOT
+					has_building = building_police_department
+				}
+				activate_building = {
+					building = building_police_department
+				}
+			}
+		}
+	}
+
 	can_enact = {
 		has_technology_researched = labor_movement
 	}
