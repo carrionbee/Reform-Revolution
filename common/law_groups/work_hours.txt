@@ -1,7 +1,0 @@
-﻿# Working Hours Act
-#lawgroup_labor_work_hours = {
-#	law_group_category = human_rights
-#	
-#	progressive_movement_chance = 2.5
-#	regressive_movement_chance = 0.25	
-#}
