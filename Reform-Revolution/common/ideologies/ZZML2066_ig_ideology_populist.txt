@@ -3,6 +3,7 @@
 	
 	lawgroup_land_reform = {
 		law_collectivized_agriculture = neutral
+		law_deep_ecology_cooperatives = neutral
 		law_homesteading = neutral
 		law_tenant_farmers = disapprove	
 		law_commercialized_agriculture = disapprove

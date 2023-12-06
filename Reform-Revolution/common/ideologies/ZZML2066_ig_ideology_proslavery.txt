@@ -8,6 +8,7 @@
 		law_commercialized_agriculture = neutral
 		law_homesteading = disapprove
 		law_collectivized_agriculture = strongly_disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
 	}
 	
 	lawgroup_slavery = {
@@ -23,5 +24,11 @@
 		law_permanent_residency = neutral
 		law_violent_suppresion = neutral
 		law_forced_labour = strongly_approve
+	}
+	
+	lawgroup_gun_rights = {
+		law_banned_firearms = strongly_disapprove
+		law_licensed_firearms = approve
+		law_unrestricted_firearms = neutral
 	}
 }

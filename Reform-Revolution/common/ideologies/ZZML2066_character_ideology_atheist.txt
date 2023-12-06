@@ -32,6 +32,12 @@
 		law_queer_liberation = neutral
 	}
 	
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = approve
+		law_limited_beast_restrictions = neutral
+		law_total_beast_restrictions = disapprove
+	}
+	
 	possible = {
 		# Agitators should have an ideology at odds with current laws
 		NAND = {

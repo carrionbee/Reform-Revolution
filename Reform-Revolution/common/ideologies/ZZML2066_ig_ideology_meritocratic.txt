@@ -18,6 +18,7 @@
 		law_serfdom = disapprove
 		law_titled_estates = disapprove
 		law_collectivized_agriculture = disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
 	}
 
 	lawgroup_economic_system = {	

@@ -6,6 +6,7 @@
 		law_collectivized_agriculture = neutral
 		law_commercialized_agriculture = neutral
 		law_tenant_farmers = disapprove
+		law_deep_ecology_cooperatives = disapprove
 		law_serfdom = strongly_disapprove
 	}
 	
@@ -41,5 +42,11 @@
 		law_pollution_tax = neutral
 		law_enviromental_standards = approve
 		law_pollution_management = approve
+	}
+	
+	lawgroup_gun_rights = {
+		law_banned_firearms = strongly_disapprove
+		law_licensed_firearms = disapprove
+		law_unrestricted_firearms = strongly_approve
 	}
 }

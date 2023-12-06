@@ -55,10 +55,23 @@
 
 	lawgroup_land_reform = {
 		law_collectivized_agriculture = strongly_disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
 		law_serfdom = disapprove
 		law_tenant_farmers = neutral
 		law_homesteading = disapprove
 		law_commercialized_agriculture = approve
+	}
+	
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = approve
+		law_limited_beast_restrictions = neutral
+		law_total_beast_restrictions = disapprove
+	}
+	
+	lawgroup_gun_rights = {
+		law_banned_firearms = disapprove
+		law_licensed_firearms = neutral
+		law_unrestricted_firearms = approve
 	}
 
 #	lawgroup_crime_and_punishment = {

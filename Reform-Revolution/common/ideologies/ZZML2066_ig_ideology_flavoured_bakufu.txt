@@ -37,5 +37,6 @@
 		law_commercialized_agriculture = disapprove
 		law_homesteading = disapprove
 		law_collectivized_agriculture = disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
 	}
 }

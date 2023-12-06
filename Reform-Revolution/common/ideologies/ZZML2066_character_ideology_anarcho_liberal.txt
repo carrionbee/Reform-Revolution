@@ -49,6 +49,7 @@ ideology_anarcho_liberal = {
 		law_homesteading = disapprove
 		law_serfdom = strongly_disapprove
 		law_collectivized_agriculture = strongly_disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
 	}
 
 	lawgroup_policing = {
@@ -96,6 +97,18 @@ ideology_anarcho_liberal = {
 		law_pollution_tax = strongly_disapprove
 		law_enviromental_standards = strongly_disapprove
 		law_pollution_management = strongly_disapprove
+	}
+	
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = approve
+		law_limited_beast_restrictions = disapprove
+		law_total_beast_restrictions = strongly_disapprove
+	}
+	
+	lawgroup_gun_rights = {
+		law_banned_firearms = strongly_disapprove
+		law_licensed_firearms = disapprove
+		law_unrestricted_firearms = strongly_approve
 	}
 	
 	possible = {

@@ -38,4 +38,10 @@
 		law_migration_controls = strongly_approve
 		law_no_migration_controls = disapprove
 	}
+	
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = disapprove
+		law_limited_beast_restrictions = neutral
+		law_total_beast_restrictions = approve
+	}
 }

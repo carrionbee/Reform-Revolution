@@ -68,6 +68,12 @@
 		law_sycophants = disapprove
 		law_generalissimo = disapprove
 	}
+	
+	lawgroup_gun_rights = {
+		law_banned_firearms = approve
+		law_licensed_firearms = approve
+		law_unrestricted_firearms = strongly_disapprove
+	}
 
 #	lawgroup_crime_and_punishment = {
 #		law_traditional_law = disapprove

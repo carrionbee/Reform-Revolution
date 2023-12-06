@@ -2,10 +2,6 @@
 	icon = "gfx/interface/icons/ideology_icons/abolitionist.dds"
 	
 	lawgroup_land_reform = {
-		law_homesteading = neutral
-		law_tenant_farmers = neutral
-		law_commercialized_agriculture = neutral
-		law_titled_estates = neutral
 		law_serfdom = strongly_disapprove
 	}
 	

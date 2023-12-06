@@ -14,5 +14,11 @@
 		law_military_schools = neutral
 		law_public_schools = disapprove
 		law_private_schools = disapprove		
-	}	
+	}
+	
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = strongly_disapprove
+		law_limited_beast_restrictions = disapprove
+		law_total_beast_restrictions = approve
+	}
 }

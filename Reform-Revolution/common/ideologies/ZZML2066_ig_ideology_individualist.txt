@@ -29,4 +29,10 @@
 		law_migration_controls = disapprove
 		law_closed_borders = strongly_disapprove
 	}
+	
+	lawgroup_gun_rights = {
+		law_banned_firearms = disapprove
+		law_licensed_firearms = neutral
+		law_unrestricted_firearms = approve
+	}
 }

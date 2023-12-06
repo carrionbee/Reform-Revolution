@@ -20,7 +20,7 @@
 		law_single_party_state = strongly_disapprove
 		law_presidential_republic = disapprove
         law_parliamentary_republic = neutral
-		GovPlus_law_council_system = approve
+		GovPlus_law_council_system = strongly_approve
 	}
 	
 	GovPlus_lawgroup_political_franchise = {
@@ -28,7 +28,7 @@
         law_landed_voting = disapprove
         law_wealth_voting = disapprove
         law_census_voting = disapprove
-        law_universal_suffrage = neutral
+        law_universal_suffrage = approve
 		law_mass_democracy = strongly_approve
     }
 	
@@ -36,7 +36,7 @@
 		law_feudalism = strongly_disapprove
 		law_military_cantons = disapprove
 		law_unitary = strongly_disapprove
-		law_federalism = neutral
+		law_federalism = approve
 	}
 	
 	lawgroup_citizenship = {
@@ -78,6 +78,7 @@
 	
 	lawgroup_land_reform = {		
 		law_collectivized_agriculture = strongly_approve
+		law_deep_ecology_cooperatives = strongly_approve
 		law_homesteading = neutral
 		law_tenant_farmers = strongly_disapprove
 		law_titled_estates = strongly_disapprove
@@ -93,8 +94,8 @@
     }
 
 	lawgroup_army_model = {
-		law_national_militia = neutral
-		law_no_army = approve
+		law_national_militia = approve
+		law_no_army = strongly_approve
 		law_professional_army = disapprove
 		law_mass_conscription = disapprove
 		law_peasant_levies = strongly_disapprove
@@ -149,6 +150,12 @@
 		law_personality_cult = disapprove
 		law_sycophants = disapprove
 		law_generalissimo = disapprove
+	}
+	
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = disapprove
+		law_limited_beast_restrictions = neutral
+		law_total_beast_restrictions = approve
 	}
 
 #	lawgroup_crime_and_punishment = {

@@ -14,6 +14,7 @@ ideology_land_reformer = {
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
 		law_titled_estates = strongly_disapprove
+		law_deep_ecology_cooperatives = disapprove
 		law_tenant_farmers = disapprove
 		law_commercialized_agriculture = neutral
 		law_homesteading = approve
