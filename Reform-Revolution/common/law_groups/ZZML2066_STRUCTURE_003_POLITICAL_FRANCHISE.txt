@@ -1,0 +1,7 @@
+GovPlus_lawgroup_political_franchise = {
+	law_group_category = power_structure
+	base_enactment_days = 150
+	
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
