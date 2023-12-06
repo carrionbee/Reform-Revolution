@@ -65,6 +65,7 @@ ideology_ig_anarchist = {
 	
 	lawgroup_land_reform = {		
 		law_collectivized_agriculture = strongly_approve
+		law_deep_ecology_cooperatives = strongly_approve
 		law_homesteading = neutral
 		law_tenant_farmers = strongly_disapprove
 		law_titled_estates = strongly_disapprove
