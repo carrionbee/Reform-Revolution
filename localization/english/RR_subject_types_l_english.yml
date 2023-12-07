@@ -8,7 +8,9 @@
 
  federal_republic:1 "Federal Republic"
  federal_republic_desc:2 "This form of Federal Republic is integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+ federal_republic_pact_desc:2 "This form of Federal Republic is integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
 
+ 
  become_federal_republic:1 "Ask to Integrate into the Federal Republic"
  become_federal_republic_desc:2 "Federal Republics are integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
 
@@ -25,6 +27,8 @@
  
  autonomous_federal_republic:1 "Autonomous Federal Republic"
  autonomous_federal_republic_desc:2 "This form of Federal Republic is more Autonomous, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+ autonomous_federal_republic_pact_desc:2 "This form of Federal Republic is more Autonomous, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+
 
  autonomous_federal_republic_action_propose_name:1 "Offer to Federate as an Autonomous Republic"
  autonomous_federal_republic_action_propose_name_desc:2 "Autonomous Federal Republics maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
@@ -39,6 +43,7 @@
  # Federal Revenues Tax (+15% Tax on State Revenues)
  federal_republic_tax:1 "Federal Revenues Tax"
  federal_republic_tax_desc:2 "A Direct Tax on the Revenues of this Federal Republic"
+ federal_republic_tax_pact_desc:2 "A Direct Tax on the Revenues of this Federal Republic"
  
  federal_republic_tax_action_propose_name:1 "Issue a Federal Revenues Tax"
  federal_republic_tax_action_propose_name_desc:2 "Issue a Direct Tax on the Revenues of this Federal Republic"
@@ -49,6 +54,8 @@
  # Federal Revenues Subsidy (+15% Subsidy based on State Revenues)
  federal_republic_subsidy:1 "Federal Revenues Subsidy"
  federal_republic_subsidy_desc:2 "A Direct Subsidy based on the Revenues of this Federal Republic"
+ federal_republic_subsidy_pact_desc:2 "A Direct Subsidy based on the Revenues of this Federal Republic"
+ 
  
  federal_republic_subsidy_action_propose_name:1 "Issue a Federal Revenues Subsidy"
  federal_republic_subsidy_action_propose_name_desc:2 "Issue a Direct Subsidy based on the Revenues of this Federal Republic"
