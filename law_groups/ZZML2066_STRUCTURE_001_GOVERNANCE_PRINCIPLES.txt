@@ -1,0 +1,20 @@
+lawgroup_governance_principles = {
+	law_group_category = power_structure
+	base_enactment_days = 200
+	enactment_approval_mult = 2.0
+	
+	progressive_movement_chance = 1
+	regressive_movement_chance = 0.25
+	
+	change_allowed_trigger = {
+		NAND = {
+			is_subject = yes
+			OR = {
+				is_subject_type = subject_type_personal_union
+				is_subject_type = subject_type_federal_republic
+				is_subject_type = subject_type_autonomous_federal_republic
+				has_government_type = gov_chartered_company
+			}			
+		}
+	}
+}
