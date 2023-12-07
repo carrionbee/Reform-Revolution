@@ -1,0 +1,113 @@
+﻿l_english:
+#Leader Ideologies
+ ideology_anarcho_liberal: "Anarcho Liberal"
+ ideology_anarcho_liberal_desc: "#lore This leader believes that the role of government should be minimized to ensure that free markets are at their maximum efficiency.#!"
+ ideology_militarist: "Militarist"
+ ideology_militarist_desc: "#lore This leader advocates an aggressive foreign policy, emphasize the establishment of a permanent total war system to carry out the nation's ambitions.#!"
+ #ideology_fundamentalist: "Fundamentalist"
+ #ideology_fundamentalist_desc: "#lore This leader blindly believes in the religious scriptures, and believes that the depraved reason of human cannot defy divine truth.#!"
+ #ideology_religious_socialist: "종교 사회주의자"
+ #ideology_religious_socialist_desc: "#lore 이 지도자는 종교 교리에서 노동의 가치와 평등주의의 근거를 찾았습니다.#!"
+ ideology_radical_feminist: "Radical Feminist"
+ ideology_radical_feminist_desc: "#lore This leader believes that in order for men and women to truly be equal, they must shatter their male-centered social structure.#!"
+ ideology_clerical_fascist: "Clerical Fascist"
+ ideology_clerical_fascist_desc: "#lore This leader is a far-right believer in the path to awakening modern society with doctrinaire and traditional religious values.#!"
+ ideology_national_socialist: "National Socialist"
+ ideology_national_socialist_desc: "#lore This leader is a totalitarian who follows an altruistic, sacrificial and pure-blooded national character committed to serving the national community.#!"
+#Interest Group Ideologies
+ ideology_armed_forces_patriotic: "Patriotic"
+ ideology_armed_forces_patriotic_desc: "#lore This group is fiercely devoted to its country and wants harsh measures against those who would spread dissent.#!"
+#flavor ideologies
+#Government Principles group
+ law_corporatocracy: "Corporate Governance"
+ law_corporatocracy_desc: "Public powers are relegated to a minimal government that only performs security and defense functions, and we aim for privatization of all possible infrastructure and public services."
+#Free speech group
+ law_pan_opticon: "Pan-Opticon"
+ law_pan_opticon_desc: "Traitors are identified early through a mechanized surveillance system.\nEveryone is suspect. Everyone is watched. Everyone will serve."
+#Army Model group
+ law_no_army: "Disarmed State"
+ law_no_army_desc: "The country has no organized armed forces."
+#Distribution of Power group
+ law_ecclesiarchy: "Ecclesiarchy"
+ law_ecclesiarchy_desc: "A council of respected clergys, with morality and faithfulness, rule the state according to the interpretation of holy scripture. Value the horizontal consensus of the clergy rather than the authority of religious leaders."
+# Voting System group
+ law_first_past_the_post: "First Past The Post"
+ law_first_past_the_post_desc: "Also known as Winner Takes All, this system elects the single candidate who wins the most number of seats in regional sub-elections. It tends to create single-party governments with strong mandates but is vulnerable to gerrymandering."
+ law_proportional_representation: "Proportional Representation"
+ law_proportional_representation_desc: "This system distributes parliamentary seats in proportion to the number of votes cast. It tends to create multi-party coalition governments where compromise is key to getting anything done."
+#Workplace Safety group
+ law_union_representation: "All-Union Federation Chamber"
+ law_union_representation_desc: "The Proletariat are more deeply involved in the government legislature, as a chamber of the National Assembly is dedicated for the All-Union Federation of Labour."
+#Children's Rights group
+ law_child_benefit: "Child Benefit"
+ law_child_benefit_desc: "Nurture the nation's future generations is exactly what the nation must come out to help."
+#Slavery group
+#Church and State group
+ law_religious_pluralism: "Religious Pluralism"
+ law_religious_pluralism_desc: "Although there is an official state religion, no religion is discriminated against. Recognize religious diversity and seek equality of faith."
+#Citizenship group
+#Economic System group
+ law_state_capitalism: "State Capitalism"
+ law_state_capitalism_desc: "It is a state-led market economic system with strong government control."
+#Trade Policy group
+#Taxation Group
+ law_no_taxation: "No Taxation"
+ law_no_taxation_desc: "Taxes are national theft and violence that violates individual property rights."
+#Education System group
+ law_military_schools: "Military Schools"
+ law_military_schools_desc: "Including military training in the education curriculum, the people are trained as patriotic reserve forces that can be mobilized immediately."
+#Health System group
+ law_research_health_system: "Research Hospitals"
+ law_research_health_system_desc: "practice 'experimental treatment' in medical research hospitals run by universities and societies."
+#Welfare group
+ law_disability_insurance: "Disability Insurance"
+ law_disability_insurance_desc: "It is the responsibility of the State to care for those who - through no fault of their own - find themselves unable to work."
+#Rights of Women group
+ law_overthrow_patriarchy: "Overthrow Patriarchy"
+ law_overthrow_patriarchy_desc: "This radical policy is designed to obliterate traditional gender norms and power structures. By declaring the abolition of patriarchy as state policy - the government commits to dismantling systemic male-dominated hierarchies, and takes the emmancipation of women deeply seriously."
+#Policing
+ law_private_security_system: "Private Security"
+ law_private_security_system_desc: "There are agents of private security companies set up by entrepreneurs to do what the police of the Night-watchman state cannot do."
+#Bureaucracy
+ law_meritocratic_bureaucracy: "Meritocratic Bureaucracy"
+ law_meritocratic_bureaucracy_desc: "Bureaucrats vie for positions of power through merit. Over time this creates enormous, byzantine administrations."
+#Colonization
+ #law_colonial_purge: "식민지 정화"
+ #law_colonial_purge_desc: "원주민을 몰아내고 영토를 차지하기 위해 식민지를 설립합니다."
+#Internal Security
+ law_gendarmerie: "Paramilitary Police"
+ law_gendarmerie_desc: "The Ministry of Interior has established a robust Paramilitary Police & Security Force dedicated to upholding public order, dealing with subversives, and enforcing the rule of law. Operating with a combination of policing and military capabilities, the [ROOT.GetCountry.GetGovernment.GetName] Paramilitary Police ensures the security and stability of the State - facilitating a capacity to respond to challenges domestic and foreign."
+#Migration
+#Luddites
+#Land Reform Laws
+#Jacksonian Democrat
+#Discriminated Pop
+ lawgroup_discriminated_pop: "Discrimination"
+ lawgroup_discriminated_pop_desc: "Addresses the qualifications of Personae non gratae."
+ law_no_codified_discrimination: "No Codified Discrimination"
+ law_no_codified_discrimination_desc: "There is no specific law about the treatment of non-citizens."
+ law_permanent_residency: "Permanent Residency"
+ law_permanent_residency_desc: "We must not discriminate on ability because of race or cultural differences."
+ law_profession_banned: "Profession Banned"
+ law_profession_banned_desc: "Those who are discriminated against are not allowed to be promoted and can only work in precarious jobs unless there are special circumstances."
+ #law_colonial_serfdom: "식민 농노제"
+ #law_colonial_serfdom_desc: "차별 받는 사람들을 대상으로 봉건적 지배 체제를 재현합니다."
+ law_violent_suppresion: "Violent Suppresion"
+ law_violent_suppresion_desc: "The state can arrest or assault noncitizens without just cause, and will limit the rights of the capital assets and businesses they own. Employment is prohibited in almost all jobs, so there is no way to live except for tenant farming or simple labor."
+ law_forced_labour: "Forced Labour"
+ law_forced_labour_desc: "Non-citizens, especially those who are disloyal or unable to pay their debts, are deprived of their human rights and forced to do unpaid labor."
+ profession_banned_modifier: "Profession Banned"
+ profession_banned_modifier_desc: "[concept_discrimination] 받는 인구층이 일터에서 쫓겨나고 있음."
+ violent_suppresion_modifier: "Violent Suppresion"
+ violent_suppresion_modifier_desc: "[concept_discrimination] 받는 인구층이 Serf 취급 받고 있음."
+ enslavement_modifier: "Forced Labour"
+ enslavement_modifier_desc: "차별 받는 인구층이 enslavement 되고 있음."
+
+ #qualifications_bureaucrats_meritocratic_bureaucracy_tt: "[GetPopType('bureaucrats').GetName] [concept_pop_qualifications]을 개발하는 데 필요한 목표 [concept_literacy]율이 상승함"
+ 
+ qualifications_discriminated_pop_permanent_residency_tt: "대부분의 [Concept('concept_profession','$concept_professions$')]에서 [concept_discrimination]로 인한 [concept_pop_qualifications] 제한을 해제함"
+ qualifications_discriminated_pop_profession_banned_tt: "대부분의 [concept_middle_strata] [Concept('concept_profession','$concept_professions$')]에서 [Concept('concept_discrimination','$concept_discriminated$')]받는 인구의 $concept_pop_qualifications$을 박탈"
+ qualifications_discriminated_pop_violent_suppresion_tt: "[concept_discrimination]받는 인구가 [GetLawType('law_serfdom').GetName] 하의 $peasants$ 수준의 [concept_pop_qualifications] 제한을 받음"
+ enslave_discriminated_labors_tt: "기존 노예 주의 농장, 목축장, 플랜테이션, 광산, 벌목장, 건설 부문에서 근무하는 일부 [Concept('concept_discrimination','$concept_discriminated$')]받는 $laborers$가 [Concept('concept_slavery', '$concept_enslaved$')]화됨"
+ enslave_discriminated_serfs_tt: "기존 노예 주의 자경 농장에서 근무하는 일부 [Concept('concept_discrimination','$concept_discriminated$')]받는 $peasants$이 [Concept('concept_slavery', '$concept_enslaved$')]화됨"
+ enslave_upper_class_tt: "기존 노예 주의 &concept_unemployed&$ 상태인 $aristocrats$과 $capitalists$가 [Concept('concept_slavery', '$concept_enslaved$')]화됨"
