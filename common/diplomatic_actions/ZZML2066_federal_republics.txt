@@ -68,9 +68,9 @@
 		relations_progress_per_day = 1
 		relations_improvement_max = 100
 		
-		income_transfer = 0.05
-		recipient_gets_income_transfer = no
-		income_transfer_based_on_recipient = yes
+		#income_transfer = 0.05
+		#recipient_gets_income_transfer = no
+		#income_transfer_based_on_recipient = yes
 
 		subject_type = subject_type_federal_republic
 		
