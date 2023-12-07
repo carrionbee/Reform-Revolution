@@ -1,20 +1,19 @@
 ﻿federal_republic = {
 	requires_approval = yes
 	can_use_obligations = yes
-	
+	should_notify_third_parties = yes
 	show_effect_in_tooltip = yes
 
 	potential = {
 		scope:target_country = {
 			is_direct_subject_of = root
-			is_subject_type = subject_type_autonomous_republic
+			is_subject_type = subject_type_autonomous_federal_republic
 		}
 	}
 	
 	possible = {
 		NOT = { has_war_with = scope:target_country }
 		NOT = { is_subject_of = scope:target_country }
-		is_junior_in_customs_union = no
 		has_diplomatic_relevance = scope:target_country	
 		custom_tooltip = {
 			text = DIPLO_ACTION_RELATIONS_CORDIAL_OR_GREATER
@@ -41,7 +40,7 @@
 	}
 	
 	accept_effect = {
-		change_relations = { country = scope:target_country value = -40 }
+		change_relations = { country = scope:target_country value = -50 }
 		scope:root = {
 			if = {
 				limit = { 
@@ -68,6 +67,10 @@
 		
 		relations_progress_per_day = 1
 		relations_improvement_max = 100
+		
+		income_transfer = 0.05
+		recipient_gets_income_transfer = no
+		income_transfer_based_on_recipient = yes
 
 		subject_type = subject_type_federal_republic
 		
@@ -85,17 +88,17 @@
 		should_invalidate = {
 			OR = {
 				NOR = { 
-					has_law = law_type:GovPlus_law_republic
+					has_law = law_type:presidential_republic
+					has_law = law_type:parliamentary_republic
 					has_law = law_type:law_council_republic
 					has_law = law_type:law_corporatocracy
-					has_law = law_type:law_unitary
 				}
 				scope:target_country = { 
 					NOR = { 
-						has_law = law_type:GovPlus_law_republic 
+						has_law = law_type:presidential_republic
+						has_law = law_type:parliamentary_republic
 						has_law = law_type:law_council_republic
 						has_law = law_type:law_corporatocracy
-						has_law = law_type:law_unitary
 					}
 				}
 			}
@@ -122,15 +125,15 @@
 }
 
 autonomous_federal_republic = {
-	#can_select = no
-	requires_approval = no
-	should_notify_third_parties = no
+	requires_approval = yes
+	can_use_obligations = yes
+	should_notify_third_parties = yes
 	show_effect_in_tooltip = yes
 
 	potential = {
 		scope:target_country = {
 			is_direct_subject_of = root
-			is_subject_type = subject_type_autonomous_republic
+			is_subject_type = subject_type_protectorate 
 		}
 	}
 	
@@ -164,7 +167,7 @@ autonomous_federal_republic = {
 	}
 	
 	accept_effect = {
-		change_relations = { country = scope:target_country value = -40 }
+		change_relations = { country = scope:target_country value = -50 }
 		scope:root = {
 			if = {
 				limit = { 
@@ -208,17 +211,17 @@ autonomous_federal_republic = {
 		should_invalidate = {
 			OR = {
 				NOR = { 
-					has_law = law_type:GovPlus_law_republic
+					has_law = law_type:presidential_republic
+					has_law = law_type:parliamentary_republic
 					has_law = law_type:law_council_republic
 					has_law = law_type:law_corporatocracy
-					has_law = law_type:law_unitary
 				}
 				scope:target_country = { 
 					NOR = { 
-						has_law = law_type:GovPlus_law_republic 
+						has_law = law_type:presidential_republic
+						has_law = law_type:parliamentary_republic
 						has_law = law_type:law_council_republic
 						has_law = law_type:law_corporatocracy
-						has_law = law_type:law_unitary
 					}
 				}
 			}
@@ -228,11 +231,11 @@ autonomous_federal_republic = {
 			change_relations = { country = scope:target_country value = +40 }
 			remove_diplomatic_pact = {
 				country = scope:target_country
-				type = autonomous_federal_republic
+				type = subject_type_autonomous_federal_republic
 			}
 			create_diplomatic_pact = {
 				country = scope:target_country
-				type = protectorate
+				type = subject_type_protectorate
 			}
 		}
 	}
