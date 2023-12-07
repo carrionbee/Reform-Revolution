@@ -1,5 +1,0 @@
-﻿country_institution_labor_relations_commission_max_investment_add = {
-	good = yes
-	percent = no
-	num_decimals = 0
-}
