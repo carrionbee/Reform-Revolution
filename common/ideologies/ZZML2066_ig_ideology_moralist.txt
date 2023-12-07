@@ -1,0 +1,43 @@
+﻿ideology_moralist = {
+	icon = "gfx/interface/icons/ideology_icons/moralist.dds"
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve
+		law_theocracy = approve
+		law_theocracy_occultists = strongly_disapprove
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporatocracy = disapprove
+		law_council_republic = strongly_disapprove
+	}
+
+	lawgroup_church_and_state = {
+		law_state_religion = strongly_approve
+		law_freedom_of_conscience = neutral
+		law_religious_pluralism = disapprove
+		law_total_separation = strongly_disapprove
+        law_state_atheism = strongly_disapprove		
+	}
+
+	lawgroup_citizenship = {
+		law_ethnostate = neutral
+		law_national_supremacy = approve
+		law_racial_segregation = neutral
+		law_cultural_exclusion = disapprove
+		law_multicultural = strongly_disapprove	
+	}
+
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = disapprove
+		law_limited_beast_restrictions = neutral
+		law_total_beast_restrictions = approve
+	}
+	
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = approve
+#		law_elitist_system = disapprove
+#		law_local_law = neutral
+#		law_liberal_system = neutral
+#		law_authoritarian_system = disapprove
+#	}
+}

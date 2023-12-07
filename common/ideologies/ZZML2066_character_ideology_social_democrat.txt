@@ -1,0 +1,198 @@
+﻿ideology_social_democrat = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_social_democrat.dds"
+	
+	character_ideology = yes
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_disapprove		
+		law_oligarchy = strongly_disapprove
+		law_ecclesiarchy = strongly_disapprove
+		law_technocracy = strongly_disapprove
+		law_single_party_state = strongly_disapprove
+		law_landed_voting = disapprove
+		law_wealth_voting = disapprove
+		law_anarchy = disapprove
+		law_mass_democracy = disapprove
+		law_census_voting = neutral
+		law_universal_suffrage = strongly_approve
+	}
+	
+	lawgroup_taxation = {
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_no_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = strongly_approve
+	}
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = disapprove
+		law_regulatory_bodies = neutral
+		law_worker_protections = approve
+		law_corporatist_labour_syndicate = approve
+		law_union_representation = approve
+	}
+
+	lawgroup_labor_work_hours = {
+		law_labor_work_hours_unlimit = strongly_disapprove
+		law_labor_work_hours_day_12 = disapprove
+		law_labor_work_hours_day_8 = neutral
+		law_labor_work_hours_week_40 = approve
+		law_labor_work_hours_week_32 = approve
+		law_labor_work_hours_week_20 = approve
+	}
+
+	lawgroup_welfare = {
+		law_poor_laws = strongly_disapprove
+		law_no_social_security = strongly_disapprove
+		law_wage_subsidies = approve
+		law_old_age_pension = strongly_approve
+		law_disability_insurance = strongly_approve
+	}
+	
+	lawgroup_enviromental_protections = {
+		law_no_enviromental_protections = disapprove
+		law_pollution_tax = approve
+		law_enviromental_standards = approve
+		law_pollution_management = approve
+	}
+	
+	lawgroup_executive_privileges = {
+		law_no_reserve_powers = neutral
+		law_ministers_appointed = disapprove
+		law_decree_powers = disapprove
+		law_personality_cult = disapprove
+		law_sycophants = disapprove
+		law_generalissimo = disapprove
+	}
+
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = neutral
+		law_limited_beast_restrictions = approve
+		law_total_beast_restrictions = neutral
+	}
+
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = disapprove
+#		law_elitist_system = strongly_disapprove
+#		law_local_law = neutral
+#		law_liberal_system = strongly_approve
+#		law_authoritarian_system = strongly_disapprove
+#	}
+
+	possible = {
+		owner = { has_technology_researched = socialism }
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_graduated_taxation
+				OR = {
+					has_law = law_type:law_old_age_pension
+					has_law = law_type:law_disability_insurance
+				}
+				OR = {
+					has_law = law_type:law_corporatist_labour_syndicate
+					has_law = law_type:law_worker_protections
+					has_law = law_type:law_union_representation
+				}
+			}
+		}
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_armed_forces
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 100
+		# very angry IG's more likely to turn to more radical socialism
+		if = {
+			limit = {
+				scope:interest_group = {
+					NOT = { is_interest_group_type = ig_devout } # can't be radical socialists
+					ig_approval <= -5
+				}
+			}
+			add = -75
+		}
+		# more likely when issues are relevant
+		if = {
+			limit = {
+				owner = {
+					NAND = {
+						has_law = law_type:law_graduated_taxation
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_worker_protections
+						has_law = law_type:law_union_representation
+						has_law = law_type:law_labor_work_hours_week_40
+					}
+				}
+			}
+			add = 50
+		}
+		# more likely for content devout in council republic
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_devout
+					ig_approval >= 0
+				}
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+			}
+			add = 75
+		}
+		# more likely for content trade unions outside of council republic
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_trade_unions
+					ig_approval >= 0
+				}
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+				}
+			}
+			add = 75
+		}
+		# extremely unlikely for trade unions in council republic
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_trade_unions
+				}
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+			}
+			multiply = 0.01
+		}
+		# liberal and/or radical leaders have a higher spawn chance if the Dreyfusards won.
+		if = {
+			limit = {
+				scope:interest_group = {
+					has_variable = dreyfusard_victory
+				}
+			}
+			add = 50
+		}
+	}
+}

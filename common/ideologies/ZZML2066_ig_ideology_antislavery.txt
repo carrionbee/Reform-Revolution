@@ -1,0 +1,23 @@
+﻿ideology_anti_slavery = {
+	icon = "gfx/interface/icons/ideology_icons/abolitionist.dds"
+	
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+	}
+	
+	lawgroup_slavery = {
+		law_slavery_banned = neutral
+		law_legacy_slavery = disapprove
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+
+	lawgroup_discriminated_pop = {
+		law_no_codified_discrimination = neutral
+		law_profession_banned = neutral
+		law_permanent_residency = neutral
+		law_violent_suppresion = strongly_disapprove
+		law_forced_labour = strongly_disapprove
+	}
+
+}

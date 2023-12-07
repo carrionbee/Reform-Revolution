@@ -1,0 +1,41 @@
+﻿ideology_orthodox_patriarch = {
+	icon = "gfx/interface/icons/ideology_icons/orthodox_patriarch.dds"
+
+	lawgroup_distribution_of_power = {
+		law_autocracy = strongly_approve
+		law_oligarchy = approve
+		law_ecclesiarchy = approve
+		law_single_party_state = disapprove
+		law_landed_voting = neutral
+		law_wealth_voting = neutral
+		law_census_voting = disapprove
+		law_universal_suffrage = strongly_disapprove
+		law_anarchy = strongly_disapprove
+		law_mass_democracy = strongly_disapprove
+		law_technocracy = strongly_disapprove
+	}
+
+	lawgroup_rights_of_women = {
+		law_no_womens_rights = strongly_approve
+		law_women_own_property = approve
+		law_women_in_the_workplace = neutral
+		law_womens_suffrage = disapprove
+		law_overthrow_patriarchy = strongly_disapprove
+	}
+
+lawgroup_queer_rights = {
+		law_enforced_gender_roles = approve
+		law_sodomy_laws = approve
+		law_queer_decriminalized = disapprove
+		law_gay_marriage = strongly_disapprove
+		law_queer_liberation = strongly_disapprove
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_approve
+		law_censorship = approve
+		law_pan_opticon = neutral
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
+	}
+}

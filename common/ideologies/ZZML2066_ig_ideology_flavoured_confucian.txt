@@ -1,0 +1,37 @@
+﻿ideology_confucian = {
+	icon = "gfx/interface/icons/ideology_icons/confucian.dds"
+	
+	lawgroup_church_and_state = {
+		law_state_religion = approve
+		law_freedom_of_conscience = approve
+		law_religious_pluralism = neutral
+		law_total_separation = disapprove
+		law_atheism = disapprove
+	}
+	
+	lawgroup_governance_principles = {
+		law_monarchy = strongly_approve	
+		law_theocracy = neutral
+		law_theocracy_occultists = strongly_disapprove
+		law_presidential_republic = neutral
+		law_parliamentary_republic = neutral
+		law_corporatocracy = disapprove
+		law_council_republic = strongly_disapprove
+	}
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_approve
+		law_censorship = approve
+		law_pan_opticon = neutral
+		law_right_of_assembly = neutral
+		law_protected_speech = disapprove
+	}
+	
+#	lawgroup_crime_and_punishment = {
+#		law_traditional_law = approve
+#		law_elitist_system = neutral
+#		law_local_law = neutral
+#		law_liberal_system = disapprove
+#		law_authoritarian_system = approve
+#	}
+}

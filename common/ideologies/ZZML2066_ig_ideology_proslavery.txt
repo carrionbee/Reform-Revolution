@@ -1,0 +1,34 @@
+﻿ideology_pro_slavery = {
+	icon = "gfx/interface/icons/ideology_icons/slaver.dds"
+	
+	lawgroup_land_reform = {
+		law_serfdom = strongly_approve
+		law_titled_estates = approve
+		law_tenant_farmers = approve	
+		law_commercialized_agriculture = neutral
+		law_homesteading = disapprove
+		law_collectivized_agriculture = strongly_disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
+	}
+	
+	lawgroup_slavery = {
+		law_slave_trade = approve
+		law_debt_slavery = approve
+		law_legacy_slavery = neutral
+		law_slavery_banned = strongly_disapprove
+	}
+	
+	lawgroup_discriminated_pop = {
+		law_no_codified_discrimination = neutral
+		law_profession_banned = neutral
+		law_permanent_residency = neutral
+		law_violent_suppresion = neutral
+		law_forced_labour = strongly_approve
+	}
+	
+	lawgroup_gun_rights = {
+		law_banned_firearms = strongly_disapprove
+		law_licensed_firearms = approve
+		law_unrestricted_firearms = neutral
+	}
+}

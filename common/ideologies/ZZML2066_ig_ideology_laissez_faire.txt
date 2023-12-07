@@ -1,0 +1,78 @@
+﻿ideology_laissez_faire = {
+	icon = "gfx/interface/icons/ideology_icons/laissez_faire.dds"
+	
+	lawgroup_urban_planning = {	
+		law_bourgeoisie_ownership = approve
+		law_guild_system = neutral
+		law_aristocratic_holdings = neutral
+		law_dirigisme = disapprove	
+		law_religious_integralism = disapprove
+		law_worker_management = disapprove
+		law_planned_economics = strongly_disapprove
+	}
+	
+	lawgroup_land_reform = {	
+		law_commercialized_agriculture = strongly_approve
+		law_tenant_farmers = approve
+		law_titled_estates = neutral
+		law_homesteading = disapprove
+		law_serfdom = disapprove
+		law_collectivized_agriculture = strongly_disapprove
+		law_deep_ecology_cooperatives = strongly_disapprove
+	}
+	
+	lawgroup_economic_system = {
+		law_laissez_faire = strongly_approve
+		law_interventionism = approve
+		law_agrarianism = neutral
+		law_traditionalism = disapprove
+		law_industry_banned = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_communal_principle = strongly_disapprove
+		law_cooperative_ownership = strongly_disapprove		
+	}
+	
+	lawgroup_trade_policy = {		
+		law_free_trade = approve	
+		law_mercantilism = neutral
+		law_protectionism = disapprove
+		law_isolationism = strongly_disapprove
+	}		
+		
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = disapprove
+		law_child_benefit = strongly_disapprove
+	}
+	
+	lawgroup_labor_rights = {
+		law_corporatist_labour_syndicate = disapprove
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = disapprove
+		law_worker_protections = strongly_disapprove
+		law_union_representation = strongly_disapprove
+	}
+	
+	lawgroup_enviromental_protections = {
+		law_pollution_management = strongly_disapprove
+		law_enviromental_standards = disapprove
+		law_pollution_tax = neutral
+		law_no_enviromental_protections = approve
+	}
+	
+	lawgroup_labor_work_hours = {
+		law_labor_work_hours_unlimit = disapprove
+		law_labor_work_hours_day_12 = neutral
+		law_labor_work_hours_day_8 = disapprove
+		law_labor_work_hours_week_40 = strongly_disapprove
+		law_labor_work_hours_week_32 = strongly_disapprove
+		law_labor_work_hours_week_20 = strongly_disapprove
+	}
+
+	lawgroup_fabricated_beasts = {
+		law_no_beast_restrictions = approve
+		law_limited_beast_restrictions = neutral
+		law_total_beast_restrictions = disapprove
+	}
+}
