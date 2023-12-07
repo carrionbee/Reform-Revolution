@@ -1,0 +1,98 @@
+﻿pm_opioid_privately_owned_industry = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+	
+	is_visible = { exists = building_synthetic_opioid_plant } 
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+			building_employment_shopkeepers_add = 50
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_opioid_publicly_traded_building_synthetic_plants = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+	
+	is_visible = { exists = building_synthetic_opioid_plant } 
+	
+	unlocking_laws = {
+		law_bourgeoisie_ownership
+	}
+
+	unlocking_technologies = { mutual_funds }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+			building_employment_shopkeepers_add = 10
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+			building_shopkeepers_shares_add = 1
+		}
+	}
+}
+
+pm_opioid_government_run_industry = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	is_visible = { exists = building_synthetic_opioid_plant } 
+
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+			building_employment_clerks_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+			building_bureaucrats_shares_add = 0.03
+			building_clerks_shares_add = 0.01
+		}
+	}
+}
+
+pm_opioid_worker_cooperative_industry = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+	
+	is_visible = { exists = building_synthetic_opioid_plant } 
+
+	unlocking_laws = {
+		law_command_economy
+		law_planned_economics
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 50
+			building_employment_clerks_add = 50
+			building_employment_shopkeepers_add = 50
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}

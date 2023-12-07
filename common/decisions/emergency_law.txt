@@ -1,0 +1,112 @@
+﻿enact_emergency_law_decision = {
+	is_shown = {
+		enacting_any_law = yes
+		currently_enacting_law.type = {
+			NOT = { is_same_law_group_as = law_type:law_monarchy }
+		}
+	}
+
+	possible = {
+		NOR = {
+			has_modifier = emergency_law_entrenched
+			has_modifier = emergency_law_modifier
+		}	
+		OR = {
+			has_law = law_type:law_autocracy
+			NOT = {	has_law = law_type:law_no_reserve_powers }
+		}
+	}
+
+	when_taken = {
+		every_interest_group = {
+			limit = {
+				law_stance = {
+					law = owner.currently_enacting_law.type
+					value = neutral
+				}
+				owner = {
+					NOR = {
+						is_at_war = yes
+						has_revolution = yes
+						is_revolutionary = yes
+					}
+				}
+			}
+			add_modifier = {
+				name = emergency_law_enacted
+				months = 24
+			}
+		}
+		every_interest_group = {
+			limit = {
+				law_stance = {
+					law = owner.currently_enacting_law.type
+					value = disapprove
+				}
+				owner = {
+					OR = {
+						is_at_war = yes
+						has_revolution = yes
+						is_revolutionary = yes
+					}
+				}
+			}
+			add_modifier = {
+				name = emergency_law_enacted
+				months = 24
+			}
+		}
+		every_interest_group = {
+			limit = {
+				law_stance = {
+					law = owner.currently_enacting_law.type
+					value = disapprove
+				}
+				owner = {
+					NOR = {
+						is_at_war = yes
+						has_revolution = yes
+						is_revolutionary = yes
+					}
+				}
+			}
+			add_modifier = {
+				name = hated_emergency_law_enacted
+				months = 36
+			}
+		}
+		every_interest_group = {
+			limit = {
+				OR = {
+					law_stance = {
+						law = owner.currently_enacting_law.type
+						value = strongly_disapprove
+					}
+					is_insurrectionary = yes
+				}
+			}
+			add_modifier = {
+				name = hated_emergency_law_enacted
+				months = 36
+			}
+		}
+		if = {
+			limit = {
+				NOR = { 
+				has_law = law_type:law_autocracy 
+				has_law = law_type:law_decree_powers
+			}
+			}
+			add_radicals = {
+				value = large_radicals
+			}
+		}
+		add_journal_entry = {
+			type = je_emergency_law
+		}
+	}
+	
+   ai_chance = {
+      base = 0
+   }
+}

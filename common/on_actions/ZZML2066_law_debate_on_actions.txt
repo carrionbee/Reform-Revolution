@@ -1,0 +1,26 @@
+﻿on_law_checkpoint_advance = {
+	random_events = {
+		10 = work_hours.1
+		10 = work_hours.4
+	}
+	effect = {
+	}
+}
+
+on_law_checkpoint_debate = {
+	random_events = {
+		10 = work_hours.2
+		10 = work_hours.5
+	}
+	effect = {
+	}
+}
+
+on_law_checkpoint_stall = {
+	random_events = {
+		10 = work_hours.3
+		10 = work_hours.6
+	}
+	effect = {
+	}
+}

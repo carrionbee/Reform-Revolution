@@ -1,0 +1,75 @@
+﻿# General Strike
+action_urban_mass_strike = {
+	texture = "gfx/interface/icons/decree/action_seize_factory.dds"
+
+	unlocking_technologies = { labor_movement }
+
+	valid = {
+		owner = {
+			NOR = {
+				has_law = law_type:law_corporatist_labour_syndicate		# fascist capture of the militant worker movement
+				has_law = law_type:law_industry_banned					# productive forces have been smashed, curtailed, contained
+				has_law = law_type:law_traditionalism					# insufficient productive forces and organised labour
+				has_law = law_type:law_cooperative_ownership			# socialised relations of production - worker ownership is implemented
+				has_law = law_type:law_communal_principle				# socialised relations of production - worker ownership is implemented
+			}
+			any_interest_group = {
+				AND = {
+					is_in_government = yes
+					is_powerful = yes 	# must be the leading force in govt, not coalition.
+					}
+				OR = {
+					has_ideology = ideology:ideology_proletarian
+					has_ideology = ideology:ideology_socialist
+					has_ideology = ideology:ideology_ig_united_socialist
+					has_ideology = ideology:ideology_ig_reformist_socialist
+					has_ideology = ideology:ideology_ig_revolutionist_socialist
+					has_ideology = ideology:ideology_ig_social_democrat
+					has_ideology = ideology:ideology_agrarian_socialist_leader
+					has_ideology = ideology:ideology_social_democrat
+					has_ideology = ideology:ideology_communist
+					has_ideology = ideology:ideology_vanguardist
+					has_ideology = ideology:ideology_market_socialist
+					has_ideology = ideology:ideology_anarchist
+					has_ideology = ideology:ideology_ig_anarchist
+					has_ideology = ideology:ideology_left_communism
+					has_ideology = ideology:ideology_syndicalism
+					has_ideology = ideology:ideology_technocratic_socialism
+					has_ideology = ideology:ideology_communist_securocrat
+					has_ideology = ideology:ideology_futurist
+					has_ideology = ideology:ideology_luddite 
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		building_employment_labourers_mult = 0.30
+		building_employment_machinists_mult = 0.15
+		building_employment_engineers_mult = 0.05
+		building_employment_shopkeepers_mult = 0.05
+		
+		building_group_bg_service_throughput_mult = -0.15
+		building_group_bg_manufacturing_throughput_mult = -0.15
+		
+		state_rich_standard_of_living_mult = -0.15
+		building_employment_capitalists_mult = -0.50
+		building_employment_bureaucrats_mult = -0.90
+		state_political_strength_from_wealth_mult = -0.50
+		
+		state_laborers_mortality_mult = 0.05
+		state_soldiers_mortality_mult = 0.02
+		state_capitalists_mortality_mult = 0.01
+		building_employment_soldiers_mult = 0.10
+		
+		state_mortality_turmoil_mult = 0.30
+		state_turmoil_effects_mult = 0.15
+		political_movement_radicalism_mult = 0.20
+		state_welfare_payments_add = 1.0
+		state_political_strength_from_welfare_mult = 1.0
+	}
+	
+	cost = 150
+	
+	ai_will_do = { always = no }
+}
