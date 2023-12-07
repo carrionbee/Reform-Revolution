@@ -538,8 +538,9 @@ law_cooperative_ownership = {
 	}
 	
 	unlocking_laws = {
-        #law_council_republic
-		GovPlus_law_council_system
+        law_council_republic
+		law_worker_protections
+		law_union_representation
 	}
 	
 	unlocking_technologies = {
@@ -786,7 +787,6 @@ law_communal_principle = {
 	
 	unlocking_laws = {
 		law_council_republic
-		GovPlus_law_council_system
 	}
 	
 	unlocking_technologies = {
