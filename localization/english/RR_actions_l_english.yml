@@ -1,6 +1,13 @@
 ﻿l_english:
 
-#Classicide
+# Seize Domestic Private Capital
+ SEIZE_DOMESTIC_PRIVATE_CAPITAL:0 "Seize Investment Capital"
+ 
+# Public-Private Investment 
+ PUBLIC_INVESTMENT:0 "Public Capital Investment"
+ PUBLIC_INVESTMENT_DESC:0 "Invest [Concept('concept_treasury','Public Funds')] towards [Concept('concept_investment_pool','Capital-Seeking Ventures.')]"
+
+# Classicide
  action_classicide_landowners:0 "Classicide"
  action_classicide_landowners_desc:0 "Declare the systematic obliteration of the [GetPopType('aristocrats').GetName] class. The cries of the [Concept('concept_lower_strata','Working Class')] have declared - it is time for [Concept('concept_revolution','Class War!')]"
 
