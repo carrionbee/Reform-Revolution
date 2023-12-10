@@ -1,0 +1,15 @@
+ZZML2066_state_investment_pool_contribution = {
+
+	scope = country
+	saved_scopes = {
+		current_treasury
+	}
+	is_shown = { always = yes }
+	is_valid  = {
+		treasury = >0
+	}
+	
+	effect = {
+		add_investment_pool = scope:current_treasury
+	}
+}

@@ -9,19 +9,23 @@
 	can_have_subjects = no
 	overlord_must_be_higher_rank = no
 	overlord_must_be_same_country_type = no
-	use_for_release_country = yes
+	use_for_release_country = no
 	gives_prestige_to_overlord = yes
 	subservient_to_overlord = yes
 	convoy_contribution = 0
 	
 	diplomatic_action = autonomous_federal_republic
 	
-	lower_autonomy_subject_type_alternatives = {
-		subject_federal_republic
+	higher_autonomy_subject_type_alternatives = {
+		subject_type_protectorate
 	}
 	
 	same_autonomy_subject_type_alternatives = {
-		subject_type_protectorate
+		subject_type_dominion
+	}
+	
+	lower_autonomy_subject_type_alternatives = {
+		subject_federal_republic
 	}
 	
 	valid_overlord_country_types = {

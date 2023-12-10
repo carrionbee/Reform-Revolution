@@ -1,0 +1,50 @@
+ZZML2066_seize_investment_pool = {	# in times of crisis, the state reserves its right to seize assets
+
+	scope = country
+	is_shown = { always = yes }
+	is_valid  = {
+		NOT = { has_modifier = { modifier_seized_investment_pool } }
+		scope:any_interest_group = {
+			AND = {
+				is_in_government = yes
+				is_powerful = yes 	# must be the leading force in govt, not coalition.
+				NOT = { has_ideology = ideology:ideology_laissez_faire }
+			}
+			OR = {
+				has_ideology = ideology:ideology_socialist
+				has_ideology = ideology:ideology_ig_united_socialist
+				has_ideology = ideology:ideology_ig_revolutionist_socialist
+				has_ideology = ideology:ideology_agrarian_socialist_leader
+				has_ideology = ideology:ideology_ig_anarchist
+				leader = { has_ideology = ideology:ideology_authoritarian }
+				leader = { has_ideology = ideology:ideology_vanguardist }
+				leader = { has_ideology = ideology:ideology_technocratic_socialism }
+				leader = { has_ideology = ideology:ideology_communist_securocrat }
+				leader = { has_ideology = ideology:ideology_anarchist }
+				leader = { has_ideology = ideology:ideology_syndicalism }
+				leader = { has_ideology = ideology:ideology_futurist }
+			}
+		}
+	}
+	
+	effect = {
+		seize_investment_pool = yes
+		add_modifier = {
+			name = modifier_seized_investment_pool
+			months = short_modifier_time
+		}
+		every_scope_state = {
+			limit = {
+				owner = ROOT
+			}
+			add_radicals_in_state = {
+				value = very_large_radicals
+				strata = rich
+			}
+			add_radicals_in_state = {
+				value = medium_radicals
+				strata = middle
+			}
+		}
+	}
+}
