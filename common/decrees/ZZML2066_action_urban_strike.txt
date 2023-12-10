@@ -17,7 +17,7 @@ action_urban_mass_strike = {
 				AND = {
 					is_in_government = yes
 					is_powerful = yes 	# must be the leading force in govt, not coalition.
-					}
+				}
 				OR = {
 					has_ideology = ideology:ideology_proletarian
 					has_ideology = ideology:ideology_socialist
@@ -25,19 +25,19 @@ action_urban_mass_strike = {
 					has_ideology = ideology:ideology_ig_reformist_socialist
 					has_ideology = ideology:ideology_ig_revolutionist_socialist
 					has_ideology = ideology:ideology_ig_social_democrat
-					has_ideology = ideology:ideology_agrarian_socialist_leader
-					has_ideology = ideology:ideology_social_democrat
-					has_ideology = ideology:ideology_communist
-					has_ideology = ideology:ideology_vanguardist
-					has_ideology = ideology:ideology_market_socialist
-					has_ideology = ideology:ideology_anarchist
 					has_ideology = ideology:ideology_ig_anarchist
-					has_ideology = ideology:ideology_left_communism
-					has_ideology = ideology:ideology_syndicalism
-					has_ideology = ideology:ideology_technocratic_socialism
-					has_ideology = ideology:ideology_communist_securocrat
-					has_ideology = ideology:ideology_futurist
-					has_ideology = ideology:ideology_luddite 
+					leader = { has_ideology = ideology:ideology_agrarian_socialist_leader }
+					leader = { has_ideology = ideology:ideology_social_democrat }
+					leader = { has_ideology = ideology:ideology_communist }
+					leader = { has_ideology = ideology:ideology_vanguardist }
+					leader = { has_ideology = ideology:ideology_market_socialist }
+					leader = { has_ideology = ideology:ideology_anarchist }
+					leader = { has_ideology = ideology:ideology_left_communism }
+					leader = { has_ideology = ideology:ideology_syndicalism }
+					leader = { has_ideology = ideology:ideology_technocratic_socialism }
+					leader = { has_ideology = ideology:ideology_communist_securocrat }
+					leader = { has_ideology = ideology:ideology_futurist }
+					leader = { has_ideology = ideology:ideology_luddite }
 				}
 			}
 		}

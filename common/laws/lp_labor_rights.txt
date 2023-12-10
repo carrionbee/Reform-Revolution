@@ -32,8 +32,11 @@ law_union_representation = {
 
 	institution = institution_workplace_safety
 	institution_modifier = {
-		building_minimum_wage_mult = 0.2
+		building_minimum_wage_mult = 0.15
+		country_laborers_pol_str_mult = 0.05
+		country_clerks_pol_str_mult = 0.05
 		country_machinists_pol_str_mult = 0.05
+		country_engineers_pol_str_mult = 0.05
 		country_farmers_pol_str_mult = 0.05
 	}
 

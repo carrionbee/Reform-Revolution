@@ -86,7 +86,29 @@ law_serfdom = {
 	
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.5
-		state_aristocrats_investment_pool_contribution_add = 0.10
+		state_aristocrats_investment_pool_efficiency_mult = 1.00
+		state_aristocrats_investment_pool_contribution_add = 0.50
+	}
+	
+	tax_modifier_very_low = {
+		tax_land_add = 0.10
+	}
+	
+	tax_modifier_low = {
+		tax_land_add = 0.20
+	}
+	
+	tax_modifier_medium = {
+		tax_land_add = 0.30
+	}
+	
+	tax_modifier_high = {
+		tax_land_add = 0.40
+	}
+	
+	tax_modifier_very_high = {
+		tax_land_add = 0.50
+		
 	}
 
 	possible_political_movements = {
@@ -162,7 +184,7 @@ law_tenant_farmers = {
 	tax_modifier_very_low = {
 		tax_land_add = 0.050
 		tax_income_add = -0.10
-	}	
+	}
 	
 	tax_modifier_low = {
 		tax_land_add = 0.10
@@ -172,7 +194,7 @@ law_tenant_farmers = {
 	tax_modifier_medium = {
 		tax_land_add = 0.20
 		tax_income_add = -0.01
-	}	
+	}
 	
 	tax_modifier_high = {
 		tax_land_add = 0.30
@@ -182,7 +204,7 @@ law_tenant_farmers = {
 	tax_modifier_very_high = {
 		tax_land_add = 0.40
 		
-	}	
+	}
 	
 
 	build_from_investment_pool = {

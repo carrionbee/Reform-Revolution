@@ -19,21 +19,21 @@ action_extortion_reactionary = {
 				AND = {
 					is_in_government = yes
 					is_powerful = yes 	# must be the leading force in govt, not coalition.
-					}
+				}
 				OR = {
 					has_ideology = ideology:ideology_stratocratic
 					has_ideology = ideology:ideology_ig_fascist
-					has_ideology = ideology:ideology_fascist
-					has_ideology = ideology:ideology_authoritarian
-					has_ideology = ideology:ideology_militaristgeneral
-					has_ideology = ideology:ideology_hitlerist
 					has_ideology = ideology:ideology_slaver
 					has_ideology = ideology:ideology_royalist
-					has_ideology = ideology:ideology_anarcho_liberal
-					has_ideology = ideology:ideology_militarist
-					has_ideology = ideology:ideology_clerical_fascist
-					has_ideology = ideology:ideology_national_socialist
-					has_ideology = ideology:ideology_natsoc
+					leader = { has_ideology = ideology:ideology_authoritarian }
+					leader = { has_ideology = ideology:ideology_fascist }
+					leader = { has_ideology = ideology:ideology_militaristgeneral }
+					leader = { has_ideology = ideology:ideology_hitlerist }
+					leader = { has_ideology = ideology:ideology_anarcho_liberal }
+					leader = { has_ideology = ideology:ideology_militarist }
+					leader = { has_ideology = ideology:ideology_clerical_fascist }
+					leader = { has_ideology = ideology:ideology_national_socialist }
+					leader = { has_ideology = ideology:ideology_natsoc }
 				}
 			}
 		}

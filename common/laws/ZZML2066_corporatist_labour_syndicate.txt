@@ -37,7 +37,7 @@
 			if = {
 				limit = {
 					owner = {
-						OR = { 
+						OR = {
 							has_law = law_regulatory_bodies
 							has_law = law_type:law_union_representation
 							has_law = law_type:law_worker_protections
