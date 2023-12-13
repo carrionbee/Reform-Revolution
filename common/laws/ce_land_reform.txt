@@ -60,7 +60,8 @@ law_serfdom = {
 	disallowing_laws = {
 		law_interventionism
 		law_laissez_faire
-		law_command_economy
+		law_cooperative_ownership		
+		law_communal_principle
 	}
 	
 	on_enact = {
@@ -183,27 +184,34 @@ law_tenant_farmers = {
 
 	tax_modifier_very_low = {
 		tax_land_add = 0.050
-		tax_income_add = -0.10
+		building_group_bg_agriculture_tax_mult = -0.20
+		building_group_bg_ranching_tax_mult = -0.20
+		building_group_bg_plantations_tax_mult = -0.20
 	}
 	
 	tax_modifier_low = {
 		tax_land_add = 0.10
-		tax_income_add = -0.05
+		building_group_bg_agriculture_tax_mult = -0.15
+		building_group_bg_ranching_tax_mult = -0.15
+		building_group_bg_plantations_tax_mult = -0.15
 	}
 	
 	tax_modifier_medium = {
 		tax_land_add = 0.20
-		tax_income_add = -0.01
+		building_group_bg_agriculture_tax_mult = -0.10
+		building_group_bg_ranching_tax_mult = -0.10
+		building_group_bg_plantations_tax_mult = -0.10
 	}
 	
 	tax_modifier_high = {
 		tax_land_add = 0.30
-		tax_income_add = -0.005
+		building_group_bg_agriculture_tax_mult = -0.05
+		building_group_bg_ranching_tax_mult = -0.05
+		building_group_bg_plantations_tax_mult = -0.05
 	}
 	
 	tax_modifier_very_high = {
 		tax_land_add = 0.40
-		
 	}
 	
 
@@ -343,6 +351,14 @@ law_commercialized_agriculture = {
 			}
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_tt
 		}
+		if = {
+			limit = {
+				has_journal_entry = je_pedro_brazil
+				NOT = { has_variable = landreform_pedropoint }
+			}
+			set_variable = landreform_pedropoint
+			remove_pedropoint_effect = yes
+		}
 	}
 
 	pop_support = {
@@ -403,6 +419,8 @@ law_homesteading = {
 	disallowing_laws = {
 		law_feudalism
 		law_slave_trade
+		law_command_economy
+		law_communal_principle
 	}
 
 	on_activate = {
@@ -445,6 +463,14 @@ law_homesteading = {
 				}
 			}
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_pedro_brazil
+				NOT = { has_variable = landreform_pedropoint }
+			}
+			set_variable = landreform_pedropoint
+			remove_pedropoint_effect = yes
 		}
 	}
 	
@@ -555,6 +581,14 @@ law_collectivized_agriculture = {
 				}
 			}
 			custom_tooltip = farmers_pb_ig_shift_effect_negative_tt
+		}
+		if = {
+			limit = {
+				has_journal_entry = je_pedro_brazil
+				NOT = { has_variable = landreform_pedropoint }
+			}
+			set_variable = landreform_pedropoint
+			remove_pedropoint_effect = yes
 		}
 	}
 	

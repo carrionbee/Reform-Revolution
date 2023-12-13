@@ -13,9 +13,6 @@ law_feudalism = {
 	institution_modifier = {
 		interest_group_ig_landowners_approval_add = -1
 		
-		tax_per_capita_add = -0.08
-		tax_land_add = -0.08
-		
 		state_radicals_from_sol_change_mult = -0.03
 		political_movement_radicalism_mult = -0.01
 		state_radicals_from_discrimination_mult = -0.03
@@ -37,9 +34,6 @@ law_feudalism = {
 		state_radicals_from_sol_change_mult = 0.20
 		political_movement_radicalism_mult = 0.10
 		state_radicals_from_discrimination_mult = 0.20
-		
-		tax_per_capita_add = 0.50
-		tax_land_add = 0.50
 	}
 	
 	possible_political_movements = {
@@ -123,7 +117,7 @@ law_military_cantons = {
 		unit_offense_mult = 0.02
 		unit_morale_loss_mult = -0.02
 		
-		state_tax_waste_add = 0.01
+		#state_tax_waste_add = 0.01
 		state_bureaucracy_population_base_cost_factor_mult = 0.01
 	
 		interest_group_ig_armed_forces_attraction_mult = 0.05
@@ -182,7 +176,7 @@ law_unitary = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		centralization
 	}
 	
 	possible = {
@@ -203,8 +197,8 @@ law_unitary = {
 		country_law_enactment_time_mult = -0.05
 		state_tax_collection_mult = 0.02
 		
-		state_bureaucracy_population_base_cost_factor_mult = 0.05
-		country_bureaucracy_investment_cost_factor_mult = 0.05
+		state_bureaucracy_population_base_cost_factor_mult = 0.01
+		country_bureaucracy_investment_cost_factor_mult = 0.01
 		
 		state_assimilation_mult = 0.03
 		state_conversion_mult = 0.03

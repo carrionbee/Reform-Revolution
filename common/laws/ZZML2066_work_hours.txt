@@ -155,7 +155,6 @@ law_labor_work_hours_week_40 = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		human_rights
 		labor_movement
 	}
 
@@ -225,8 +224,7 @@ law_labor_work_hours_week_32 = {
 	progressiveness = 150
 
 	unlocking_technologies = {
-		human_rights
-		labor_movement
+		socialism
 	}
 
 	disallowing_laws = {
@@ -295,7 +293,6 @@ law_labor_work_hours_week_20 = {
 	progressiveness = 200
 
 	unlocking_technologies = {
-		socialism
 		anarchism
 	}
 
