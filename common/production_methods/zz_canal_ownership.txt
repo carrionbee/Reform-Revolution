@@ -1,0 +1,123 @@
+﻿## Canal Ownership
+
+pm_partially_privatized_building_canals = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_laws = {
+		law_sprawl
+		law_bourgeoisie_ownership
+		law_guild_system
+		law_aristocratic_holdings
+		law_religious_integralism
+	}
+
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 250
+			building_employment_bureaucrats_add = 250
+		}
+		unscaled = {
+			building_capitalists_shares_add = 20
+			building_government_shares_add = 1
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = -50
+		}
+	}	
+}
+
+pm_publicly_traded_building_canals = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	unlocking_laws = {
+		law_bourgeoisie_ownership
+	}
+	
+	disallowing_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 500
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_government_run_building_canals = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_command_economy
+        law_communal_principle
+		law_cooperative_ownership
+		law_planned_economics
+		law_dirigisme
+		law_worker_management
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 500
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = -100
+		}
+	}	
+}
+
+pm_worker_cooperative_building_canals = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+	
+	unlocking_laws = {
+		law_cooperative_ownership
+		law_worker_management
+	}
+	
+	disallowing_laws = {
+		law_communal_principle
+  }
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_bureaucracy_add = -50
+		}
+	}	
+}

@@ -1,0 +1,17 @@
+﻿#Ownership
+pmg_research_contractor_ownership = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_merchant_guilds_industry
+		pm_research_contractor_ownership_privately_owned
+		pm_research_contractor_ownership_publicly_traded
+		pm_aristocratic_industry
+		pm_integralism_industry
+		pm_dirigisme_industry
+		pm_technocratic_dirigisme_light_industry
+		pm_research_contractor_ownership_government_run
+		pm_research_contractor_ownership_academic_guild
+		pm_communal_management_industry
+	}
+}

@@ -1,9 +1,7 @@
-pm_merchant_guilds_building_fish_farm = {
+pm_merchant_guilds_building_charcoal_burner = {
 	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
 
-	is_visible = { 
-		exists = building_fish_farm
-	}
+	is_visible = { exists = building_charcoal_burner }
 
 	unlocking_laws = {
 		law_sprawl
@@ -31,12 +29,10 @@ pm_merchant_guilds_building_fish_farm = {
 	}
 }
 
-pm_privately_owned_building_fish_farm = {
+pm_privately_owned_building_charcoal_burner = {
 	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
-
-	is_visible = { 
-		exists = building_fish_farm
-	}
+	
+	is_visible = { exists = building_charcoal_burner }
 
 	unlocking_laws = {
 		law_sprawl
@@ -62,16 +58,12 @@ pm_privately_owned_building_fish_farm = {
 	}
 }
 
-pm_publicly_traded_building_fish_farm = {
+pm_publicly_traded_building_charcoal_burner = {
 	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
-
-	is_visible = { 
-		exists = building_fish_farm
-	}
-
-	unlocking_laws = {
-		law_bourgeoisie_ownership
-	}
+	
+	is_visible = { exists = building_charcoal_burner }
+	
+	unlocking_laws = { law_bourgeoisie_ownership }
 	
 	disallowing_laws = {
 		law_command_economy
@@ -93,17 +85,17 @@ pm_publicly_traded_building_fish_farm = {
 	}
 }
 
-pm_government_run_building_fish_farm = {
+pm_government_run_building_charcoal_burner = {
 	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
-
-	is_visible = { 
-		exists = building_fish_farm
-	}
+	
+	is_visible = { exists = building_charcoal_burner }
 
 	unlocking_laws = {
 		law_command_economy
 		law_planned_economics
 	}
+	
+	disallowing_laws = { law_communal_principle }
 	
 	building_modifiers = {
 		level_scaled = {
@@ -118,17 +110,17 @@ pm_government_run_building_fish_farm = {
 	}
 }
 
-pm_worker_cooperative_building_fish_farm = {
+pm_worker_cooperative_building_charcoal_burner = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
-
-	is_visible = { 
-		exists = building_fish_farm
-	}
+	
+	is_visible = { exists = building_charcoal_burner }
 
 	unlocking_laws = {
 		law_cooperative_ownership
 		law_worker_management
 	}
+	
+	disallowing_laws = { law_communal_principle }
 
 	building_modifiers = {
 		level_scaled = {
@@ -144,16 +136,13 @@ pm_worker_cooperative_building_fish_farm = {
 	}
 }
 
-pm_communal_management_building_fish_farm = {
+pm_communal_management_building_charcoal_burner = {
 	texture = "gfx/interface/icons/production_method_icons/communal_management.dds"
+	
+	is_visible = { exists = building_charcoal_burner }
+	
 
-	is_visible = { 
-		exists = building_fish_farm
-	}
-
-	unlocking_laws = {
-        law_communal_principle
-	}
+	unlocking_laws = { law_communal_principle }
 
 	building_modifiers = {
 		level_scaled = {

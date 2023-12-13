@@ -12,7 +12,7 @@ pmg_ownership_capital_building_power_plant = {
 	production_methods = {
 		pm_merchant_guilds_industry
 		pm_privately_owned_industry
-		pm_publicly_traded_building_power_plant
+		pm_publicly_traded_building_railway
 		pm_aristocratic_industry
 		pm_integralism_industry
 		pm_dirigisme_industry
