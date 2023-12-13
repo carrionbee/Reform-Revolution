@@ -97,6 +97,12 @@
  law_sharecropping:0 "Tenant Farming"
  law_sharecropping_desc:0 "The typical form of tenant farming is called sharecropping - in which capitalist investors own the rights to land, and provide this land to local farmers in exchange for a percentage of that farmer's produce. While this system is still exploitative, smalltime farmers may be able to gain wealth through this arrangement, and occasionally use it to buy and develop new farmlands for themselves and their families. Capitalist investors often use this system in order to escape taxes by shifting the burden onto their tenant farmers."
  
+ law_tenant_farmers:0 "Tenant Farming"
+ law_tenant_farmers_desc:0 "The typical form of tenant farming is called sharecropping - in which hereditary elites & capitalist investors own the rights to land, and provide this land to local farmers in exchange for a percentage of that farmer's produce. While this system is still exploitative, smalltime farmers may be able to gain wealth through this arrangement, and occasionally use it to buy and develop new farmlands for themselves and their families. Capitalist investors often use this system in order to escape taxes by shifting the burden onto their tenant farmers."
+ 
+ law_homesteading:0 "Smallholders & Homesteads"
+ law_homesteading_desc:0 "Farms are primarily worked by the people who own them, small landowning farmers that live and die on their yearly produce and sell the extra to pay for more equipment and expansion. Smallholding economies are rare, and largely found in colonial societies or other places where there is much undeveloped land available for cultivation, or in societies that deliberately enact land reform laws to ensure estates stay small."
+ 
  law_smallholders:0 "Smallholders"
  law_smallholders_desc:0 "Farms are primarily worked by the people who own them, small landowning farmers that live and die on their yearly produce and sell the extra to pay for more equipment and expansion. Smallholding economies are rare, and largely found in colonial societies or other places where there is much undeveloped land available for cultivation, or in societies that deliberately enact land reform laws to ensure estates stay small."
  

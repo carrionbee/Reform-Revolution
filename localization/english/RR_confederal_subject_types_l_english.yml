@@ -1,0 +1,95 @@
+﻿l_english:
+ # Subject Types - Confederal Republics & Autonomous Confederal Republics
+ 
+ # Confederal Republic
+ subject_type_confederal_republic:1 "Confederal Republic"
+ subject_type_confederal_republic_desc:2 "This form of Confederal Republic is integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+
+ confederal_republic:1 "Confederal Republic"
+ confederal_republic_desc:2 "This form of Confederal Republic is integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+ confederal_republic_pact_desc:2 "This form of Confederal Republic is integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+
+
+ # Diplomatic Actions
+ become_confederal_republic:1 "Ask to Integrate into the Confederal Republic"
+ become_confederal_republic_desc:2 "Confederal Republics are integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+ confederal_republic_effect_desc_first:2 "Confederal Republics are integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+
+
+ confederal_republic_action_propose_name:1 "Offer to Integrate into the Confederal Republic"
+ confederal_republic_action_propose_name_desc:2 "Confederal Republics are integrated into the national market and economy, while maintaing its own internal affairs - united under the Head of State"
+
+ confederal_republic_action_break_name:1 "Offer Confederal Republic Autonomy"
+ confederal_republic_action_break_name:2 "Offer to grant Autonomy to this Confederal Republic"
+ 
+ confederal_republic_action_name:0 "Ask to Integrate into the Confederal Republic"
+ confederal_republic_action_notification_name:0 "Becoming a Confederal Republic"
+ confederal_republic_action_notification_desc:0 "We have become a Confederal Republic under [INITIATOR_COUNTRY.GetName]."
+ confederal_republic_action_notification_third_party_name:0 "[INITIATOR_COUNTRY.GetName] has Confederated"
+ confederal_republic_action_notification_third_party_desc:0 "[INITIATOR_COUNTRY.GetName] has become a Confederal Republic under [TARGET_COUNTRY.GetName]."
+
+
+
+ # Autonomous Confederal Republic
+ subject_type_autonomous_confederal_republic:1 "Confederal Autonomous Republic"
+ subject_type_autonomous_confederal_republic_desc:2 "This form of Confederal Republic is more Autonomous, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+ 
+ autonomous_confederal_republic:1 "Autonomous Confederal Republic"
+ autonomous_confederal_republic_desc:2 "This form of Confederal Republic is more Autonomous, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+ autonomous_confederal_republic_pact_desc:2 "This form of Confederal Republic is more Autonomous, and maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+
+
+ # Diplomatic Actions
+ autonomous_confederal_republic_action_propose_name:1 "Offer to Confederate as an Autonomous Republic"
+ autonomous_confederal_republic_action_propose_name_desc:2 "Autonomous Confederal Republics maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+
+ become_autonomous_confederal_republic:1 "Ask to Confederate as an Autonomous Republic"
+ become_autonomous_confederal_republic_desc:2 "Autonomous Confederal Republics maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+ autonomous_federal_conrepublic_effect_desc_first:2 "Autonomous Confederal Republics maintains its own internal market and economy, while conducting its own internal affairs - united under the Head of State"
+
+
+ autonomous_confederal_republic_action_break_name:1 "Grant Independence under Proectorate Status"
+ autonomous_confederal_republic_action_break_name_desc:2 "Offer Independence from the Confederation, while keeping them under our protection"
+
+ confederal_republic_action_name:0 "Ask to Confederate as an Autonomous Confederal Republic"
+ confederal_republic_action_notification_name:0 "Becoming an Autonomous Confederal Republic"
+ confederal_republic_action_notification_desc:0 "We have become an Autonomous Confederal Republic under [INITIATOR_COUNTRY.GetName]."
+ confederal_republic_action_notification_third_party_name:0 "[INITIATOR_COUNTRY.GetName] has Confederated"
+ confederal_republic_action_notification_third_party_desc:0 "[INITIATOR_COUNTRY.GetName] has become an Autonomous Confederal Republic under [TARGET_COUNTRY.GetName]."
+
+
+
+ # Confederal Revenues Tax (+15% Tax on State Revenues)
+ confederal_republic_tax:1 "Confederal Revenues Tax"
+ confederal_republic_tax_desc:2 "A Direct Tax on the Revenues of this Confederal Republic"
+ confederal_republic_tax_pact_desc:2 "A Direct Tax on the Revenues of this Confederal Republic"
+ 
+ confederal_republic_tax_action_propose_name:1 "Issue a Confederal Revenues Tax"
+ confederal_republic_tax_action_propose_name_desc:2 "Issue a Direct Tax on the Revenues of this Confederal Republic"
+ 
+ confederal_republic_tax_action_break_name:1 "Cease the Confederal Revenues Tax"
+ confederal_republic_tax_action_break_name_desc:2 "Cease all Direct Tax on the Revenues from this Confederal Republic"
+
+ # Confederal Revenues Subsidy (+15% Subsidy based on State Revenues)
+ confederal_republic_subsidy:1 "Confederal Revenues Subsidy"
+ confederal_republic_subsidy_desc:2 "A Direct Subsidy based on the Revenues of this Confederal Republic"
+ confederal_republic_subsidy_pact_desc:2 "A Direct Subsidy based on the Revenues of this Confederal Republic"
+ 
+ 
+ confederal_republic_subsidy_action_propose_name:1 "Issue a Confederal Revenues Subsidy"
+ confederal_republic_subsidy_action_propose_name_desc:2 "Issue a Direct Subsidy based on the Revenues of this Confederal Republic"
+ 
+ confederal_republic_subsidy_action_break_name:1 "Cease the Confederal Revenues Subsidy"
+ confederal_republic_subsidy_action_break_name_desc:2 "Cease all Direct Subsidies for this Confederal Republic" 
+
+
+
+ # Integrate Confederal Republic
+ integrate_confederal_republic:0 "Integrate Confederal Republic"
+ integrate_confederal_republic_desc:2 "Finalise Integration into the Republic"
+ integrate_confederal_republic_action_propose_name:1 "Integrate Confederal Republic"
+ integrate_confederal_republic_action_propose_name_desc:2 "Finalise Integration into the Republic"
+ integrate_confederal_republic_action_name:1 "Integrate Confederal Republic"
+ integrate_confederal_republic_action_name_desc:2 "Finalise Integration into the Republic"
+ 
+ #

@@ -21,6 +21,8 @@
  #Sway to Pro-Leader Stance | sway_to_pro_leader_stance
  sway_to_pro_leader_stance:0 "Sway towards Leader's Vision"
  sway_to_pro_leader_stance_desc:0 "This public figure could be a great asset if convinced of the leadership's vision. Perhaps it is time for some meetings?"
+ sway_to_pro_leader_stance_agitator:0 "Co-opt Agitator"
+ sway_to_pro_leader_stance_agitator_desc:0 "This [concept_agitator] is too distruptive to the status-quo. If convinced of the leadership's vision, they too could become a great asset for pushing our causes amongst the people..."
 
  #Sway to Anti-Government Stance | sway_to_anti_government_stance
  sway_to_anti_government_stance:0 "Convince of Anti-Government Agenda"
